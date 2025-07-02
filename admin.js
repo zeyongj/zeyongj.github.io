@@ -1,36 +1,44 @@
-const USER='Rancho', PWD_KEY='rz_pwd';
-if(!localStorage[PWD_KEY]) localStorage[PWD_KEY]='apvan2024';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rancho Admin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="center">
+    <h1>Admin Dashboard</h1>
 
-document.getElementById('loginDiv').onsubmit = e=>{
-  e.preventDefault();
-  if(u.value===USER && p.value===localStorage[PWD_KEY]) {
-    loginDiv.style.display='none'; dash.style.display='block';
-  } else alert('Invalid');
-};
+    <form id="loginDiv">
+      <input id="u" placeholder="Username">
+      <input id="p" type="password" placeholder="Password">
+      <button type="submit">Login</button>
+    </form>
 
-logout.onclick = ()=>location.reload();
-setPwd.onclick = ()=>{
-  localStorage[PWD_KEY]=np.value.trim();
-  alert('Password updated');
-};
+    <div id="dash" style="display:none;">
+      <button id="logout">Logout</button>
+      <hr>
+      <div class="section">
+        <h2>Change Password</h2>
+        <input id="np" placeholder="New password"><button id="setPwd">Save</button>
+      </div>
+      <hr>
+      <div class="section">
+        <h2>Upload CSV / JSON</h2>
+        <label>AP Distribution (.csv)</label><br>
+        <input type="file" id="fap"><br><br>
+        <label>AR Distribution (.csv)</label><br>
+        <input type="file" id="far"><br><br>
+        <label>PM List (.csv)</label><br>
+        <input type="file" id="fpm"><br><br>
+        <label>NLM List (.csv)</label><br>
+        <input type="file" id="fnlm"><br><br>
+        <button id="up">Upload All</button>
+      </div>
+    </div>
+  </div>
 
-up.onclick = async e=>{
-  e.preventDefault();
-  await uploadFile('ap','fap', true);
-  await uploadFile('ar','far', true);
-  await uploadFile('pm','fpm', false);
-  await uploadFile('nlm','fnlm', false);
-  alert('Done!');
-};
-
-async function uploadFile(type, eltId, isJson) {
-  const f = document.getElementById(eltId).files[0];
-  if(!f) return;
-  const txt = await f.text();
-  if(isJson){
-    localStorage[type]=txt;
-    await fetch(`data/${type}.json`,{method:'PUT', body:txt});
-  } else {
-    await fetch(`data/${type}.csv`,{method:'PUT', body:txt});
-  }
-}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
