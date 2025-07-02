@@ -46,6 +46,9 @@ function findPerson(k, data) {
     const inc = (e.Include || '').split(',').map(s => s.trim()).filter(Boolean);
     const exc = (e.Exclude || '').split(',').map(s => s.trim()).filter(Boolean);
 
+    // Special 'Include' has top priority
+    if (inc.includes(k)) return e.Name;
+
     if (ps.endsWith('+')) {
       const start = +ps.slice(0, -1);
       if (num >= start && !exc.includes(k)) return e.Name;
@@ -53,7 +56,6 @@ function findPerson(k, data) {
     } else if (ps.includes('-')) {
       const [a, b] = ps.split('-').map(Number);
       if (num >= a && num <= b) {
-        if (inc.length && !inc.includes(k)) continue;
         if (exc.includes(k)) continue;
         return e.Name;
       }
