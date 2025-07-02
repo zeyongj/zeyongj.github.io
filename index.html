@@ -2,26 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Rancho Search</title>
+  <title>Rancho Project Search</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="center">
-    <img src="rancho-logo.png" class="logo-top" alt="Rancho Logo">
-    <a href="admin.html">
-      <button type="button" class="admin-btn">Admin Login</button>
-    </a>
-  </header>
+  <div class="page-container">
+    <header class="center-content">
+      <img src="rancho-logo.png" alt="Rancho Logo" class="logo-top">
+    </header>
 
-  <main class="center">
-    <input id="q" type="text" placeholder="Enter project number">
-    <button id="btn">Search</button>
-    <div id="res"></div>
-  </main>
+    <main class="center-content">
+      <div class="search-area">
+        <input id="q" type="text" placeholder="Enter project number">
+        <button id="btn">Search</button>
+      </div>
+      <button id="adminBtn" class="admin-btn">Admin Login</button>
+      <div id="res" class="result"></div>
+    </main>
 
-  <footer>Zeyong Jin © All Rights Reserved</footer>
+    <footer>Zeyong Jin © All Rights Reserved</footer>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="script.js"></script>
+  <script>
+    document.getElementById('adminBtn').onclick = () => {
+      window.location.href = 'admin.html';
+    };
+  </script>
 </body>
 </html>
