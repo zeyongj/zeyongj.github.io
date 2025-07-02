@@ -6,37 +6,46 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="admin-container">
-    <form id="loginForm" class="admin-box">
-      <h2>Admin Login</h2>
-      <input id="u" placeholder="Username" required>
-      <input id="p" type="password" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
+  <div class="page-container">
+    <header class="center-content">
+      <img src="rancho-logo.png" alt="Rancho Logo" class="logo-top">
+    </header>
 
-    <div id="dash" class="admin-box" style="display:none;">
-      <button id="logout" class="btn-secondary">Logout</button>
-      <h2>Settings & Uploads</h2>
+    <main class="center-content admin-main">
+      <form id="loginForm" class="admin-box">
+        <h2>Admin Login</h2>
+        <input id="u" type="text" placeholder="Username" required>
+        <input id="p" type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
 
-      <label><strong>Change Password</strong></label>
-      <input id="np" placeholder="New password">
-      <button id="setPwd" class="btn-primary">Save Password</button>
-      <hr>
+      <div id="dash" class="admin-box" style="display:none;">
+        <button id="logout" class="btn-secondary">Logout</button>
+        <h2>Admin Dashboard</h2>
 
-      <label><strong>AP Distribution</strong></label>
-      <div id="apList"></div>
-      <button id="addAp" class="btn-primary small">+ Add AP entry</button>
+        <label>Change Password:</label>
+        <input id="np" type="password" placeholder="New password">
+        <button id="setPwd" class="btn-primary">Save Password</button>
 
-      <label><strong>AR Distribution</strong></label>
-      <div id="arList"></div>
-      <button id="addAr" class="btn-primary small">+ Add AR entry</button>
-      <hr>
+        <hr>
 
-      <label><strong>Upload Project & NLM Lists</strong></label>
-      <input type="file" id="fpm" accept=".csv">
-      <input type="file" id="fnlm" accept=".csv">
-      <button id="up" class="btn-primary">Upload Files</button>
-    </div>
+        <label>AP Distribution:</label>
+        <div id="apList" class="list-container"></div>
+        <button id="addAp" class="btn-secondary small">+ Add AP entry</button>
+
+        <label>AR Distribution:</label>
+        <div id="arList" class="list-container"></div>
+        <button id="addAr" class="btn-secondary small">+ Add AR entry</button>
+
+        <hr>
+
+        <label>Upload PM List (CSV):</label>
+        <input id="fpm" type="file" accept=".csv">
+        <label>Upload NLM List (CSV):</label>
+        <input id="fnlm" type="file" accept=".csv">
+        <button id="up" class="btn-primary">Upload Files</button>
+      </div>
+    </main>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
