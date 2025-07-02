@@ -1,0 +1,5 @@
+body { font-family:sans-serif; margin:0; display:flex;justify-content:center;align-items:center;flex-direction:column;height:100vh; }
+.center { text-align:center; }
+.logo { width:200px; margin-bottom:20px; }
+input, button { padding:8px; margin:5px; width:200px; }
+footer { position:fixed;bottom:10px;font-size:0.8em;color:#666; }
