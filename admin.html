@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta charset="utf-8"><title>Rancho Admin</title><link rel="stylesheet" href="styles.css"></head>
+<head>
+  <meta charset="utf-8">
+  <title>Rancho Admin</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-  <div class="center">
-    <form id="loginDiv">
-      <input id="u" placeholder="Username">
-      <input id="p" type="password" placeholder="Password">
+  <div class="admin-container">
+    <form id="loginForm" class="admin-box">
+      <h2>Admin Login</h2>
+      <input id="u" placeholder="Username" required>
+      <input id="p" type="password" placeholder="Password" required>
       <button type="submit">Login</button>
     </form>
 
-    <div id="dash" style="display:none;">
-      <button id="logout">Logout</button>
-      <h2>Change Password</h2>
-      <input id="np" placeholder="New password"><button id="setPwd">Save</button>
-      <h2>Upload CSV/JSON</h2>
-      <label>AP dist</label><input type="file" id="fap"><br>
-      <label>AR dist</label><input type="file" id="far"><br>
-      <label>PM list (CSV)</label><input type="file" id="fpm"><br>
-      <label>NLM list (CSV)</label><input type="file" id="fnlm"><br>
-      <button id="up">Upload all</button>
+    <div id="dash" class="admin-box" style="display:none;">
+      <button id="logout" class="btn-secondary">Logout</button>
+      <h2>Settings & Uploads</h2>
+
+      <label><strong>Change Password</strong></label>
+      <input id="np" placeholder="New password">
+      <button id="setPwd" class="btn-primary">Save Password</button>
+      <hr>
+
+      <label><strong>AP Distribution</strong></label>
+      <div id="apList"></div>
+      <button id="addAp" class="btn-primary small">+ Add AP entry</button>
+
+      <label><strong>AR Distribution</strong></label>
+      <div id="arList"></div>
+      <button id="addAr" class="btn-primary small">+ Add AR entry</button>
+      <hr>
+
+      <label><strong>Upload Project & NLM Lists</strong></label>
+      <input type="file" id="fpm" accept=".csv">
+      <input type="file" id="fnlm" accept=".csv">
+      <button id="up" class="btn-primary">Upload Files</button>
     </div>
   </div>
-  <script src="papaparse.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="admin.js"></script>
 </body>
