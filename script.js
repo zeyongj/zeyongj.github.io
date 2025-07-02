@@ -1,21 +1,23 @@
 let ap = [], ar = [], pm = [], nlm = [];
 
 async function loadData() {
-  ap = await fetch('https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/ap.json')
-    .then(r => r.json());
-  ar = await fetch('https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/ar.json')
-    .then(r => r.json());
-  pm = await fetch('https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/pm.csv')
+  const base = 'https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/';
+  
+  ap = await fetch(base + 'ap.json').then(r => r.json());
+  ar = await fetch(base + 'ar.json').then(r => r.json());
+
+  pm = await fetch(base + 'pm.csv')
     .then(r => r.text())
     .then(txt => Papa.parse(txt, { header: true }).data
       .map(r => ({ p: r['Proj#'].trim().slice(0,4), pm: r['PM'].trim() }))
     );
-  nlm = await fetch('https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/nlm.csv')
+
+  nlm = await fetch(base + 'nlm.csv')
     .then(r => r.text())
     .then(txt => Papa.parse(txt, { header: true }).data
-      .map(r => r['Proj#'].trim().slice(0,4))
-    );
+      .map(r => r['Proj#'].trim().slice(0,4)));
 }
+
 
 function findPerson(k, data) {
   const num = +k;
