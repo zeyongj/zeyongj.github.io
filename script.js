@@ -47,7 +47,10 @@ function findPerson(k, data) {
     const exc = (e.Exclude || '').split(',').map(s => s.trim()).filter(Boolean);
 
     // Special 'Include' has top priority
-    if (inc.includes(k)) return e.Name;
+    if (inc.includes(k)) {
+      console.log('→ Found in Include for', e.Name);
+      return e.Name;
+    }
 
     if (ps.endsWith('+')) {
       const start = +ps.slice(0, -1);
