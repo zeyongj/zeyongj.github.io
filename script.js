@@ -9,15 +9,25 @@ async function loadData() {
   pm = await fetch(base + 'pm.csv')
     .then(r => r.text())
     .then(txt => {
-      const data = Papa.parse(txt, { header: true }).data;
+      const repaired = txt.replace(/"([^"]*)\n([^"]*)"/g, (_, a, b) => `"${a} ${b}"`);
+      const data = Papa.parse(repaired, {
+        header: true,
+        skipEmptyLines: true,
+        quoteChar: '"',
+        delimitersToGuess: [',']
+      }).data;
+  
       return data
         .map(r => {
-          const proj = (r['Proj#'] || '').trim().slice(0, 4);
-          const pmName = (r['PM'] || '').trim();
+          const proj = (r['PROJ #'] || r['Proj#'] || '')
+                        .split('"').join('')
+                        .trim().slice(0,4);
+          const pmName = (r['PM'] || '').split('\n')[0].trim();
           return { p: proj, pm: pmName };
         })
         .filter(r => r.p);
     });
+
 
   nlm = await fetch(base + 'nlm.csv')
     .then(r => r.text())
