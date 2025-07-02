@@ -1,42 +1,61 @@
-let nlm=[], pm=[], ap=[], ar=[];
-function load() {
-  Papa.parse('data/nlm.csv', { download:true, header:true,
-    complete: r=>nlm = r.data.map(row=>row['Proj#'].trim().slice(0,4)) });
-  Papa.parse('data/pm.csv', { download:true, header:true,
-    complete: r=>pm = r.data.map(rw=>({p:rw['Proj#'].trim().slice(0,4), pm:rw['PM'].trim()})) });
-  fetch('data/ap.json').then(r=>r.json()).then(d=>ap=d);
-  fetch('data/ar.json').then(r=>r.json()).then(d=>ar=d);
+let ap = [], ar = [], pm = [], nlm = [];
+
+async function loadData() {
+  ap = await fetch('https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/ap.json')
+    .then(r => r.json());
+  ar = await fetch('https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/ar.json')
+    .then(r => r.json());
+  pm = await fetch('https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/pm.csv')
+    .then(r => r.text())
+    .then(txt => Papa.parse(txt, { header: true }).data
+      .map(r => ({ p: r['Proj#'].trim().slice(0,4), pm: r['PM'].trim() }))
+    );
+  nlm = await fetch('https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/nlm.csv')
+    .then(r => r.text())
+    .then(txt => Papa.parse(txt, { header: true }).data
+      .map(r => r['Proj#'].trim().slice(0,4))
+    );
 }
-document.addEventListener('DOMContentLoaded', load);
 
-document.getElementById('btn').onclick = ()=>{
-  const k = document.getElementById('q').value.trim().slice(0,4),
-        out = document.getElementById('res');
-  if(!k) return out.textContent = '';
-  if(nlm.includes(k)) return out.textContent = `Project ${k} is NLM.`;
-  const pmRow = pm.find(r=>r.p===k);
-  if(!pmRow) return out.textContent = 'No result';
-  const apn = findPerson(k, ap), arn = findPerson(k, ar);
-  out.innerHTML = `
-    <p>Project number: ${k}</p>
-    <p>AP name: ${apn||'–'}</p>
-    <p>AR name: ${arn||'–'}</p>
-    <p>PM name: ${pmRow.pm}</p>`;
-};
-
-function findPerson(k, arr) {
+function findPerson(k, data) {
   const num = +k;
-  for(let e of arr){
-    const ps=e.Portfolio.trim(), inc=e.Include||[], exc=e.Exclude||[];
-    if(ps.endsWith('+') && num>=+ps.slice(0,-1)) return e.Name;
-    if(ps.includes('-')){
-      const [a,b]=ps.split('-').map(Number);
-      if(num>=a&&num<=b){
-        if(inc.length && !inc.includes(k)) continue;
-        if(exc.includes(k)) continue;
+  for (let e of data) {
+    const ps = e.Portfolio.trim(), inc = (e.Include||'').split(',').filter(Boolean), exc = (e.Exclude||'').split(',').filter(Boolean);
+    if (ps.endsWith('+') && num >= +ps.slice(0, -1)) {
+      if (exc.includes(k)) continue;
+      return e.Name;
+    } else if (ps.includes('-')) {
+      const [a,b] = ps.split('-').map(Number);
+      if (num >= a && num <= b) {
+        if (inc.length && !inc.includes(k)) continue;
+        if (exc.includes(k)) continue;
         return e.Name;
       }
     }
   }
   return null;
 }
+
+document.getElementById('btn').onclick = async () => {
+  const key = document.getElementById('q').value.trim().slice(0,4);
+  const res = document.getElementById('res');
+  if (!key) return res.textContent = '';
+
+  await loadData();
+
+  if (nlm.includes(key)) return res.textContent = `Project ${key} is NLM.`;
+
+  const pmRow = pm.find(r => r.p === key);
+  if (!pmRow) return res.textContent = 'No result';
+
+  const apn = findPerson(key, ap) || '–';
+  const arn = findPerson(key, ar) || '–';
+
+  res.innerHTML = `
+    <p>Project number: ${key}</p>
+    <p>AP name: ${apn}</p>
+    <p>AR name: ${arn}</p>
+    <p>PM name: ${pmRow.pm}</p>`;
+};
+
+loadData();
