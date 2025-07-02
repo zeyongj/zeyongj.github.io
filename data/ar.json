@@ -1,1 +1,86 @@
-[]
+[
+  {
+    "Name": "Sharon Garcia",
+    "Portfolio": "5006-5150",
+    "Include": "",
+    "Exclude": "5061,5063"
+  },
+  {
+    "Name": "April Payagen",
+    "Portfolio": "5156-5234",
+    "Include": "5255",
+    "Exclude": ""
+  },
+  {
+    "Name": "Husay Issaqzai",
+    "Portfolio": "5235-5308",
+    "Include": "",
+    "Exclude": "5255"
+  },
+  {
+    "Name": "Johannes Phanoto",
+    "Portfolio": "5310-5377",
+    "Include": "",
+    "Exclude": "5325"
+  },
+  {
+    "Name": "Amber Lee",
+    "Portfolio": "5379-5398",
+    "Include": "",
+    "Exclude": ""
+  },
+  {
+    "Name": "Amber Lee",
+    "Portfolio": "5502-5529",
+    "Include": "",
+    "Exclude": ""
+  },
+  {
+    "Name": "Shivam Seth",
+    "Portfolio": "5531-5590",
+    "Include": "",
+    "Exclude": ""
+  },
+  {
+    "Name": "Dutchie Nambeke",
+    "Portfolio": "5593-5636",
+    "Include": "",
+    "Exclude": ""
+  },
+  {
+    "Name": "Parmjit Johal",
+    "Portfolio": "5637-5681",
+    "Include": "",
+    "Exclude": ""
+  },
+  {
+    "Name": "Mae Teaño",
+    "Portfolio": "5682-5717",
+    "Include": "",
+    "Exclude": ""
+  },
+  {
+    "Name": "Stanley Martinez",
+    "Portfolio": "5718-5748",
+    "Include": "",
+    "Exclude": ""
+  },
+  {
+    "Name": "Felicitas Baddiles",
+    "Portfolio": "5749-5771",
+    "Include": "5061,5063",
+    "Exclude": ""
+  },
+  {
+    "Name": "Wendy Yan",
+    "Portfolio": "5772-5791",
+    "Include": "5325",
+    "Exclude": ""
+  },
+  {
+    "Name": "Mohd Aarif",
+    "Portfolio": "5792+",
+    "Include": "",
+    "Exclude": ""
+  }
+]
