@@ -18,9 +18,9 @@ A lightweight static site hosted on GitHub Pages that provides:
     - `nlm.csv` (Project # list)
   
 All data is stored in the `data/` folder and updated via the admin interface or GitHub upload.
----
+
 ## 🗂 Repository Structure
-/
+
 ├── index.html # Public search page
 ├── admin.html # Protected admin interface
 ├── styles.css # Shared styles for both pages
@@ -34,7 +34,7 @@ All data is stored in the `data/` folder and updated via the admin interface or 
 ├── pm.csv # Project‑to‑PM mapping
 └── nlm.csv # List of NLM projects
 
----
+
 
 ## ⚙️ Setup & Use
 
