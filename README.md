@@ -22,16 +22,27 @@ All data is stored in the `data/` folder and updated via the admin interface or 
 ## 🗂 Repository Structure
 
 ├── index.html # Public search page
+
 ├── admin.html # Protected admin interface
+
 ├── styles.css # Shared styles for both pages
+
 ├── script.js # Search logic for public page
+
 ├── admin.js # Login, admin UI & file uploads
+
 ├── papaparse.min.js # CSV parsing library (via CDN)
+
 ├── rancho-logo.png # Branding logo
+
 └── data/
+
 ├── ap.json # AP distribution (managed via admin page)
+
 ├── ar.json # AR distribution (managed via admin page)
+
 ├── pm.csv # Project‑to‑PM mapping
+
 └── nlm.csv # List of NLM projects
 
 
