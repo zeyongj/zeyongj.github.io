@@ -102,7 +102,6 @@ Option B: **Use `gh-pages` branch**
 ## 📘 Contributions & Support
 
 - Open to enhancements: better styling, validation, or back-end integration
-- Reach out to **Zeyong Jin** for support or feature requests
 
 ---
 
