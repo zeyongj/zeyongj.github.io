@@ -6,29 +6,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-container">
-    <header class="center-content">
-      <img src="rancho-logo.png" alt="Rancho Logo" class="logo-top">
-    </header>
-
-    <main class="center-content">
-      <div class="search-area">
-        <input id="q" type="text" placeholder="Enter project number">
-        <button id="btn">Search</button>
-      </div>
-      <button id="adminBtn" class="admin-btn">Admin Login</button>
-      <div id="res" class="result"></div>
-    </main>
-
-    <footer>Zeyong Jin © All Rights Reserved</footer>
+  <div class="home-container">
+    <img src="rancho-logo.png" class="logo-top" alt="Rancho Logo">
+    <input id="q" type="text" placeholder="Enter project number">
+    <button id="btn">Search</button>
+    <button id="adminBtn" class="admin-btn">Admin Login</button>
+    <div id="res" class="result"></div>
   </div>
+
+  <footer>Zeyong Jin © All Rights Reserved</footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script src="script.js"></script>
   <script>
-    document.getElementById('adminBtn').onclick = () => {
-      window.location.href = 'admin.html';
-    };
+    document.getElementById('adminBtn')
+            .onclick = () => window.location.href = 'admin.html';
   </script>
 </body>
 </html>
