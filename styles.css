@@ -1,8 +1,8 @@
-/* Base Layout */
+/* Page Setup */
 body, html {
-  width: 100%;
+  margin: 0;
+  padding: 0;
   height: 100%;
-  margin: 0; padding: 0;
   font-family: Arial, sans-serif;
 }
 footer {
@@ -15,7 +15,7 @@ footer {
   width: 100%;
 }
 
-/* Home Page Centering */
+/* Center Home Page UI */
 .home-container {
   min-height: calc(100vh - 60px);
   display: flex;
@@ -29,24 +29,24 @@ footer {
   margin-bottom: 20px;
 }
 input[type="text"], button {
+  width: 280px;
   padding: 10px;
   font-size: 1em;
-  width: 280px;
   box-sizing: border-box;
 }
 .admin-btn {
   width: 150px;
 }
 
-/* Result text */
+/* Results */
 .result {
   margin-top: 15px;
   font-size: 1.1em;
 }
 
-/* Admin Page styling */
+/* Admin Page Shared Styles */
 .admin-box {
-  background: white;
+  background: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -63,16 +63,19 @@ input[type="text"], button {
 }
 .admin-box input, .admin-box input[type="file"], .admin-box button {
   width: 100%;
-  box-sizing: border-box;
   padding: 10px;
   font-size: 1em;
+  box-sizing: border-box;
 }
-.btn-primary { background: #007bff; color: white; }
-.btn-secondary { background: #6c757d; color: white; }
+.btn-primary { background: #007bff; color: #fff; }
+.btn-secondary { background: #6c757d; color: #fff; }
 .small { font-size: 0.9em; padding: 8px; }
 
-/* Admin list styling */
-.list-container { max-height: 200px; overflow-y: auto; margin-bottom: 15px; }
+.list-container {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-bottom: 15px;
+}
 .list-container > div {
   display: flex;
   gap: 5px;
