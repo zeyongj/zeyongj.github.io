@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "Name": "Mylene Badua",
+    "Portfolio": "5750+",
+    "Include": "5061,5266,5133,5134,5135,5198,5255,5167,5265,5257,5258,5594,5598,5377,5381,5386,5504,5521,5556,5571,5661,5699,5739",
+    "Exclude": ""
+  },
+  {
+    "Name": "Stephanie Torres",
+    "Portfolio": "5636-5749",
+    "Include": "",
+    "Exclude": "5661,5699,5739"
+  },
+  {
+    "Name": "Danny Liang",
+    "Portfolio": "5528-5635",
+    "Include": "",
+    "Exclude": "5594,5598,5521,5556,5571"
+  },
+  {
+    "Name": "David Wong",
+    "Portfolio": "5539-5527",
+    "Include": "",
+    "Exclude": "5377,5381,5386,5504"
+  },
+  {
+    "Name": "Livani Gazali",
+    "Portfolio": "5218-5337",
+    "Include": "5200",
+    "Exclude": "5260,5261,5256,5257,5258"
+  },
+  {
+    "Name": "Jasjeet Sidhu",
+    "Portfolio": "5006-5216",
+    "Include": "5260,5261",
+    "Exclude": "5061,5266,5133,5134,5135,5167,5198,5255"
+  }
+]
