@@ -15,6 +15,12 @@ async function loadData() {
       })).filter(r => r.p);
   });
 
+  function toTitleCase(str) {
+    return str
+      .toLowerCase()
+      .replace(/(^|\s)\S/g, c => c.toUpperCase());
+  }
+  
   fa = await fetch(base + 'fa.csv').then(r => r.text()).then(txt =>
     Papa.parse(txt, {
       header: true,
@@ -25,13 +31,15 @@ async function loadData() {
       .map(r => {
         const projRaw = Object.values(r)[0] || '';
         const proj = projRaw.trim().match(/^\d{4}/)?.[0] || '';
+        const rawFa = (r.FA || '').trim();
         return {
           p: proj,
-          fa: (r.FA || '').trim()
+          fa: rawFa ? toTitleCase(rawFa) : ''
         };
       })
       .filter(r => r.p)
   );
+
 
   nlm = await fetch(base + 'nlm.csv').then(r => r.text()).then(txt =>
     Papa.parse(txt, { header: true }).data
