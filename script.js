@@ -14,12 +14,6 @@ async function loadData() {
         pm: (r['PM'] || '').split('\n')[0].trim()
       })).filter(r => r.p);
   });
-
-  function toTitleCase(str) {
-    return str
-      .toLowerCase()
-      .replace(/(^|\s)\S/g, c => c.toUpperCase());
-  }
   
   fa = await fetch(base + 'fa.csv').then(r => r.text()).then(txt =>
     Papa.parse(txt, {
@@ -46,6 +40,12 @@ async function loadData() {
       .map(r => (r['Proj#'] || '').trim().slice(0,4)).filter(p => p)
   );
 }
+
+function toTitleCase(str) {
+    return str
+      .toLowerCase()
+      .replace(/(^|\s)\S/g, c => c.toUpperCase());
+  }
 
 function findPerson(k, data) {
   const num = +k;
