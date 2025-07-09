@@ -15,23 +15,23 @@ async function loadData() {
       })).filter(r => r.p);
   });
 
-fa = await fetch(base + 'fa.csv').then(r => r.text()).then(txt =>
-  Papa.parse(txt, {
-    header: true,
-    skipEmptyLines: true,
-    quoteChar: '"',
-    delimitersToGuess: [',', '\t']
-  }).data
-    .map(r => {
-      const projRaw = Object.values(r)[0] || '';
-      const proj = projRaw.trim().match(/^\d{4}/)?.[0] || '';
-      return {
-        p: proj,
-        fa: (r.FA || '').trim()
-      };
-    })
-    .filter(r => r.p)
-);
+  fa = await fetch(base + 'fa.csv').then(r => r.text()).then(txt =>
+    Papa.parse(txt, {
+      header: true,
+      skipEmptyLines: true,
+      quoteChar: '"',
+      delimitersToGuess: [',', '\t']
+    }).data
+      .map(r => {
+        const projRaw = Object.values(r)[0] || '';
+        const proj = projRaw.trim().match(/^\d{4}/)?.[0] || '';
+        return {
+          p: proj,
+          fa: (r.FA || '').trim()
+        };
+      })
+      .filter(r => r.p)
+  );
 
   nlm = await fetch(base + 'nlm.csv').then(r => r.text()).then(txt =>
     Papa.parse(txt, { header: true }).data
