@@ -1,4 +1,4 @@
-let ap = [], ar = [], pm = [], nlm = [];
+let ap = [], ar = [], pm = [], fa = [], nlm = [];
 
 async function loadData() {
   const base = 'https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/';
@@ -8,19 +8,24 @@ async function loadData() {
 
   pm = await fetch(base + 'pm.csv').then(r => r.text()).then(txt => {
     const fix = txt.replace(/"([^"]*)\n([^"]*)"/g, (_, a, b) => `"${a} ${b}"`);
-    const dp = Papa.parse(fix, {
-      header: true, skipEmptyLines: true, quoteChar: '"'
-    }).data;
-    return dp.map(r => ({
-      p: ((r['PROJ #'] || r['Proj#'] || '').replace(/"/g,'').trim().slice(0,4)),
-      pm: (r['PM'] || '').split('\n')[0].trim()
-    })).filter(r => r.p);
+    return Papa.parse(fix, { header: true, skipEmptyLines: true, quoteChar: '"' }).data
+      .map(r => ({
+        p: ((r['PROJ #'] || r['Proj#'] || '').replace(/"/g,'').trim().slice(0,4)),
+        pm: (r['PM'] || '').split('\n')[0].trim()
+      })).filter(r => r.p);
   });
+
+  fa = await fetch(base + 'fa.csv').then(r => r.text()).then(txt =>
+    Papa.parse(txt, { header: true, skipEmptyLines: true }).data
+      .map(r => ({
+        p: (r['Proj#'] || '').trim().slice(0,4),
+        fa: (r['FA'] || '').trim()
+      })).filter(r => r.p)
+  );
 
   nlm = await fetch(base + 'nlm.csv').then(r => r.text()).then(txt =>
     Papa.parse(txt, { header: true }).data
-      .map(r => (r['Proj#'] || '').trim().slice(0,4))
-      .filter(p => p)
+      .map(r => (r['Proj#'] || '').trim().slice(0,4)).filter(p => p)
   );
 }
 
@@ -44,7 +49,7 @@ function findPerson(k, data) {
   return null;
 }
 
-// Display last-modified timestamp
+// Show last modified timestamp
 (() => {
   const el = document.getElementById('last-modified');
   if (el) {
@@ -57,21 +62,22 @@ document.getElementById('btn').onclick = async () => {
   const key = document.getElementById('q').value.trim().slice(0,4);
   const resEl = document.getElementById('res');
   resEl.textContent = '';
-
   if (!key) return;
   await loadData();
-
   if (nlm.includes(key)) return resEl.textContent = `Project ${key} is NLM.`;
 
   const pmRow = pm.find(r => r.p === key);
   if (!pmRow) return resEl.textContent = 'No result';
 
+  const faRow = fa.find(r => r.p === key);
   const apn = findPerson(key, ap) || '–';
   const arn = findPerson(key, ar) || '–';
+  const fan = faRow ? faRow.fa : '–';
 
   resEl.innerHTML = `
     <p>Project number: ${key}</p>
     <p>AP name: ${apn}</p>
     <p>AR name: ${arn}</p>
+    <p>FA name: ${fan}</p>
     <p>PM name: ${pmRow.pm}</p>`;
 };
