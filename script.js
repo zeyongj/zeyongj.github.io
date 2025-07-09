@@ -18,7 +18,7 @@ async function loadData() {
   fa = await fetch(base + 'fa.csv').then(r => r.text()).then(txt =>
     Papa.parse(txt, { header: true, skipEmptyLines: true }).data
       .map(r => ({
-        p: (r['Proj#'] || '').trim().slice(0,4),
+        p: (r['Project'] || '').trim().slice(0,4),
         fa: (r['FA'] || '').trim()
       })).filter(r => r.p)
   );
