@@ -41,13 +41,28 @@
 
     .logo {
       text-align: center;
-      margin: 30px 0;
+      margin: 30px 0 20px 0;
     }
 
     .logo img {
       max-width: 280px;
       height: auto;
       filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    }
+
+    .current-time {
+      text-align: center;
+      font-size: 18px;
+      color: var(--primary);
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .visit-counter {
+      text-align: center;
+      font-size: 14px;
+      color: #6c757d;
+      margin-bottom: 20px;
     }
 
     .search-card {
@@ -396,6 +411,8 @@
     <div class="logo">
       <img src="rancho-logo.png" alt="Rancho Logo">
     </div>
+    <div class="current-time" id="currentTime">Loading time...</div>
+    <div class="visit-counter" id="visitCounter">👁️ Total Visits: <span id="visitCount">0</span></div>
 
     <div class="search-card">
       <div class="search-header">
@@ -507,6 +524,11 @@
       loadDataAsync();
       setupEventListeners();
       updateFooter();
+      updateTime();
+      updateVisitCounter();
+      
+      // Update time every second
+      setInterval(updateTime, 1000);
     });
 
     function setupEventListeners() {
@@ -837,12 +859,10 @@
               <div class="detail-label">Project Number</div>
               <div class="detail-value">${r.proj}</div>
             </div>
-            ${r.strataplan ? `
             <div class="detail-item">
               <div class="detail-label">Strata Plan</div>
-              <div class="detail-value">${r.strataplan}</div>
+              <div class="detail-value">${r.strataplan || '—'}</div>
             </div>
-            ` : ''}
             <div class="detail-item">
               <div class="detail-label">AP Name</div>
               <div class="detail-value">${r.ap}</div>
@@ -884,6 +904,30 @@
           minute: '2-digit'
         });
       document.getElementById('currentYear').textContent = new Date().getFullYear();
+    }
+
+    function updateTime() {
+      const now = new Date();
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+      };
+      document.getElementById('currentTime').textContent = 
+        '🕐 ' + now.toLocaleString('en-US', options);
+    }
+
+    function updateVisitCounter() {
+      // Get current visit count from localStorage
+      let visits = parseInt(localStorage.getItem('rancho_visit_count') || '0');
+      visits++;
+      localStorage.setItem('rancho_visit_count', visits.toString());
+      document.getElementById('visitCount').textContent = visits.toLocaleString();
     }
   </script>
 </body>
