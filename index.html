@@ -601,7 +601,7 @@
         .map(r => ({
           proj: extractProjectNumber(r['PROJ #'] || r['Proj#'] || ''),
           pm: (r['PM'] || '').split('\n')[0].trim(),
-          strataplan: (r['STRATA \nPLAN'] || r['STRATA PLAN'] || r['STRATA'] || '').trim(),
+          strataplan: (r['STRATA'] || r['STRATA PLAN'] || r['STRATA \nPLAN'] || '').trim(),
           raw: r
         }))
         .filter(r => r.proj);
