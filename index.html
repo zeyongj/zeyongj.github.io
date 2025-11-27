@@ -63,6 +63,7 @@
       font-size: 14px;
       color: #6c757d;
       margin-bottom: 20px;
+      font-family: monospace;
     }
 
     .search-card {
@@ -412,7 +413,7 @@
       <img src="rancho-logo.png" alt="Rancho Logo">
     </div>
     <div class="current-time" id="currentTime">Loading time...</div>
-    <div class="visit-counter" id="visitCounter">👁️ Total Visits: <span id="visitCount">0</span></div>
+    <div class="visit-counter" id="visitCounter">📍 Location: <span id="userLocation">Loading...</span></div>
 
     <div class="search-card">
       <div class="search-header">
@@ -525,7 +526,7 @@
       setupEventListeners();
       updateFooter();
       updateTime();
-      updateVisitCounter();
+      getUserIP();
       
       // Update time every second
       setInterval(updateTime, 1000);
@@ -649,15 +650,39 @@
       });
       
       console.log('CSV Headers:', parsed.meta.fields); // Debug: see what headers we got
+      console.log('Total rows parsed:', parsed.data.length);
+      
+      // Find all 5164 entries
+      const entries5164 = parsed.data.filter(r => {
+        const projRaw = r['PROJ #'] || r['Proj#'] || r['PROJ#'] || '';
+        return projRaw.trim().startsWith('5164');
+      });
+      
+      console.log('All 5164 entries found:', entries5164.length);
+      entries5164.forEach((entry, idx) => {
+        console.log(`Entry ${idx + 1}:`, {
+          projRaw: entry['PROJ #'],
+          strata: entry['STRATA'],
+          pm: entry['PM']
+        });
+      });
       
       return parsed.data
         .map(r => {
           // Try all possible column name variations
           const strataplan = r['STRATA'] || r['STRATA PLAN'] || r['STRATA \nPLAN'] || r['Strata Plan'] || '';
-          const proj = extractProjectNumber(r['PROJ #'] || r['Proj#'] || r['PROJ#'] || '');
+          const projRaw = r['PROJ #'] || r['Proj#'] || r['PROJ#'] || '';
+          const proj = extractProjectNumber(projRaw);
           const pm = (r['PM'] || '').split('\n')[0].trim();
           
-          console.log(`Project ${proj}: Strata = "${strataplan}"`); // Debug
+          if (proj === '5164') {
+            console.log('Found 5164 entry:');
+            console.log('  Raw PROJ #:', projRaw);
+            console.log('  Extracted:', proj);
+            console.log('  Strata:', strataplan);
+            console.log('  PM:', pm);
+            console.log('  All columns:', Object.keys(r));
+          }
           
           return {
             proj: proj,
@@ -930,12 +955,24 @@
         '🕐 ' + now.toLocaleString('en-US', options);
     }
 
-    function updateVisitCounter() {
-      // Get current visit count from localStorage
-      let visits = parseInt(localStorage.getItem('rancho_visit_count') || '0');
-      visits++;
-      localStorage.setItem('rancho_visit_count', visits.toString());
-      document.getElementById('visitCount').textContent = visits.toLocaleString();
+    async function getUserIP() {
+      try {
+        // Using ipapi.co for geolocation (free, no API key needed)
+        const response = await fetch('https://ipapi.co/json/');
+        const data = await response.json();
+        
+        if (data.city && data.country_name) {
+          document.getElementById('userLocation').textContent = 
+            `${data.city}, ${data.country_name}`;
+        } else if (data.country_name) {
+          document.getElementById('userLocation').textContent = data.country_name;
+        } else {
+          document.getElementById('userLocation').textContent = 'Location unavailable';
+        }
+      } catch (error) {
+        console.log('Could not fetch location:', error);
+        document.getElementById('userLocation').textContent = 'Location unavailable';
+      }
     }
   </script>
 </body>
