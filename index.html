@@ -260,6 +260,33 @@
       margin-bottom: 15px;
       padding-bottom: 10px;
       border-bottom: 2px solid var(--light);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .results-header-left {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .btn-clear {
+      padding: 8px 16px;
+      background: var(--light);
+      color: var(--dark);
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-clear:hover {
+      background: var(--danger);
+      color: white;
+      border-color: var(--danger);
+      transform: translateY(-2px);
     }
 
     .results-count {
@@ -486,8 +513,11 @@
 
     <div id="resultsContainer" class="search-card results-container">
       <div class="results-header">
-        <h2 style="color: var(--primary);">Search Results</h2>
-        <span class="results-count" id="resultsCount">0 results</span>
+        <div class="results-header-left">
+          <h2 style="color: var(--primary); margin: 0;">Search Results</h2>
+          <span class="results-count" id="resultsCount">0 results</span>
+        </div>
+        <button class="btn-clear" id="clearBtn">🗑️ Clear Results</button>
       </div>
       <div id="results"></div>
     </div>
@@ -551,10 +581,25 @@
       // Search button
       document.getElementById('searchBtn').addEventListener('click', performSearch);
 
+      // Clear results button
+      document.getElementById('clearBtn').addEventListener('click', clearResults);
+
       // Enter key to search
       document.getElementById('searchInput').addEventListener('keypress', (e) => {
         if (e.key === 'Enter') performSearch();
       });
+    }
+
+    function clearResults() {
+      const container = document.getElementById('resultsContainer');
+      const input = document.getElementById('searchInput');
+      
+      container.classList.remove('active');
+      input.value = '';
+      input.focus();
+      
+      // Scroll back to search box
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function updatePlaceholder() {
@@ -751,9 +796,15 @@
             isNLM: false
           });
         } else {
-          // If project already exists, update strata if it was empty
-          if (record.strataplan && !searchIndex.get(key).strataplan) {
-            searchIndex.get(key).strataplan = record.strataplan;
+          // If project already exists, update strata if current one is empty
+          const existing = searchIndex.get(key);
+          if (record.strataplan && !existing.strataplan) {
+            existing.strataplan = record.strataplan;
+            console.log(`Updated ${key} strata to: ${record.strataplan}`);
+          }
+          // Also update PM if it was empty
+          if (record.pm && !existing.pm) {
+            existing.pm = record.pm;
           }
         }
       });
@@ -777,8 +828,8 @@
         record.ar = findPerson(proj, numProj, dataCache.ar) || '—';
       });
       
-      console.log('Search index built, sample entries:');
-      console.log('5164:', searchIndex.get('5164'));
+      console.log('Search index built. Entry for 5164:');
+      console.log(searchIndex.get('5164'));
     }
 
     function findPerson(key, num, data) {
