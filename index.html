@@ -547,6 +547,26 @@
     async function loadDataAsync() {
       if (dataCache.loaded) return;
       
+      // Try to load from localStorage first
+      const cachedData = localStorage.getItem('rancho_data_cache');
+      const cacheTimestamp = localStorage.getItem('rancho_cache_time');
+      const cacheAge = cacheTimestamp ? Date.now() - parseInt(cacheTimestamp) : Infinity;
+      
+      // Use cache if less than 1 hour old
+      if (cachedData && cacheAge < 3600000) {
+        try {
+          const cached = JSON.parse(cachedData);
+          dataCache = cached;
+          dataCache.loaded = true;
+          buildSearchIndex();
+          updateStats();
+          console.log('Loaded from cache');
+          return;
+        } catch (e) {
+          console.log('Cache invalid, reloading...');
+        }
+      }
+      
       const loadingEl = document.getElementById('loading');
       loadingEl.style.display = 'block';
 
@@ -571,6 +591,14 @@
           loadTime: performance.now() - startTime
         };
 
+        // Save to localStorage
+        try {
+          localStorage.setItem('rancho_data_cache', JSON.stringify(dataCache));
+          localStorage.setItem('rancho_cache_time', Date.now().toString());
+        } catch (e) {
+          console.warn('Could not cache data:', e);
+        }
+
         buildSearchIndex();
         updateStats();
         loadingEl.style.display = 'none';
@@ -594,16 +622,28 @@
       const parsed = Papa.parse(fixed, {
         header: true,
         skipEmptyLines: true,
-        quoteChar: '"'
+        quoteChar: '"',
+        transformHeader: h => h.trim() // Remove whitespace from headers
       });
       
+      console.log('CSV Headers:', parsed.meta.fields); // Debug: see what headers we got
+      
       return parsed.data
-        .map(r => ({
-          proj: extractProjectNumber(r['PROJ #'] || r['Proj#'] || ''),
-          pm: (r['PM'] || '').split('\n')[0].trim(),
-          strataplan: (r['STRATA'] || r['STRATA PLAN'] || r['STRATA \nPLAN'] || '').trim(),
-          raw: r
-        }))
+        .map(r => {
+          // Try all possible column name variations
+          const strataplan = r['STRATA'] || r['STRATA PLAN'] || r['STRATA \nPLAN'] || r['Strata Plan'] || '';
+          const proj = extractProjectNumber(r['PROJ #'] || r['Proj#'] || r['PROJ#'] || '');
+          const pm = (r['PM'] || '').split('\n')[0].trim();
+          
+          console.log(`Project ${proj}: Strata = "${strataplan}"`); // Debug
+          
+          return {
+            proj: proj,
+            pm: pm,
+            strataplan: strataplan.trim(),
+            raw: r
+          };
+        })
         .filter(r => r.proj);
     }
 
