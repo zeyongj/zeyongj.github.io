@@ -725,6 +725,11 @@
             ar: '',
             isNLM: false
           });
+        } else {
+          // If project already exists, update strata if it was empty
+          if (record.strataplan && !searchIndex.get(key).strataplan) {
+            searchIndex.get(key).strataplan = record.strataplan;
+          }
         }
       });
 
@@ -746,6 +751,9 @@
         record.ap = findPerson(proj, numProj, dataCache.ap) || '—';
         record.ar = findPerson(proj, numProj, dataCache.ar) || '—';
       });
+      
+      console.log('Search index built, sample entries:');
+      console.log('5164:', searchIndex.get('5164'));
     }
 
     function findPerson(key, num, data) {
