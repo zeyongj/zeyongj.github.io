@@ -2,28 +2,841 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rancho Project Search</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #2c5aa0;
+      --primary-dark: #1e4278;
+      --secondary: #4a90e2;
+      --success: #28a745;
+      --danger: #dc3545;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --border: #dee2e6;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      flex: 1;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .logo {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .logo img {
+      max-width: 280px;
+      height: auto;
+      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    }
+
+    .search-card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+    }
+
+    .search-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .search-header h1 {
+      color: var(--primary);
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(44, 90, 160, 0.3);
+    }
+
+    .btn-secondary {
+      background: var(--light);
+      color: var(--dark);
+      border: 1px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      background: var(--border);
+    }
+
+    .search-modes {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--light);
+      padding-bottom: 10px;
+    }
+
+    .mode-btn {
+      padding: 8px 16px;
+      background: none;
+      border: none;
+      color: var(--dark);
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    .mode-btn.active {
+      color: var(--primary);
+    }
+
+    .mode-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 3px 3px 0 0;
+    }
+
+    .search-input-group {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 16px 50px 16px 20px;
+      font-size: 16px;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      transition: all 0.3s;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(44, 90, 160, 0.1);
+    }
+
+    .search-icon {
+      position: absolute;
+      right: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--primary);
+      font-size: 20px;
+    }
+
+    .advanced-search {
+      display: none;
+      background: var(--light);
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .advanced-search.active {
+      display: block;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: var(--dark);
+      font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 10px 15px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 20px;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    .spinner {
+      border: 3px solid var(--light);
+      border-top: 3px solid var(--primary);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 10px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .results-container {
+      display: none;
+    }
+
+    .results-container.active {
+      display: block;
+    }
+
+    .results-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--light);
+    }
+
+    .results-count {
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    .result-card {
+      background: white;
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 15px;
+      transition: all 0.3s;
+    }
+
+    .result-card:hover {
+      border-color: var(--primary);
+      box-shadow: 0 4px 12px var(--shadow);
+      transform: translateY(-2px);
+    }
+
+    .result-card.nlm {
+      border-left: 5px solid var(--danger);
+      background: #fff5f5;
+    }
+
+    .result-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .project-number {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .nlm-badge {
+      background: var(--danger);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    .result-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .detail-item {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .detail-label {
+      font-size: 12px;
+      color: #6c757d;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .detail-value {
+      font-size: 16px;
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 40px 20px;
+      color: #6c757d;
+    }
+
+    .no-results-icon {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 20px;
+      text-align: center;
+      color: var(--dark);
+      font-size: 14px;
+      margin-top: 30px;
+    }
+
+    .footer-date {
+      color: #6c757d;
+      margin-bottom: 5px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .stat-card {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .stat-label {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+      }
+
+      .search-card {
+        padding: 20px;
+      }
+
+      .search-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .result-details {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="home-container">
-    <img src="rancho-logo.png" class="logo-top" alt="Rancho Logo">
-    <input id="q" type="text" placeholder="Enter project number">
-    <button id="btn">Search</button>
-    <button id="adminBtn" class="admin-btn">Admin Login</button>
-    <div id="res" class="result"></div>
+  <div class="container">
+    <div class="logo">
+      <img src="rancho-logo.png" alt="Rancho Logo">
+    </div>
+
+    <div class="search-card">
+      <div class="search-header">
+        <h1>🔍 Project Search</h1>
+        <div class="btn-group">
+          <button class="btn btn-secondary" id="advancedBtn">Advanced Search</button>
+          <a href="admin.html" class="btn btn-primary">Admin Login</a>
+        </div>
+      </div>
+
+      <div class="stats" id="stats" style="display: none;">
+        <div class="stat-card">
+          <div class="stat-number" id="totalProjects">0</div>
+          <div class="stat-label">Total Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="nlmCount">0</div>
+          <div class="stat-label">NLM Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="searchTime">0ms</div>
+          <div class="stat-label">Search Time</div>
+        </div>
+      </div>
+
+      <div class="search-modes">
+        <button class="mode-btn active" data-mode="simple">Simple Search</button>
+        <button class="mode-btn" data-mode="multi">Multi-Project</button>
+        <button class="mode-btn" data-mode="strata">By Strata Plan</button>
+      </div>
+
+      <div class="search-input-group">
+        <input 
+          type="text" 
+          id="searchInput" 
+          class="search-input" 
+          placeholder="Enter project number (e.g., 5164 or 5164-10)"
+          autocomplete="off"
+        >
+        <span class="search-icon">🔍</span>
+      </div>
+
+      <div class="advanced-search" id="advancedSearch">
+        <h3 style="margin-bottom: 15px; color: var(--primary);">Advanced Filters</h3>
+        <div class="form-group">
+          <label>PM Name</label>
+          <input type="text" id="filterPM" placeholder="Filter by PM name">
+        </div>
+        <div class="form-group">
+          <label>FA Name</label>
+          <input type="text" id="filterFA" placeholder="Filter by FA name">
+        </div>
+        <div class="form-group">
+          <label>Show NLM Only</label>
+          <select id="filterNLM">
+            <option value="">All Projects</option>
+            <option value="yes">NLM Only</option>
+            <option value="no">Exclude NLM</option>
+          </select>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" id="searchBtn" style="width: 100%;">Search Projects</button>
+
+      <div id="loading" class="loading" style="display: none;">
+        <div class="spinner"></div>
+        <div>Loading data...</div>
+      </div>
+    </div>
+
+    <div id="resultsContainer" class="search-card results-container">
+      <div class="results-header">
+        <h2 style="color: var(--primary);">Search Results</h2>
+        <span class="results-count" id="resultsCount">0 results</span>
+      </div>
+      <div id="results"></div>
+    </div>
   </div>
 
   <footer>
-    <div id="last-modified" class="deploy-time"></div>
-    Zeyong Jin © All Rights Reserved
+    <div class="footer-date" id="lastModified">Site last updated: Loading...</div>
+    <div>© <span id="currentYear"></span> Zeyong Jin. All Rights Reserved.</div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
-  <script src="script.js"></script>
   <script>
-    document.getElementById('adminBtn').onclick = () =>
-      window.location.href = 'admin.html';
+    // Data cache
+    let dataCache = {
+      pm: [],
+      nlm: [],
+      fa: [],
+      ap: [],
+      ar: [],
+      loaded: false,
+      loadTime: null
+    };
+
+    // Search index for faster lookups
+    let searchIndex = new Map();
+
+    // Current search mode
+    let searchMode = 'simple';
+
+    // Base URL for data files
+    const BASE_URL = 'https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/';
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      loadDataAsync();
+      setupEventListeners();
+      updateFooter();
+    });
+
+    function setupEventListeners() {
+      // Mode switching
+      document.querySelectorAll('.mode-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+          e.target.classList.add('active');
+          searchMode = e.target.dataset.mode;
+          updatePlaceholder();
+        });
+      });
+
+      // Advanced search toggle
+      document.getElementById('advancedBtn').addEventListener('click', () => {
+        document.getElementById('advancedSearch').classList.toggle('active');
+      });
+
+      // Search button
+      document.getElementById('searchBtn').addEventListener('click', performSearch);
+
+      // Enter key to search
+      document.getElementById('searchInput').addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') performSearch();
+      });
+    }
+
+    function updatePlaceholder() {
+      const input = document.getElementById('searchInput');
+      const placeholders = {
+        simple: 'Enter project number (e.g., 5164 or 5164-10)',
+        multi: 'Enter multiple projects separated by comma (e.g., 5164, 5200, 5300)',
+        strata: 'Enter strata plan (e.g., BCS1362 or EPS3602)'
+      };
+      input.placeholder = placeholders[searchMode] || placeholders.simple;
+    }
+
+    async function loadDataAsync() {
+      if (dataCache.loaded) return;
+      
+      const loadingEl = document.getElementById('loading');
+      loadingEl.style.display = 'block';
+
+      try {
+        const startTime = performance.now();
+
+        const [pmData, nlmData, faData, apData, arData] = await Promise.all([
+          fetchAndParsePM(),
+          fetchAndParseNLM(),
+          fetchAndParseFA(),
+          fetchJSON('ap.json'),
+          fetchJSON('ar.json')
+        ]);
+
+        dataCache = {
+          pm: pmData,
+          nlm: nlmData,
+          fa: faData,
+          ap: apData,
+          ar: arData,
+          loaded: true,
+          loadTime: performance.now() - startTime
+        };
+
+        buildSearchIndex();
+        updateStats();
+        loadingEl.style.display = 'none';
+        
+        console.log(`Data loaded in ${dataCache.loadTime.toFixed(2)}ms`);
+      } catch (error) {
+        console.error('Error loading data:', error);
+        loadingEl.innerHTML = '<div style="color: var(--danger);">Error loading data. Please refresh the page.</div>';
+      }
+    }
+
+    async function fetchJSON(filename) {
+      const response = await fetch(BASE_URL + filename);
+      return response.json();
+    }
+
+    async function fetchAndParsePM() {
+      const response = await fetch(BASE_URL + 'pm.csv');
+      const text = await response.text();
+      const fixed = text.replace(/"([^"]*)\n([^"]*)"/g, (_, a, b) => `"${a} ${b}"`);
+      const parsed = Papa.parse(fixed, {
+        header: true,
+        skipEmptyLines: true,
+        quoteChar: '"'
+      });
+      
+      return parsed.data
+        .map(r => ({
+          proj: extractProjectNumber(r['PROJ #'] || r['Proj#'] || ''),
+          pm: (r['PM'] || '').split('\n')[0].trim(),
+          strataplan: (r['STRATA \nPLAN'] || r['STRATA PLAN'] || '').trim(),
+          raw: r
+        }))
+        .filter(r => r.proj);
+    }
+
+    async function fetchAndParseNLM() {
+      const response = await fetch(BASE_URL + 'nlm.csv');
+      const text = await response.text();
+      const parsed = Papa.parse(text, { header: true });
+      
+      return parsed.data
+        .map(r => extractProjectNumber(r['PROJ #'] || r['Proj#'] || ''))
+        .filter(p => p);
+    }
+
+    async function fetchAndParseFA() {
+      const response = await fetch(BASE_URL + 'fa.csv');
+      const text = await response.text();
+      const parsed = Papa.parse(text, {
+        header: true,
+        skipEmptyLines: true,
+        quoteChar: '"',
+        delimitersToGuess: [',', '\t']
+      });
+      
+      return parsed.data
+        .map(r => {
+          const projRaw = Object.values(r)[0] || '';
+          const proj = projRaw.trim().match(/^\d{4}/)?.[0] || '';
+          const rawFa = (r.FA || '').trim();
+          return {
+            proj: proj,
+            fa: rawFa ? toTitleCase(rawFa) : ''
+          };
+        })
+        .filter(r => r.proj);
+    }
+
+    function extractProjectNumber(str) {
+      return str.replace(/"/g, '').trim().slice(0, 4);
+    }
+
+    function toTitleCase(str) {
+      return str.toLowerCase().replace(/(^|\s)\S/g, c => c.toUpperCase());
+    }
+
+    function buildSearchIndex() {
+      searchIndex.clear();
+      
+      dataCache.pm.forEach(record => {
+        const key = record.proj;
+        if (!searchIndex.has(key)) {
+          searchIndex.set(key, {
+            proj: key,
+            pm: record.pm,
+            strataplan: record.strataplan,
+            fa: '',
+            ap: '',
+            ar: '',
+            isNLM: false
+          });
+        }
+      });
+
+      dataCache.fa.forEach(record => {
+        if (searchIndex.has(record.proj)) {
+          searchIndex.get(record.proj).fa = record.fa;
+        }
+      });
+
+      dataCache.nlm.forEach(proj => {
+        if (searchIndex.has(proj)) {
+          searchIndex.get(proj).isNLM = true;
+        }
+      });
+
+      // Add AP/AR
+      searchIndex.forEach((record, proj) => {
+        const numProj = parseInt(proj);
+        record.ap = findPerson(proj, numProj, dataCache.ap) || '—';
+        record.ar = findPerson(proj, numProj, dataCache.ar) || '—';
+      });
+    }
+
+    function findPerson(key, num, data) {
+      for (const e of data) {
+        const ps = (e.Portfolio || '').trim();
+        const inc = (e.Include || '').split(',').map(s => s.trim()).filter(Boolean);
+        const exc = (e.Exclude || '').split(',').map(s => s.trim()).filter(Boolean);
+
+        if (inc.includes(key)) return e.Name;
+
+        if (ps.endsWith('+')) {
+          const start = parseInt(ps.slice(0, -1));
+          if (num >= start && !exc.includes(key)) return e.Name;
+        } else if (ps.includes('-')) {
+          const [a, b] = ps.split('-').map(Number);
+          if (num >= a && num <= b && !exc.includes(key)) return e.Name;
+        }
+      }
+      return null;
+    }
+
+    function performSearch() {
+      if (!dataCache.loaded) {
+        alert('Data is still loading. Please wait...');
+        return;
+      }
+
+      const startTime = performance.now();
+      const query = document.getElementById('searchInput').value.trim();
+      
+      if (!query) {
+        alert('Please enter a search term');
+        return;
+      }
+
+      let results = [];
+
+      if (searchMode === 'simple') {
+        const proj = query.slice(0, 4);
+        const record = searchIndex.get(proj);
+        if (record) results = [record];
+      } else if (searchMode === 'multi') {
+        const projects = query.split(',').map(p => p.trim().slice(0, 4)).filter(Boolean);
+        results = projects
+          .map(p => searchIndex.get(p))
+          .filter(Boolean);
+      } else if (searchMode === 'strata') {
+        const strataQuery = query.toUpperCase().replace(/\s+/g, '');
+        results = Array.from(searchIndex.values())
+          .filter(r => r.strataplan.toUpperCase().replace(/\s+/g, '').includes(strataQuery));
+      }
+
+      // Apply advanced filters
+      results = applyFilters(results);
+
+      const searchTime = performance.now() - startTime;
+      displayResults(results, searchTime);
+    }
+
+    function applyFilters(results) {
+      const pmFilter = document.getElementById('filterPM').value.trim().toLowerCase();
+      const faFilter = document.getElementById('filterFA').value.trim().toLowerCase();
+      const nlmFilter = document.getElementById('filterNLM').value;
+
+      return results.filter(r => {
+        if (pmFilter && !r.pm.toLowerCase().includes(pmFilter)) return false;
+        if (faFilter && !r.fa.toLowerCase().includes(faFilter)) return false;
+        if (nlmFilter === 'yes' && !r.isNLM) return false;
+        if (nlmFilter === 'no' && r.isNLM) return false;
+        return true;
+      });
+    }
+
+    function displayResults(results, searchTime) {
+      const container = document.getElementById('resultsContainer');
+      const resultsEl = document.getElementById('results');
+      const countEl = document.getElementById('resultsCount');
+      
+      container.classList.add('active');
+      countEl.textContent = `${results.length} result${results.length !== 1 ? 's' : ''}`;
+      document.getElementById('searchTime').textContent = `${searchTime.toFixed(1)}ms`;
+
+      if (results.length === 0) {
+        resultsEl.innerHTML = `
+          <div class="no-results">
+            <div class="no-results-icon">📭</div>
+            <h3>No Results Found</h3>
+            <p>Try adjusting your search criteria</p>
+          </div>
+        `;
+        return;
+      }
+
+      resultsEl.innerHTML = results.map(r => `
+        <div class="result-card ${r.isNLM ? 'nlm' : ''}">
+          <div class="result-header">
+            <div class="project-number">#${r.proj}</div>
+            ${r.isNLM ? '<span class="nlm-badge">NLM</span>' : ''}
+          </div>
+          ${r.isNLM ? '<div style="color: var(--danger); font-weight: 500; margin-bottom: 15px;">⚠️ Project is No Longer Managed (NLM)</div>' : ''}
+          <div class="result-details">
+            <div class="detail-item">
+              <div class="detail-label">Project Number</div>
+              <div class="detail-value">${r.proj}</div>
+            </div>
+            ${r.strataplan ? `
+            <div class="detail-item">
+              <div class="detail-label">Strata Plan</div>
+              <div class="detail-value">${r.strataplan}</div>
+            </div>
+            ` : ''}
+            <div class="detail-item">
+              <div class="detail-label">AP Name</div>
+              <div class="detail-value">${r.ap}</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">AR Name</div>
+              <div class="detail-value">${r.ar}</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">FA Name</div>
+              <div class="detail-value">${r.fa || '—'}</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-label">PM Name</div>
+              <div class="detail-value">${r.pm}</div>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // Smooth scroll to results
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updateStats() {
+      document.getElementById('stats').style.display = 'grid';
+      document.getElementById('totalProjects').textContent = searchIndex.size;
+      document.getElementById('nlmCount').textContent = dataCache.nlm.length;
+    }
+
+    function updateFooter() {
+      const lastMod = new Date(document.lastModified);
+      document.getElementById('lastModified').textContent = 
+        'Site last updated: ' + lastMod.toLocaleString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
+        });
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+    }
   </script>
 </body>
 </html>
