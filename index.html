@@ -877,16 +877,27 @@
       }
 
       let results = [];
+      let nlmProjects = []; // Track NLM-only projects
 
       if (searchMode === 'simple') {
         const proj = query.slice(0, 4);
         const record = searchIndex.get(proj);
-        if (record) results = [record];
+        if (record) {
+          results = [record];
+        } else if (dataCache.nlm.includes(proj)) {
+          // Project is NLM but not in main data
+          nlmProjects.push(proj);
+        }
       } else if (searchMode === 'multi') {
         const projects = query.split(',').map(p => p.trim().slice(0, 4)).filter(Boolean);
-        results = projects
-          .map(p => searchIndex.get(p))
-          .filter(Boolean);
+        projects.forEach(p => {
+          const record = searchIndex.get(p);
+          if (record) {
+            results.push(record);
+          } else if (dataCache.nlm.includes(p)) {
+            nlmProjects.push(p);
+          }
+        });
       } else if (searchMode === 'strata') {
         const strataQuery = query.toUpperCase().replace(/\s+/g, '');
         results = Array.from(searchIndex.values())
@@ -897,7 +908,7 @@
       results = applyFilters(results);
 
       const searchTime = performance.now() - startTime;
-      displayResults(results, searchTime, query);
+      displayResults(results, searchTime, query, nlmProjects);
     }
 
     function applyFilters(results) {
@@ -914,7 +925,7 @@
       });
     }
 
-    function displayResults(results, searchTime, query) {
+    function displayResults(results, searchTime, query, nlmProjects = []) {
       const container = document.getElementById('resultsContainer');
       const resultsEl = document.getElementById('results');
       const countEl = document.getElementById('resultsCount');
@@ -928,10 +939,12 @@
       }
       
       document.querySelector('.results-header h2').textContent = headerText;
-      countEl.textContent = `${results.length} result${results.length !== 1 ? 's' : ''}`;
+      
+      const totalCount = results.length + nlmProjects.length;
+      countEl.textContent = `${totalCount} result${totalCount !== 1 ? 's' : ''}`;
       document.getElementById('searchTime').textContent = `${searchTime.toFixed(1)}ms`;
 
-      if (results.length === 0) {
+      if (results.length === 0 && nlmProjects.length === 0) {
         resultsEl.innerHTML = `
           <div class="no-results">
             <div class="no-results-icon">📭</div>
@@ -942,7 +955,31 @@
         return;
       }
 
-      resultsEl.innerHTML = results.map(r => `
+      let html = '';
+
+      // Show NLM-only projects first (not in PM data)
+      if (nlmProjects.length > 0) {
+        nlmProjects.forEach(proj => {
+          html += `
+            <div class="result-card nlm">
+              <div class="result-header">
+                <div class="project-number">#${proj}</div>
+                <span class="nlm-badge">NLM</span>
+              </div>
+              <div style="color: var(--danger); font-weight: 600; font-size: 18px; margin-bottom: 10px;">
+                ⚠️ This project is No Longer Managed by Rancho
+              </div>
+              <div style="color: #6c757d; margin-top: 10px;">
+                <strong>Note:</strong> This project has been transferred to another management company. 
+                For more information, please check the Project List or contact PM/Admin.
+              </div>
+            </div>
+          `;
+        });
+      }
+
+      // Show regular results
+      html += results.map(r => `
         <div class="result-card ${r.isNLM ? 'nlm' : ''}">
           <div class="result-header">
             <div class="project-number">#${r.proj}</div>
@@ -977,6 +1014,8 @@
           </div>
         </div>
       `).join('');
+
+      resultsEl.innerHTML = html;
 
       // Smooth scroll to results
       container.scrollIntoView({ behavior: 'smooth', block: 'start' });
