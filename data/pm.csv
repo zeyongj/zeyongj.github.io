@@ -1,0 +1,2469 @@
+PROJ #,PROJECT NAME,"STRATA 
+PLAN",PM
+"2500
+(50)",RANCHO CORPORATE,,CKS
+"2600
+(98)",ALLBRIGHT,,CKS
+5006,"EXECUTIVE HOTELS  (RESIDENTIAL)
+5911 Alderbridge 
+Richmond, BC
+V6X 1A3",LMS3174,"CKS/KN  (KaWing is PM)
+(AW is Admin)"
+5015,"AUGUSTA GROVE
+1690 Augusta Avenue (A)
+1750 Augusta Avenue (B)
+Burnaby, BC
+V5A 2V6",NW2225,SY
+5016,"VR1853
+1200 West 10th Avenue
+Vancouver, BC
+V6H 1J3",VR1853,SA
+5022,"FISHER GARDENS
+4933 Fisher Drive
+Richmond, BC
+V6X 3Z2",LMS2194,SY
+5026,"STONECROFT ESTATES
+2350 Westerly Street
+Abbotsford, BC
+V2T 6T7",LMS3890,CG
+5035,"THE CLARKSON
+680 Clarkson Street
+New Westminster, BC
+V3M 6X9",LMS3317,AM
+5038,"THE AQUARIUS COMMERCIAL
+1108-1196 Pacific Blvd. 
+125-179 Davie Street
+1137 & 1177 Marinaside Crescent",LMS3912,"TL
+"
+5049,"PORTOFINO (RESIDENTIAL)
+1383 Howe Street
+Vancouver, BC
+V6Z 2R5",LMS1554,"CKS/KN  (KaWing is PM)
+(AW is Admin)"
+5061,"MARINASIDE RESORT RESIDENCES - JOINT
+D-193 Aquarius Mews V6Z 2Z2 (5061-1)
+E-1077 Marinaside Crescent V6Z 2Z5  (5061-2)
+N-1099 Marinaside Crescent V6Z 2Z3 (5061-3)
+123/133/163/183 Aquarius Mews V6Z 2Z1
+128/168/178/188/198 Boathouse Mews V6Z 2Z6 (5061-4)
+1090 Pacific Boulevard - Concierge",LMS4255,JL
+5063,"MARINASIDE RESORT RESIDENCES - COMMERCIAL SECTION
+D-193 Aquarius Mews V6Z 2Z2 (5061-1)
+E-1077 Marinaside Crescent V6Z 2Z5  (5061-2)
+N-1099 Marinaside Crescent V6Z 2Z3 (5061-3)
+123/133/163/183 Aquarius Mews V6Z 2Z1
+128/168/178/188/198 Boathouse Mews V6Z 2Z6 (5061-4)
+1090 Pacific Boulevard - Concierge",LMS4255C,CKS
+5069,"CAMBRIDGE PLACE
+555 West 14th Avenue
+Vancouver, BC
+V6Z 4G8",VR1428,SB
+5079,"AVONLEA HEIGHTS
+3060 Plateau Crescent
+Coquitlam, BC
+V3E 3B3",LMS1632,PR
+5093,"GOLDEN LEAF TOWERS I & II
+7700 Granville Avenue V6Y 4C1
+7680 Granville Avenue (Tower I) V6Y 4B9
+7760 Granville Avenue (Tower II) V6Y 4C2
+Richmond, BC",LMS2807,"SY/CCS
+(FF is Admin)"
+5103,"THE GRAFTON (JOINT)
+1238 Homer Street
+Vancouver, BC
+V6B 2Y5
+5103R for residential
+5103C for commercial
+",LMS3182,"KZ
+"
+5104,"QUAYSIDE MARINA
+1088 Marinaside Crescent
+Vancouver, BC
+V6Z 3C4",LMS4705,"CKS
+(AW is Admin)"
+5105,"SOMMERTON
+4711 BLAIR DRIVE
+RICHMOND, BC",LMS4294,MC
+5106,"MARINA PARKADE
+1011 Marinaside Crescent
+Vancouver, BC",,"CKS 
+"
+5107,"WEST ONE
+1408 Strathmore Mews North
+Vancouver, BC
+V6Z 3A9",BCS183,CL
+5108,"ONE AMENITY ROOM - CLUB VIVA
+428 Pacific Street
+Vancouver, BC
+V6Z 3G9",,CS
+5110,TEMPORARY MOORAGE,,CKS
+5111,"THE CONCORD
+1328 Marinaside Crescent
+Vancouver, BC
+V6Z 3B3",BCS327,"HB
+"
+5114,"THE WATERFORD
+1483 Homer Street
+403-423 Beach Crescent
+1495-1485 Homer Street
+Vancouver, BC
+V6Z 3C7",BCS435,"JL
+"
+5115,"HEARTHSTONE
+7733 Heather Street
+Richmond, BC
+V6Y 4J1",BCS397,SY
+5117,"AZURA ONE
+1438 Richards Street
+Vancouver, BC
+V6Z 3B8
+
+483-489 Beach Crescent
+Vancouver, BC 
+V6Z 3B9",BCS679,"BL/TL
+(Mariya is Admin)
+"
+5118,"AZURA TWO
+1495 Richards Street
+Vancouver, BC
+V6Z 3E3
+
+Townhomes
+503, 505, 515, 525 Beach Crescent
+Vancouver, BC",BCS890,GR
+5120,"SUPERCLUB
+1495 Richards Street
+Vancouver, BC
+V6Z 3E3",,KC
+5125,"L'ARIA
+822 Seymour Street
+Vancouver, BC
+V6B 1L7",BCS1076,"SB
+"
+5127,"PARK WEST
+455 Beach Crescent
+Vancouver, BC
+V6Z 3E5
+
+Townhomes
+1455 Strathmore Mews
+1465 Strathmore Mews
+1475 Strathmore Mews",BCS1099,CZ
+5128,"TWO PARK WEST
+583 Beach Crescent
+Vancouver, BC V6Z 3E6
+
+ 1468, 1478, 1482, 1488 Seymour Street / 555, 567, 573, 575, 593, 595 Beach Crescent",BCS1219,KC
+"5131
+
+5131N (North Tower)
+5131S (South Tower)
+","NOVO TWO
+9232 University Crescent - North
+Townhouses:
+9234, 9236, 9238 University Crescent
+Burnaby, BC V5A 0A3
+
+9262 University Crescent - South
+Townhouses:
+9256, 9258, 9260 University Crescent
+Burnaby, BC V5A 0A4",BCS1893,CF
+"5133
+5133-1
+5133-2","THE MAX (RESIDENTIAL)
+928 Beatty St.   V6Z 3G6 (Tower I) 
+
+938/950/960/968/970 (Townhouses)
+978/980 Beatty St.  V6Z 3C6
+
+963/969/973/977/979 Expo Blvd. V6Z 3G8 (Townhouses)
+
+930, 938, 950, 960, 968, 970, 978, 980 Beatty Street (Townhouses)
+
+939 Expo Blvd. (Tower II)      
+ Vancouver, BC V6Z 3G7",BCS1437,"FY/CL
+(EJ is Admin)"
+5134,"THE MAX COMMERCIAL
+910, 920 Beatty St.
+
+78, 80, 82, 86, 88, 90, 92 Smithe St.
+
+ 903, 909, 919, 923, 929, 955 Expo Boulevard
+
+910, 920 Beatty Street / 78, 80, 82, 86, 88, 90, 92
+
+Smithe Street / 903, 909, 919, 923, 929, 955 Expo Blvd",BCS1437,"FY/CL
+(EJ is Admin)"
+5135,THE MAX JOINT,BCS1437,"FY/CL
+(EJ is Admin)"
+5141,"THE VICTORIA (RESIDENTIAL)
+751 & 789 Helmcken V6B 5R1",LMS1608,"CKS/KN  (KaWing is PM)
+(AW is Admin)"
+5142,"EXECUTIVE PLACE (formerly The Victoria Commercial)
+1070, 1080, 1090 Howe Street
+Vancouver, BC
+V6Z 1P5",LMS1608,"CKS/KN  (KaWing is PM)
+(AW is Admin)"
+5143,"FREESIA (RESIDENTIAL)
+1082 Seymour Street       
+Vancouver, BC 
+V6B 1X9
+
+Townhouses 
+1060, 1068, 1072, 1078, 1092 Seymour St
+555 & 565 Helmcken St.
+Vancouver, BC V6B 3M6",BCS1903,CL
+5144,"BOHEMIA
+642-690 West 6th Avenue
+Vancouver, BC
+V5Z 1A3",BCS1849,"KN
+(AW is Admin)"
+"5145
+5145-1 (638 Beach Cres., Tower 1 + TH)
+5145-2 (633 Kinghorne, Tower 2)
+","ICON
+N Tower 610 Beach Crescent V6Z 3H5
+630 Beach Crescent V6Z 3H5
+638 Beach Crescent V6Z 3H4    
+O Tower 633 Kinghorne Mews V6Z 3H3
+610, 630 Beach Crescent (Townhouse)
+",BCS1964,FY
+5146,ICON PARKING/CLUB OASIS,,FY
+"5147
+5147E (8 & 10 Renaissance Sq.)
+5147W (7 Rialto Ct.)
+","MURANO LOFTS
+7 Rialto Court V3M 7A8
+8 Renaissance Square V3M 7A9
+10 Renaissance Square V3M 7B1
+New Westminster, BC",BCS1347,"SR/HB
+(SR is Senior PM)
+(Vivivan C. is Admin)
+
+"
+5149,"PERLA (COMMERCIAL)
+8188 Saba Road
+Richmond, BC
+V6Y 4B2",BCS282,CKS
+5150,"PERLA (JOINT)
+8100 Saba Road V6Y 4H1
+6331 Buswell Street V6Y 4H2
+Richmond, BC",BCS282,RY
+5156,"THE BOWMAN (JOINT)
+528 Beatty Street
+Vancouver, BC
+V6B 2L3",BCS2186,"KD
+"
+5161,"CRESTMARK
+1228-1288 Marinaside Crescent
+Vancouver, BC
+V6Z 2W4
+V6Z 2W5
+
+
+
+",LMS2781,"BL/SR
+(Vivian C. is Admin)"
+5162,"POMARIA
+1455 Howe Street
+Vancouver, BC
+V6Z 1C2
+
+1437, 1439, 1441, 1443, 1445, 1447, 1449, 1451, 1457, 1459, 1461, 1463, 1465, 1467, 1469, 1471, 1473 Howe Street / 804, 806, 808, 810 Pacific Street (Townhouses)",BCS2495,BK
+5163,"FREESIA (COMMERCIAL)
+575, 585 Helmcken Street  
+ 1088,1092 Seymour Street       
+Vancouver, BC 
+",BCS1903,CL
+5164-10,"PINTURA (JOINT)
+1530 West 8th Avenue
+Vancouver, BC
+V6J 5M6
+
+TH:1532, 1536, 1538, 1556, 1558, 1566, 1568, 1576, 1578, and 1580 West 8th Avenue, Vancouver, BC",BCS1362,"CF
+"
+5167,"SPECTRUM 1&2
+Tower 1 
+ 111 West Georgia Street    
+ Vancouver, BC   
+ V6B 1T8   
+ 
+ Tower 2    
+ 668 Citadel Parade    
+ Vancouver, BC
+ V6B 1W6",BCS2478,JT
+5168,"CLUB OZONE
+ 111 West Georgia Street    
+ Vancouver, BC   ",,JT
+5170,"SPECTRUM 3
+131 Regiment Square
+101-129 Regiment Square
+Vancouver, BC
+V6B 1X6",BCS2577,CL
+5176,"INFINITY
+13618 100th Avenue
+Surrey, BC
+V3T 0A8",BCS2785,"CZ/TL
+(CZ's Admin)
+"
+5183,"COOPERS LOOKOUT
+33 Smithe Street
+Vancouver, BC
+V6B 0B5
+Villas: 9 Smithe Mews, V6B 0B6
+TH's: 11, 17, 19, 21, 23, 27 Smithe Mews, V6B 0B6
+Lofts: 29 Smithe Mews, V6B 0B6
+",BCS3127,YM
+5184,"ESPRIT CITY CLUB
+33 Smithe Street
+Vancouver, BC
+V6B 0B5",,YM
+"5186
+5186-10 for Residential 
+5186-20 for Commercial","DEL PRADO (JOINT)
+1155 Mainland
+Vancouver, BC
+V6B 5P2
+
+",LMS2146,"KZ
+"
+"5198
+5255-1 (Tower 1)
+5255-2 (Tower 2)
+
+
+","TV TOWERS (RESIDENTIAL)
+Tower 1
+788 Hamilton Street
+Vancouver, BC 
+V6B 0E9
+
+Tower 2
+233 Robson Street
+Vancouver, BC 
+V6B 0E8",BCS3407,JT
+"5199
+5199N (North Tower)
+5199S (South Tower)
+","VICTORIA HILL (RESIDENTIAL)
+11 & 15 Royal Avenue
+New Westminster, BC
+V3L 0A8",BCS2450,DC
+"5200
+5200-10 Residential
+5200-20 Commercial
+","PALOMA ONE (JOINT)
+6068 No. 3 Road
+Richmond, BC
+V6Y 4M7
+",BCS2610,RY
+5201,"CREEKSIDE
+125 Milross Avenue
+Vancouver, BC
+V6A 0A1
+129,139,149,159,169 & 179 Milross Avenue V6A 0A2
+910,920 & 930 Quebec Street V6A 0A3
+110,118,128,138,158,160 & 168 Prior Street V6A 0A6",BCS2563,JL
+5203,"DISCOVERY REACH
+210 11th Street, V3M 4C9 - 5203-2A
+211 12th Street, V3M 4H4 - 5203-1A
+214 11th Street, V3M 4C9 - 5203-2B
+215 12th Street, V3M 4H4 - 5203-1B
+New Westminster, BC",LMS2687,BL
+5204,"ABERDEEN RESIDENCES
+8080 Cambie Road
+Richmond, BC
+V6X 0C1
+
+",BCS2690,CZ
+5209,"EMPORIO
+6351 Buswell Street
+Richmond, B.C.
+V6Y 0A4",BCS2591,SY
+5212,"THE BRITTANY JOINT
+7088 Mont Royal Square V5S 4X7
+7002-7050 Mont Royal Square V5S 4X5
+3252-3292 E 54th Ave V5S 0A1
+3298 E 54th Ave V5S 0A1
+Vancouver, BC
+",BCS1545,SC
+5213,"YALE CROSSING
+2632 Pauline Street
+Abbotsford, BC
+V2S 0C9",BCS3562,CG
+5216,"ALTO (JOINT)
+1205 Howe Street
+Vancouver, BC
+V6Z 0B2",BCS3664,BK
+5218,"ATELIER RESIDENTIAL
+833 Homer Street
+Vancouver, B.C. 
+V6B 0H4",BCS3836,BK
+5220,"TV TOWERS (COMMERCIAL)
+211, 235, 265 and 275 Robson Street
+Vancouver, B.C. ",BCS3407,JT
+5226,"ATELIER COMMERCIAL
+825-845 Homer Street
+410, 420, 428, 430, 438 & 450 Robson Street
+Vancouver, BC",BCS3839,TL
+5228,"CONFERENCE PLAZA (RESIDENTIAL)
+438 Seymour Street
+Vancouver, B.C.
+V6B 6H4 
+",LMS2371,SR
+5229,"JARDINE'S LOOKOUT
+867 Hamilton Street
+Vancouver, B.C.
+V6B 6B7
+",LMS1716,SC
+5232,"MINORU
+7371 Minoru Blvd.
+Richmond, BC
+V6Y 1Z3",NW2697,CKS
+"5234
+","DONOVAN
+1055 Richards Street
+Vancouver, BC
+V6B 0C2
+
+Townhouses 1045, 1047, 1049, 1051, 1053, 1057, 1059, 1061, 1063 & 1065 Richards St.
+
+
+",BCS3395,KC
+5235,PALOMA PARKING,,RY
+5236,"KOI (JOINT)
+850 West 8th Avenue
+Vancouver, BC",BCS3603,GR
+5237,"SOCIAL
+2329, 2339, 2349, 2359, 2369, 2379, 2389, 2399
+Scotia Street 
+Vancouver, BC V5T 0B2
+
+2321 Scotia Street
+Vancouver, BC
+V5T 0A8
+
+240, 250, 260, 270, 280, 290 
+East 7th Avenue 
+Vancouver, BC V5T 0B4
+",BCS4075,SA
+"5238
+5238A (Tower A, 5028 Kwantlen)
+5238B (Tower B, 5068 Kwantlen)
+5238C (Tower C, 5088 Kwantlen)
+5238D (Tower D, 5168 Kwantlen)
+","SEASONS
+5028 Kwantlen Street V6X 4K2
+5068 Kwantlen Street V6X 4K4
+5088 Kwantlen Street V6X 4K5
+5168 Kwantlen St. V6X 0A2
+Richmond, B.C.",BCS1861,KZ
+5240,"WEST PENDER PLACE (COMMERCIAL)
+1477 West Pender
+1409 West Pender
+1425, 1427, 1433, 1437, 1455, 1463, 1467, 1483, 1487, 1499 West Pender
+595 Broughton Street
+Vancouver, B.C.
+",EPS390,SA
+5243,"PALOMA 2 (RESIDENTIAL)
+8033 Saba Road
+Richmond, B.C.
+V6Y 4M8",BCS3856,RY
+5245,"PALOMA 2 (JOINT)
+8033 Saba Road
+Richmond, B.C.
+V6Y 4M8",BCS3856,RY
+"5253
+5253T
+5253HH","  RICHARDS LIVING
+1088 Richards Street 
+Vancouver, BC
+V6B 0J8
+
+1038, 1040, 1048, 1050, 1058, 1060, 1070, 1090 Richards Street
+Vancouver, BC
+V6B 3E1
+
+477 and 487 Helmcken Street
+Vancouver, BC
+V6B 2E6",BCS4213,YM
+"5255
+5255-1 (Tower 1)
+5255-2 (Tower 2)
+
+","TV TOWERS (JOINT)
+Tower 1
+788 Hamilton Street
+Vancouver, BC 
+V6B 0E9
+
+Tower 2
+233 Robson Street
+Vancouver, BC 
+V6B 0E8",BCS3407,JT
+"5256 – Park Place Joint
+
+5256-1 (One Park Place)
+5256-2 (Two Park Place)
+5256-C (Commercial)
+
+
+","PARK PLACE - JOINT
+One Park Place – 13688 – 100th Ave V3T 0G5
+Two Park Place – 9981 Whalley Boulevard V3T 0G6
+Surrey, BC
+",EPS561,GR
+"5257 – Park Place Residential
+
+5256-1 (One Park Place)
+5256-2 (Two Park Place)
+","PARK PLACE - RESIDENTIAL
+One Park Place – 13688 – 100th Ave
+Two Park Place – 9981 Whalley Boulevard
+Surrey, BC
+",EPS561,GR
+"5258 – Park Place Commercial
+
+5256-C
+","PARK PLACE - COMMERCIAL 
+One Park Place – 13688 – 100th Ave
+Two Park Place – 9981 Whalley Boulevard
+Surrey, BC
+",EPS561,CKS
+5260,PERLA - RESIDENTIAL,BCS282,RY
+5261,FREESIA - JOINT,BCS1903,CL
+5262,VICTORIA HILL - COMMERCIAL,BCS2450,SA
+5263,VICTORIA HILL - JOINT,BCS2450,DC
+5266,MARINASIDE RESORT - RESIDENTIAL,LMS4255,JL
+5267,DEL PRADO - RESIDENTIAL,LMS2146,KZ
+5271,"CEDAR CREEK NORTH
+1480 Southview Street
+Coquitlam, BC
+
+",EPS1113,KC
+5272,PALOMA ONE - RESIDENTIAL,BCS2610,RY
+5273,PALOMA ONE - COMMERCIAL,BCS2610,RY
+5274,"JARDINES LOOKOUT - RESIDENTIAL
+867 Hamilton Street
+Vancouver, B.C.
+V6B 6B7",LMS1716,"SC
+"
+5275,"JARDINES LOOKOUT - COMMERCIAL
+837, 847, 863 Hamilton Street
+Vancouver, B.C.
+",LMS1716,SC
+5277,"UPTOWN - JOINT 
+2788 Prince Edward Street
+Vancouver, BC  V5T 0C8
+Townhouses
+2718, 2738, 2768, 2790, 2792 and 2796 Prince Edward Street
+408, 410, 416, 418, East 11th Avenue
+401, 411 and 421 East 12th Avenue
+Vancouver, BC 
+",EPS1093,KD
+5278,"UPTOWN - RESIDENTIAL
+2788 Prince Edward Street
+Vancouver, BC   V5T 0C8
+Townhouses
+2718, 2738, 2768, 2790, 2792 and 2796 Prince Edward Street
+408, 410, 416, 418, East 11th Avenue
+401, 411 and 421 East 12th Avenue
+Vancouver, BC 
+",EPS1093,KD
+5280,ALTO - RESIDENTIAL,BCS3664,BK
+"5281
+5281-C","LONDON PLACE 
+1177 Hornby Street
+Vancouver, BC
+V6Z 2E9",LMS1757,"KD
+"
+"5285
+5285-1 (Phase 1)
+5285-2 (Phase 2)
+","AFFINITY
+Phase 1 - 2200 Douglas Road
+2222, 2224, 2226, 2228, 2230
+Burnaby, BC
+V5C 0G8
+
+Phase 2 - 2232 Douglas Road
+2236, 2238
+Burnaby, BC
+V5C 0G9",BCS4311,"CL
+"
+5286,"COSMO
+161 West Georgia Street
+Vancouver, BC
+V6B 0K9
+",BCS4387,SC
+5291,"THE PARK @ THE BORDEAUX
+7102 Mont Royal Square
+Vancouver, BC
+V5S 4W4
+Financial Contract Only
+",LMP52054,SC
+5292,"7&W
+1002 East 7th Avenue
+1006 East 7th Avenue
+1008 East 7th Avenue
+V5T 1P7
+2316 Windsor Street
+2318 Windsor Street
+2320 Windsor Street
+2330 Windsor Street
+2328 Windsor Street
+2326 Windsor Street
+Vancouver, BC
+V5T 3Z5
+",BCS4332,"MC
+(Admin Pool is Admin)"
+5293,"MAYNARDS BLOCK
+5293W - 445 West 2nd Avenue – The West Building
+5293N - 1919 Wylie Street – The North Building
+5293S - 429 West 2nd Avenue – The South/Heritage Building
+5293T - Townhouses Addresses:
+408, 418, 428, 438, 448, 458, 468 West 1st Avenue – The North Building
+Vancouver, B.C.
+",EPS984,CS
+5295,"OASIS
+2955 Atlantic Avenue
+Coquitlam, BC V3B 0H9",BCS4512,FY
+5300,"VANTAGE
+2077 Rosser Avenue
+Burnaby, BC
+V5C 0G6
+",EPS809,JT
+5301,"THE RESIDENCES AT SUTER BROOK
+301 Capilano Road
+Port Moody, BC
+V3H 0G6",EPS1232,JL
+5302,"KITS 360 - JOINT
+1777 West 7th Avenue
+1772, 1776, 1778, 1780, 1782, 1786, 1788 West 6th Avenue
+2288 Burrard Street 
+Vancouver, B.C. 
+V6J 0E5",EPS808,GR
+5303,"KITS 360 - RESIDENTIAL 
+1777 West 7th Avenue
+1772, 1776, 1778, 1780, 1782, 1786, 1788 West 6th Avenue
+Vancouver, B.C. 
+V6J 0E5",EPS808,GR
+5306,"LOCAL ON LONSDALE
+TH - 1621, 1623, 1625, 1629, 1631, 1633, 
+1635, 1637, 1639, 1641 Eastern Avenue
+Residential Tower - 135 East 17th Street
+North Vancouver, BC 
+V7L 0C4
+",EPS1614,SB
+"5308
+5308-T (Townhomes)
+","THE MARK 
+1372 Seymour Street
+Vancouver, BC
+V6B 0L1
+
+Townhomes: 555 & 565 Pacific St. / 1378, 1382, 1386, 1390 & 1394 Seymour St.",EPS1231,YM
+"5311
+NLM as of November 30, 2025","WELLINGTON STATION
+11887 Burnett Street
+Maple Ridge, BC V2X 6P6",EPS1316,PR
+5312,"THE VICTORIA (JOINT)
+751 & 789 Helmcken V6B 5R1",LMS1608,"CKS/KN  
+(KaWing is PM)
+(AW is Admin)"
+5314,"258 CONDOS
+258 6th Street
+New Westminster, BC 
+V3L 0G6",EPS1877,HB
+5315,"CAMBIE + 7
+538 West 7th Avenue
+Vancouver, BC
+V5Z 1B3
+
+TH1 = 546, TH2 = 542, TH3 = 540, TH5 = 536, TH6 = 532, TH7 = 530 West 7th Avenue",EPS1923,SA
+5321,"LA CASITA
+5783 Balsam Street
+Vancouver, BC V6M 4B8",VAS2864,CS
+5322,"JACOBSEN
+256 East 2nd Avenue
+Vancouver, BC V5T 0A7
+
+248, 250, 252, 254, 260, 262, 264, 266, 268, 270, 272, 274, 276, 278 & 280 East 2nd Ave.
+Vancouver, BC V5T 1B7",BCS3638,KN
+"5323
+5323-1 (Tower 1, 9288 Odlin)
+5323-2A (Tower 2A, 9299 Tomicki)
+5323-2B (Tower 2B, 9199 Tomicki)
+","MERIDIAN GATE
+9288 Odlin Road (Tower 1)
+9199 Tomicki Avenue (Tower 2B)
+9299 Tomicki Avenue (Tower 2A)
+Richmond, BC",BCS3325,YM
+"5324
+5324-1 (Tower 1, 8600 Park)
+5324-2 (Tower 2, 6828 Eckersley)
+5324-3 (Tower 3, 6800 Eckersley)
+","SAFFRON
+6800 Eckersley Road, V6Y 0E7 (Tower 3)
+6828 Eckersley Road, V6Y 0E8 (Tower 2)
+8600 Park Road, V6Y 0C3 (Tower 1)
+Richmond, BC",BCS4130,JL
+"5325
+5325-1 (Tower 1, 9500 Odlin)
+5325-2 (Tower 2, 9399 Tomicki)
+","CAMBRIDGE PARK
+9500 Odlin Road V6X 0H5 (Tower 1)
+9399 Tomicki Avenue V6X 0H6 (Tower 2)
+Richmond, BC",BCS4008,SY
+5326,"THE BRITTANY (APARTMENTS)
+3292 East 54th Avenue
+Vancouver, BC V5S 0A1",BCS1545,SC
+5327,"THE AUSTIN (JOINT)
+958 Ridgeway Avenue V3K 0C5
+955 Austin Avenue V3K 3N9
+Coquitlam, BC",EPS2243,YM
+5328,"THE AUSTIN (RESIDENTIAL)
+958 Ridgeway Avenue V3K 0C5
+955 Austin Avenue V3K 3N9
+Coquitlam, BC",EPS2243,YM
+5335,"LATITUDE
+3485 Victoria Drive
+Vancouver, BC",EPS1252,"MC
+(Admin Pool is Admin)"
+5336,"KENSINGTON AT WILLOUGHBY TOWN CENTRE (JOINT)
+20728 Willoughby Town Centre Drive
+Langley, BC
+V2Y 0P3",EPS2365,BL
+5337,"KENSINGTON AT WILLOUGHBY TOWN CENTRE (RESIDENTIAL)
+20728 Willoughby Town Centre Drive
+Langley, BC
+V2Y 0P3",EPS2365,BL
+"5339
+5339T (Tomicki, Tower 1)
+5339O (Odlin, Tower 2)
+","OMEGA
+9333 Tomicki Avenue (Tower 1)
+V6X 0L4
+9388 Odlin Road (Tower 2)
+Richmond, BC
+V6X 0L5",EPS2415,JL
+5344,"LE SOLEIL - HOTEL
+567 Hornby Street
+Vancouver, BC
+V6C 3E8",LMS3837,"CKS/KN  
+(KaWing is PM)
+(AW is Admin)"
+5345,"LE SOLEIL -COMMERCIAL  SECTION
+567 Hornby Street
+Vancouver, BC
+V6C 3E8",LMS3837,"CKS/KN  
+(KaWing is PM)
+(AW is Admin)"
+5350,"SKALA
+453 & 455 East 16th Avenue
+Vancouver, B.C.",EPS2573,"MC
+(Admin Pool is Admin)"
+5353,"THE MET
+6588 Nelson Avenue
+6598, 6590, 6578, 6570, 6568, 6560 Nelson Avenue
+6569, 6579, 6585, 6595, 6599 Dunblane Avenue
+Burnaby, BC
+V5H 0E8
+",EPS2809,RY
+"5358
+5358-A (7088 14th Ave., Bldg. A)
+5358-B (7058 14th Ave., Bldg. B)
+","REDBRICK
+Building A - 7088 14th Avenue
+Burnaby, B.C. V3N 0E7
+Building B - 7058 14th Avenue
+Burnaby, B.C. V3N 0E6
+",EPS2933,CCS
+5362,"1277 Nelson Street
+Vancouver, BC
+V6E 4M8",LMS1755,SY
+5363,"HAMPTON COURT
+1765 Marine Drive
+West Vancouver, B.C.
+V7V 1J5",LMS1435,BK
+5365,"RIVA
+
+5365-1 - 5399 Cedarbridge Way, Richmond V6X 0L6
+5365-2 – 5311 Cedarbridge Way, Richmond V6X 0M3
+",EPS2420,"CKS/KN  
+(KaWing)
+(AW is Admin)"
+5367,"STRATUS AT SOLO DISTRICT
+2008 Rosser Avenue
+Burnaby, BC 
+V5C 0H8
+",EPS1911,SB
+5368,"ONE UNIVERSITY CRESCENT
+5368-1: 9300 University Crescent
+5368-2: 9310 University Crescent
+5368-3: 9320 University Crescent
+5368-4: 9330 University Crescent
+5368-5: 9370 University Crescent
+5368-6: 9380 University Crescent
+5368-7: 9390 University Crescent
+Burnaby, B.C. 
+",BCS1345,GR
+"5369
+5369-A: 508 West 29th Avenue
+5369-B: 505 West 30th Avenue
+5369-C: 4539 Cambie Street","EMPIRE
+ 511 West 30th Ave
+512 West 29th Ave
+4525-4559 Cambie Street
+5369-A: 508 West 29th Avenue
+5369-B: 505 West 30th Avenue
+5369-C: 4539 Cambie Street
+Vancouver, BC",EPS3127,BL
+"5370
+5370-1 (Phase 1)
+5370-2 (Phase 2)
+","THE LOOKOUT
+Phase 1 – 20 East Royal Avenue
+Phase 2 – 22 East Royal Avenue
+New Westminster, B.C. 
+
+",EPS3217,KD
+5374,"AVANT
+2903 – 2997 Wall Street
+Vancouver, B.C.
+V5K 0A6
+",BCS4321,KD
+5375,"WESTWOOD
+1123 Westwood Street V3B 0M1
+3080 Lincoln Avenue V3B 0L9
+TH - 3086 Lincoln Avenue
+Coquitlam, B.C. 
+V3B 0L9",EPS3436,FY
+"5377
+5377-1
+5377-2","ONE PACIFIC 
+5377-1: 68 Smithe Street
+Vancouver, B.C. 
+V6B 0P4 
+
+5377-2: 38 Smithe Street
+Vancouver, B.C. 
+V6B 0P3",EPS3602,GR
+"5379
+5379-1
+5379-2
+5379-TH","CHARTWELL MEWS
+Tower 1 - 8740 Citation Drive
+Tower 2 - 8870 Citation Drive
+Richmond, BC
+V6Y 3AE
+
+Townhomes:
+8700, 8710, 8720, 8730, 8750, 8760, 8770, 8780, 8790, 8800, 8810, 8820, 8830, 8840, 8850, 8860 Citation Drive
+Richmond, BC",NW1321,KZ
+"5380
+5380-A: Building A
+5380-BC: Building B/C","BLOCK 100
+Building A - 111 East 1st Avenue, V6A 0E9
+Building B/C - 161 East 1st Avenue, V6A 0G1
+Vancouver, BC
+
+Building A TH
+101, 103, 105 East 1st Avenue, V6A 0E8
+1670, 1680, 1690, 1696 Quebec Street, V6A 3L6
+Vancouver, BC
+
+Building B & C TH
+121, 123, 125, 127, 129, 131, 141, 143, 145, 147, 149 East 1st Avenue, V6A 0E8
+Vancouver, BC",EPS3495,YM
+5381,"ONE PACIFIC COMMERCIAL
+30, 50, 60, 68 Smithe Street
+959, 963 Pacific Blvd
+Vancouver, BC",,"CKS/CS
+(Christie)"
+5383,RIVA CLUB,,"CKS/KN  
+(KaWing)
+(AW is Admin)"
+"5385
+(EXPAND ROW FOR COMPLETE LIST OF PROJECT NOs.)
+5385-1A SL1-5 5108 Claude
+5385-1B SL6-13 5028 Savile Row
+5385-1C SL14-21 5048 Savile Row
+5385-2A 5068 Savile Row
+5385-2B 5088 Savile Row
+5385-3A 5122 Canada Way
+5385-3B 5128 Canada Way
+5385-3C 5118 Savile Row
+5385-4A 5208 Savile Row
+5385-4B 5202 Savile Row
+5385-5A 5132 Canada Way
+5385-5B 5138 Canada Way
+5385-5C 5148 Savile Row
+5385-5D 5158 Savile Row
+5385-5E 5168 Savile Row
+5385-6A 5152 Canada Way
+5385-6B 5178  Savile Row
+5385-6C 5142 Canada Way
+5385-6D 5188 Savile Row
+5385-6E 5160 Canada Way
+5385-7A 5228 Savile Row
+5385-7B 5218 Savile Row
+5385-8A 5058 Savile Row
+5385-8B 5038 Savile Row
+","SAVILE ROW
+5108 Claude Avenue V5E 0C1
+5028, 5038, 5048, 5058, 5068, 5078, 5088, 5118, 5148, 5158, 5168, 5178, 5188, 5202, 5208, 5218, 5228 Savile Row
+5122, 5128, 5132, 5138, 5142, 5152, 5160 Canada Way
+Burnaby, BC
+
+",EPS3492,SC
+5386,"PARK AVENUE
+13750 100th Avenue
+Surrey, BC V3T 0L3",EPS3859,GR
+5387,"CONCORD GARDENS ARTS UNITS
+West Tower
+8833 Hazelbridge Way
+Richmond, BC V6X 0N3
+
+North Tower
+3131 Ketcheson Road
+Richmond, BC V6S 0N4",EPS3767,"MR/CKS
+(YF is Admin)"
+"5388
+5388-1
+5388-2
+5388-3
+5388-TH (SL1-18 + 234)","CARRERA
+Phase 1 (Building A) - 7338 Gollner Avenue V6Y 0H8
+Phase 2 (Building B) - 7368 Gollner Avenue V6Y 0H9
+Phase 3 (Building C) - 7328 Gollner Avenue V6Y 0H7
+Richmond, BC
+",EPS2876,"CF/TL
+(BN is Admin)"
+"5389
+(5164-10)","PINTURA APARTMENTS
+1530 West 8th Avenue
+Vancouver, BC
+V6J 5M6",BCS1362,"CF
+"
+"5390
+(5164-10)","PINTURA TOWNHOMES
+1532, 1536, 1538, 1556, 1558, 1566, 1568, 1576, 1578, and 1580 W. 8th Ave.
+Vancouver, BC
+V6J 4R8
+",BCS1362,CF
+5392,"MIDTOWN (JOINT)
+2477 Carolina Street
+583, 585, 595 & 599 E. Broadway
+Vancouver, BC V5T 1X4
+",EPS3643,CF
+5393,"MIDTOWN (RESIDENTIAL)
+2477 Carolina Street
+Vancouver, BC V5T 1X4",EPS3643,CF
+5394,"MIDTOWN (COMMERCIAL)
+583, 585, 595 & 599 E. Broadway
+Vancouver, BC V5T 1X4
+",EPS3643,CF
+"5395
+5395-1 (East, 3107 Windsor Gate)
+5395-2 (West, 1135 Windsor Mews)","BRADLEY HOUSE
+3107 Windsor Gate V3B 0L1
+1135 Windsor Mews V3B 0L2
+Coquitlam, BC",EPS2593,CZ
+"5397
+5397-W (876 Keith Rd)
+5397-E (870 Keith Rd)","EVELYN CLIFFSIDE FOUR (WEST)
+876 Keith Road
+West Vancouver, BC
+
+EVELYN CLIFFSIDE FIVE (EAST)
+870 Keith Road
+West Vancouver, BC",EPS3984,KD
+5398,"CITTI
+238 West Broadway
+Vancouver, BC V5Y 0L2",EPS3524,HB
+5399,"PORTOFINO (JOINT)
+1383 Howe Street
+Vancouver, BC
+V6Z 2R5",LMS1554,"KN
+(AW is Admin)"
+5419,"SIEMANS ESTATES LTD.
+34313 Forrest Terrace
+Abbotsford, BC
+V2S 7L2","RENTAL
+LMS1388",CG
+5425,"WADDINGTON DEVELOPMENTS LTD.
+32063 Mt. Waddington Ave.
+Abbotsford, BC",RENTAL,CG
+5428,"SHORELINE (Harbour Heights)
+103 – 150 Shoreline Circle
+Port Moody, BC
+V3H 5B3",RENTAL,AA
+5429,"FRASER APARTMENTS
+6462 Fraser Street
+Vancouver, BC
+V5W 3A4",RENTAL,KH
+5432,"WILLOUGHBY TOWN CENTRE
+Parcel 1 (Buildings A, B, C & D)
+20678 Willoughby Town Centre Drive
+Langley, BC
+V2Y 0L7
+
+Parcel 2
+20689 Willoughby Town Centre Drive
+Langley, BC
+V2Y 0P3
+
+Parcel 4
+20728 Willoughby Town Centre Drive
+Langley, BC
+V2Y 0L7
+
+Parcel 7
+20780 Willoughby Town Centre Drive
+Langley, BC
+V2Y 0L7
+
+
+",RENTAL,TL
+5441,"SFU Rentals
+9191 University Crescent
+Burnaby, BC
+V5A 0A1",,KH
+5443,THE SPOT RENTAL HOUSING ,,AA
+5447,"MELVILLE MANOR
+1855 West 8th Avenue
+Vancouver, B.C. 
+V6J 1V9
+
+*2940 Main Street - Million Energy Homes",,"KH
+(Juliana is Admin)"
+5452,"QUALICO VANCOUVER
+17720 65A Avenue
+Surrey, B.C. V3S 5N4
+
+
+
+",,CL
+5453,"THE LEX
+1249 Granville Street
+Vancouver, B.C.
+V6Z 1M5
+","RENTAL
+BCS336",VS
+5455,"2175 WEST 7TH (LAWRENCE MANOR)
+2175 West 7th Avenue
+Vancouver, BC
+V6K 1X9",N/A,KH
+5456,"1960 WEST 7TH (CASA GRANDE)
+1960 West 7th Avenue
+Vancouver, BC
+V6J 1T1",N/A,KH
+5457,"WEST 41ST
+2028, 2032, 2034, 2036
+West 41st Avenue
+Vancouver, BC",N/A,KH
+5458,"354 EAST 10TH AVENUE
+Vancouver, BC",N/A,KH
+5460,"VALEO RENTAL
+Building A
+Retail - 4762 Hastings St., Burnaby 
+Grocery - 4790 Hastings St., Burnaby
+
+Building B 
+Office – 4756 Hasting St., Burnaby
+
+Retail - 4718, 4728, and 4734 Hastings St. Burnaby
+
+",N/A,CL
+5461,"1790 152nd Street
+Surrey, B.C. 
+V4A 7Z7",N/A,KH
+5461,"1750 152nd Street
+Surrey, B.C. 
+V4A 7Z7",N/A,KH
+5462,"5698 Victoria Drive 
+(or 2015 E 41st) 
+Vancouver, B.C. 
+V5P 2W4",N/A,KH
+5462,"46325 Yale Road
+Chilliwack, B.C. 
+V2P 2P8",N/A,KH
+5462,"295 Main Street
+ Penticton, B.C. 
+V2A 5B1",N/A,KH
+5463,"2655 King George Blvd
+Surrey, B.C. 
+V4P 1H7",N/A,KH
+5463,"1941 Commercial Drive
+Vancouver, B.C. 
+V5N 4A8",N/A,KH
+5502,"SAGE
+5782 Berton Avenue
+Vancouver, BC V6S 0C1",BCS4265,CF
+5504,PARK AVENUE CLUB,,GR
+5505,"CLUB ARIA
+2nd Floor - 400 Capilano Road
+Port Moody, BC V3H 0E6",,FY
+"5506
+5506-TH","MET 2
+6538 Nelson Avenue
+6518, 6522, 6528, 6532, 6536, 6548, 6556, 6558 Nelson Avenue
+Burnaby, BC V5H 0G5",EPS4147,FY
+5508,"MELVILLE COMMERCIAL SECTION
+550, 560, 570, 580 Bute Street
+Vancouver BC V6E 3M1",BCS2321,CKS
+5509,"MODERN COMMERCIAL SECTION
+1009 Harwood Street
+Vancouver, BC V6E 0C2",EPS2409,CKS
+5510,MET AMENITIES,,BK
+5512,"THE SPOT
+2888 Cambie Street
+Vancouver, BC V5Z 0H3",EPS4248,YM
+5513,"FIRST AVENUE MEWS
+2435 West 1st Avenue
+2437 West 1st Avenue 
+Vancouver, BC V6K 1H2",BCS4360,HB
+5514,"GALILEO COMMERCIAL SECTION
+822 Homer Street
+Vancouver, BC V6B 6M3",LMS3970,CKS
+5516,"THE DAWSON (JOINT)
+4468 Dawson Street
+Burnaby, BC V5C 0J9",EPS4242,SC
+5517,"THE DAWSON (RESIDENTIAL SECTION)
+4468 Dawson Street
+Burnaby, BC V5C 0J9",EPS4242,SC
+5518,"THE DAWSON (COMMERCIAL SECTION)
+4472, 4476, 4480 Dawson Street
+2225, 2229 Willingdon Avenue
+Burnaby, BC V5C 0J9",EPS4242,CKS
+5519,THE SPOT REMAINDER,,YM
+5520,"RIVA 3
+7008 River Parkway
+Richmond, BC V6X 0R1",EPS3584,"CKS/KN  
+(KaWing)
+(AW is Admin)"
+5521,"PARK AVENUE WEST
+13696 100th Avenue
+Surrey, BC V3T 0L5
+
+Townhomes:
+TH1-7
+13720 100th Avenue 
+Surrey, BC V3T 0L4",EPS4403,GR
+5522,"CROWN
+520 Como Lake Avenue
+Coquitlam, BC V3J 0E8",EPS4454,YM
+"5523
+5523-A
+5523-B","CENTREVIEW
+Tower A: 112 East 13th Street
+Tower B: 125 East 14th Street
+North Vancouver, BC ",EPS3752,DC
+"5525
+5525-1a Alderbridge
+5525-1c Cedarbridge
+5525-2A","TEMPO (JOINT)
+Phase 1:
+7688 Alderbridge Way V6X 0P7
+5619 Cedarbridge Way V6X 0P8
+Richmond, BC
+
+Phase 2:
+7708 Alderbridge Way
+7811 Lansdowne Road
+Richmond, BC ",EPS4199,CZ
+5526,"TEMPO (RESIDENTIAL SECTION)
+Phase 1:
+7688 Alderbridge Way V6X 0P7
+5619 Cedarbridge Way V6X 0P8
+Richmond, BC
+
+Phase 2:
+7708 Alderbridge Way
+7811 Lansdowne Road
+Richmond, BC ",EPS4199,CZ
+5527,"TEMPO (COMMERCIAL SECTION)
+7688 Alderbridge Way V6X 0P7
+7708 Alderbridge Way V6X 2A2
+Richmond, BC ",EPS4199,CKS
+5528,"PARK ESTATES
+8988 Patterson Road
+Richmond, BC
+V6X 0R2
+",EPS4250,CF
+5529,"CENTRAL ESTATES
+3233 Ketcheson Road
+Richmond, B.C.
+V6X 0R3
+",EPS4329,JL
+5531,"ALTUS
+4485 Skyline Drive
+Burnaby, BC
+V5C 0J2
+",EPS3583,SR
+5533,"TOWER GREEN AT WEST
+159 West 2nd Avenue
+Vancouver, BC
+V5Y 0L8",EPS4169,GR
+5534,"LOWER LONSDALE SYNERGY I
+137-149 St. Patrick’s Avenue
+North Vancouver, B.C. 
+V7L 0E7
+",EPS4078,"MC
+(Admin Pool is Admin) "
+5535,"ABBOTT PLACE - JOINT ONLY
+233 Abbott Street
+Vancouver, BC
+V6B 2K7",LMS2412,SA
+5536,"BINNING TOWER
+3355 Binning Road
+Vancouver, BC
+V6S 0J1",EPS3494,CS
+5537,"DIAMOND CLUB
+8988 Patterson Road
+Richmond, BC
+V6X 0R2
+
+",,TL
+5541,"MONARCH
+4427 Cambie Street
+518 West 28th Avenue
+Vancouver, BC
+V5Z 2Y8",EPS4575,MB
+5542,"JAMES WALK
+168 East 35th Avenue
+Vancouver, BC
+V5W 1A6",EPS3680,KD
+5544,"V6A
+221 Union Street
+Vancouver, BC
+V6A 0B4",BCS3944,SC
+5545,"CONCORD GARDENS PARK ESTATES AFFORDABLE HOUSING
+8988 Patterson Road
+Richmond, BC
+V6X 0R2",EPS4725,"MR/CKS
+(YF is Admin)"
+"5547
+5547E
+5547W","NORTHWEST 
+
+EAST TOWER (E)
+8189 Cambie Street
+Vancouver, B.C. V6P 0G6
+
+WEST TOWER (W)
+8238 Lord Street
+Vanocuver, B.C. V6P 0G7",EPS4185,"HB/FY
+(EJ is Admin)"
+"5550
+5550-C (Commercial Units)","THE GRAND AT LANSDOWNE - JOINT
+5599 Cooney Road
+Richmond, B.C. 
+V6X 0N8 ",EPS4801,RY
+5551,"THE GRAND AT LANSDOWNE - RESIDENTIAL SECTION
+5599 Cooney Road
+Richmond, B.C. 
+V6X 0N8 ",EPS4801,RY
+5552,"NEW HORIZON ESTATES
+3190 Tahsis Avenue
+Coquitlam, B.C. 
+V3B 5C2",NW1668,KC
+5553,"EASTON
+617 Smith Avenue
+Coquitlam, BC
+V3J 0C3",EPS1326,PR
+"5555
+","THE CHARLESON
+499 Pacific Street
+Vancouver, BC
+V6B 0N4",EPS4774,DC
+"5556
+5556A
+5556B
+5556C","AVANTI
+8333 Sweet Avenue (Tower A)
+3331 Brown Road (Tower B)
+3333 Brown Road (Tower C)
+Richmond, B.C. ",EPS3982,MC/TL
+5557,"INGASTOWN
+150 East Cordova Street
+Vancouver, B.C. 
+V6A 1K9",EPS3663,BL
+5558,"UNION
+518 Whiting Way
+Coquitlam, B.C.
+V3J 0H7
+",EPS5100,SA
+5560,"ALTITUDE
+9060 University Crescent (V5A 0B7)
+9080 University Crescent (V5A 0E1)
+Burnaby, B.C.
+",EPS2546,DC
+"5563
+5563-1 (7660 Minoru)
+5563-2 (7680 Minoru)
+5563-3 (7671 Abercrombie)
+5563-4 (7651 Abercrombie)","BENTLEY WYND
+7660 & 7680 Minoru Blvd 
+7651 & 7671 Abercrombie Dr. 
+Richmond, B.C. 
+V5Y 1Z5 
+
+",NW2361,BL
+5564,"INGASTOWN - Residential 
+150 East Cordova Street
+Vancouver, B.C. 
+V6A 1K9",EPS3663,BL
+5565,"INGASTOWN - Commercial 
+150 East Cordova Street
+Vancouver, B.C. 
+V6A 1K9",EPS3663,BL
+5566,"THE RESIDENCES AT LYNN VALLEY (EF)
+Building F -  1295 Conifer Street
+ North Vancouver, B.C. V7J 0B4
+
+Building E -  2738 Library Lane
+ North Vancouver, B.C. V7J 0B3
+
+2761, 2763, 2765, 2767, 2769 Mountain Hwy
+North Vancouver, B.C. V7J 0B4
+",EPS4092,SR
+5567,"VERDANT
+9191 University Crescent
+Burnaby, B.C. 
+V5A 0A1 
+",BCS2284,BK
+5571,"W1
+West Tower - 455 SW Marine Drive Vancouver BC V5X 0H3
+East Tower - 433 SW Marine Drive Vancouver BC V5X 0H5
+
+Townhouse (West Tower) – 8110, 8120 8130, 8180, 8182, 8188 Nunavut Lane Vancouver BC V5X 0H3
+Townhouse (East Tower) – 8081, 8083, 8085, 8087, 8093, 8095 Yukon Street Vancouver BC V5X 0H5",EPS5144,"CZ/FY
+(CZ is PM)
+(EJ is Admin)"
+5573,"THE GRAND AT LANSDOWNE - COMMERCIAL SECTION
+5599 Cooney Road
+Richmond, B.C. 
+V6X 0N8 ",EPS4801,RY
+5574,"ELLE - JOINT
+6533 Buswell Street
+Richmond, BC
+V6Y 0J6",EPS5474,"KZ
+"
+5575,"ELLE - RESIDENTIAL SECTION
+6533 Buswell Street
+Richmond, BC
+V6Y 0J6",EPS5474,"KZ
+"
+"5576
+(formerly 5738)","The Paramount Cost Share 
+
+EPS8060
+6388 No. 3 Road
+Richmond, BC
+
+EPS8061
+6320 No. 3 Road
+6328 No. 3 Road
+8133 Cook Road
+Richmond, BC
+
+EPS8062
+6386 No. 3 Road
+Richmond, BC",N/A,CCS
+5578,"LE SOLEIL - JOINT
+567 Hornby Street
+Vancouver, BC
+V6C 3E8",LMS3837,"KN 
+(AW is Admin)"
+5579,"THE GRAYSON
+489 West 26th Ave.
+Vancouver, B.C. 
+V5Y 0M8
+
+Townhouses 481, 483, 485 & 487 West 26th Ave.
+V5Z 2Y1",EPS5252,BL
+5580,"NORQUAY NINE
+2388 East 34th Avenue
+
+5001, 5003, 5005, 5007, 5009, 5011, 5013, 5015 St. Margaret's Street
+
+Vancouver, B.C. 
+V5R 0H4
+",EPS5366,"MC
+(Admin Pool is Admin)"
+5582,"BRYDON GREEN
+19940 Brydon Crescent
+Langley, B.C.
+V3A 0K8
+",EPS5632,PR
+5583,"BROOKMERE 
+530 Whiting Way
+Coquitlam, B.C.
+V3J 0J4 
+
+",EPS5550,DC
+5585,"THE REGENT AT KING EDWARD
+523 W. King Edward Avenue
+
+Townhouses:
+531, 533, 535 & 537 W. King Edward Ave.
+Vancouver, BC 
+V5Z 0J3",EPS5493,BK
+5587,"THE PARK
+4900 Lennox Lane
+Burnaby, B.C.
+V5H 0G9
+
+Townhouses:
+6638, 6632, 6628, 6622, 6612 Nelson Ave
+6671, 6673, 6675, 6677, 6679, 6681 Dunblane Ave 
+Burnaby, B.C.
+V5H 0G9",EPS4056,RY
+5590,"SUNDIAL
+4340 Sundial Place
+Whistler, B.C.
+V8E 1G5
+",VR1570,TL
+"5593
+5593-C","THE EDGE
+289 Alexander Street
+Vancouver, B.C. 
+V6A 4H6",LMS3818,CCS
+"5594
+5594N - 89 Nelson Street
+5594S - 87 Nelson Street","THE ARC
+North Tower - 89 Nelson Street
+Vancouver, B.C.
+V6Z 0E7
+
+South Tower - 87 Nelson Street
+Vancouver, B.C.
+V6Z 0E8",EPS5890,JT
+5595,"PRIME ON THE PLAZA
+13438 Central Avenue
+Surrey, B.C.
+V3T 0N2
+",EPS5579,GR
+5596,"PARK ESTATES II 
+3300 Ketcheson Road
+Richmond, B.C.  
+V6X 0S5
+",EPS6022,JL
+"5597
+5597-1 (Hazelbridge)
+5597-2 (Ketcheson)","SOUTH ESTATES 
+3311 Ketcheson Road – V6X 0S4
+8800 Hazelbridge Way – V6X 0S3
+Richmond, B.C.  
+",EPS6023,RY
+5598,THE ARC COMMERCIAL,ASP,"CKS/CS
+(Christie)"
+5601,"CRISTALLO
+828 Gauthier Avenue
+Coquitlam, B.C.
+V3K 0E9",EPS4769,EL
+5603,"QUEEN'S LANDING
+115 West Queens Road
+North Vancouver B.C.
+V7N 2K4",EPS5212,"MC
+(Admin Pool is Admin)"
+5604,"THE RESIDENCES AT WEST
+1783 Manitoba Street
+ Vancouver B.C.
+V5Y 0K1",EPS2328,DC
+5608,"SILVER OAK
+1465, 1485 & 1490 Parkway Blvd.
+Coquitlam, BC
+V3E 3E6
+2900, 2902, 2906, 2908, 2910, 2912, 2916, 2918, 2920, 2922, 2926, 2928, 2930, 2932, 2936, 2938, 2940, 2942, 2944 Panorama Drive
+Coquitlam, BC V3E 3B4",LMS2058,KC
+5609,"LINCOLN'S GATE
+10620 150th Street
+Surrey, B.C.
+V3R 7S1
+
+** UNITS 800 THRU 1318 ONLY **
+Other units managed by other management companies; unit owner to confirm which.",NW1581,HB
+5610,"TRIOMPHE
+1888 Gilmore Avenue
+Burnaby, BC
+V5C 0L2
+
+",EPS6099,"HB/DC 
+(DC's Admin)"
+5611,"THE GEORGIA EAST
+20696 Eastleigh Crescent
+Langley, B.C. 
+V3A 0M3
+
+
+",EPS6482,KD
+5613,"ELEMENT 1
+7131 17th Avenue
+Burnaby, BC
+V3N 1K8
+",EPS6236,EL
+5614,SOUTH ESTATES SAS (SEXSMITH ARTIST STUDIOS) UNITS,n/a,"MR/CKS
+(YF is Admin)"
+5615,"JUNEAU
+4465 Juneau Street, 
+Burnaby, B.C.
+V5C 0L8
+",EPS6618,CCS
+5616,"CAPITOL
+1001-1021 Quebec Street 
+1012-1020 Auckland Street 
+New Westminster, BC 
+V3M 0M3
+",EPS6050,SC
+5618,"THE GEORGIA WEST
+20686 Eastleigh Crescent 
+Langley, B.C.
+V3A 0M4
+",EPS6483,HB
+5619,"LINCOLN CENTER
+3030 Lincoln Avenue
+Coquitlam, BC
+V3B 6B4",LMS2440,KC
+5620,"HAWTHORNE
+4988 Cambie Street 
+Vancouver, BC
+V5Z 2Z5 ",EPS6514,CZ
+5621,"THE WELWYN
+4413-4429 Welwyn Street
+Vancouver, BC
+V5N 3Z3",EPS6681,"MC
+(Admin Pool is Admin)"
+5626,"THE RESIDENCES AT LYNN VALLEY (ABCD)
+
+Building A - 2780 Valley Centre Avenue
+			North Vancouver, BC
+				V7J 0C4
+
+Building B - 	2785 Library Lane
+				North Vancouver, BC
+				V7J 0C3
+
+Building C -	1210 East 27th Street
+				North Vancouver, BC
+				V7J 0C5
+
+Building D - 	2707 Library Lane 
+				North Vancouver, BC
+V7J 0C6",EPS4096,SR
+5627,"CRESTON - JOINT
+1411-1415 Bewicke  
+V7M 3C7
+715 15th St W               
+V7M 1T2
+North Vancouver, BC",EPS5766,BK
+5628,"CRESTON - RESIDENTIAL SECTION
+1411-1415 Bewicke  
+V7M 3C7
+715 15th St W               
+V7M 1T2
+North Vancouver, BC",EPS5766,BK
+5629,"BASALT
+5058 Cambie Street
+Vancouver, B.C. 
+V5Z 2Z5
+",EPS6589,BK
+5631,"KINGS CROSSING III
+7303 Noble Lane 
+Burnaby, BC
+V3N 0H2
+",EPS4444,"CF
+"
+5632,"KING EDWARD VILLAGE II
+4028 Knight Street
+1432 Kingsway
+Vancouver, BC
+V5N5Y8 ",BCS2869,CS
+5633,"ORCHID - JOINT
+5580 No.3 Road 
+Richmond, B.C. 
+V6X 0R8
+",EPS5182,CZ
+5634,"ORCHID - RESIDENTIAL SECTION
+5580 No.3 Road 
+Richmond, B.C. 
+V6X 0R8
+",EPS5182,CZ
+5635,"ORCHID - COMMERCIAL SECTION
+5580 No.3 Road 
+Richmond, B.C. 
+V6X 0R8
+",EPS5182,CZ
+5636,"THE TRAILS
+505, 515, 525 East 2nd Street
+North Vancouver, BC
+V7L 1E1
+
+",EPS6372,"KD
+"
+5637,"ROSEDALE ON ROBSON 
+838 Hamilton Street
+Vancouver, BC 
+V6B 6A2 
+
+818, 828, 838, 848, 858, 868, 878 Hamilton Street
+260, 270, 280, 290 Robson Street
+Vancouver, BC",LMS1863,CS
+5642,"RIVER
+188 Wood Street
+New Westminster, BC
+V3M 5A4
+",EPS3793,BL
+5643,"PORTSIDE
+488 Furness Street
+New Westminster, BC
+V3M 0M1
+",EPS6825,DC
+"5645
+Newstar:
+5681 Birney 5645-1
+5629 Birney 5645-2","IVY ON THE PARK 
+5629 Birney Avenue (Strata Lots 46-226)
+5681 Birney Avenue (Strata Lots 1-45)
+Vancouver, B.C.
+V6S 0L5 
+
+
+",EPS6944,DC
+5651,"THE PEAK
+8850 University Crescent
+Burnaby, B.C.
+V5A 0C8
+
+",EPS5447,"KZ
+(LPJ is Admin)"
+5655,"MODA
+6658 Dow Avenue 
+Burnaby, BC 
+V5H 0C7",EPS2219,FY
+5656,"PROMENADE - JOINT
+118 Carrie Cates Court 
+North Vancouver, B.C. 
+V7M 0G6",EPS6231,CF
+5657,"PROMENADE - RESIDENTIAL SECTION
+118 Carrie Cates Court 
+North Vancouver, B.C. 
+V7M 0G6",EPS6231,CF
+"5658
+Newstar:
+5656-C","PROMENADE - COMMERCIAL  SECTION (EXPAND ROW FOR COMPLETE LIST OF UNITS)
+CRU1 - 112 Carrie Cates Court
+CRU2 - 114 Carrie Cates Court
+CRU3 - 120 Carrie Cates Court
+CRU4 - 122 Carrie Cates Court
+CRU5 - 124 Carrie Cates Court
+CRU6 - 126 Carrie Cates Court
+CRU7 - 128 Carrie Cates Court
+CRU8 - 129 West Esplanade
+CRU9 - 125 West Esplanade
+CRU10 - 123 West Esplanade
+CRU11 - 121 West Esplanade
+CRU12 - 122 West Esplanade
+CRU13 - 127 West Esplanade
+CRU14 - 115 West Esplanade
+North Vancouver, B.C. 
+V7M 0G6",EPS6231,SC
+"5661
+Newstar:
+Phase 1: 9399 Alexandra Road 
+Phase 2: 9311 Alexandra Road 
+Phase 3: 9366 Tomicki Avenue
+Phase 4: 9388 Tomicki Avenue ","ALEXANDRA COURT 
+9311 Alexandra Road V6X 0L8 
+9399 Alexandra Road V6X 0L7 
+9366 Tomicki Avenue V6X 0N9 
+9388 Tomicki Avenue V6X 0P1 
+Richmond, B.C. ",EPS2669,"CF/TL
+(BN is Admin)"
+5663,"PARK HOUSE SOUTH
+477 W 59th Avenue
+Vancouver BC
+V5X 1X4",EPS7549,LZ
+"5664
+Newstar:
+5664-K: 6233 Katsura Joint 
+5664-KA: 6233 Katsura Apartment 
+5664-S: 9133 Hemlock Joint 
+5664-SA:  9133 Hemlock Apartment ","KATSURA & SEQUOIA AT HAMPTONS PARK
+9133 Hemlock Drive - V6Y 4J9
+6233 Katsura Street - V6Y 4K1
+Richmond, BC",BCS1060,JL
+5666,"KINGS CROSSING OWNERS COMMITTEE (KCOC) AMENITY CLUB
+",,BK
+5672,"PARK BOULEVARD
+Residential Building - 9887 Whalley Boulevard
+Townhouses - 9861, 9863, 9867, 9869, 9881, 9883, 9887, 9889 Whalley Boulevard
+Surrey, B.C. 
+V3T 0P4",EPS7405,GR
+5673,"AVENUE ONE 
+Residential Tower - 1768 Cook Street, Vancouver, B.C. 
+Townhouses
+1718, 1728, 1738 Cook Street
+208, 210, 212 West 1st Avenue
+1755, 1765, 1775, 1785 Columbia Street
+Vancouver, B.C. V5Y 0N3",EPS6841,JT
+5674,"BORDEAUX
+4488 Juneau Street
+Burnaby, B.C. 
+V5C 0M4",EPS7516,CF
+5675,"THE BERESFORD
+6288 Beresford Street
+Burnaby, B.C. 
+V5J 1K2",EPS7457,"MC
+(Admin Pool is Admin)"
+5676,"KINGS CROSSING 2
+7358 Edmonds Street
+Burnaby, B.C. 
+V3N 0H1",EPS5758,"CZ
+
+"
+5677,"CEDAR CREEK
+Phase 1 – 7133 14th Avenue, Burnaby, BC V3N 0H5
+
+Phase 2 – 7169 14th Avenue, Burnaby, BC V3N 0H6
+
+Phase 3 – 7579 16th Street, Burnaby, BC V3N 0H7",EPS7638,"CKS/CS  
+(Christie)"
+5678,"KINGS CROSSING 1
+7388 Kingsway
+Burnaby, BC
+V3N 0G9",EPS5757,SC
+5679,"THE RESIDENCES AT WILLOUGHBY (PARCEL 3)
+JOINT
+20727 Willoughby Town Centre Drive
+Langley, B.C. 
+V2Y 1X1",EPS7877,SA
+5681,"CIRRUS
+2085 Skyline Court
+Burnaby, B.C. 
+V5C 0M6 ",EPS6726,"LZ/SR
+(Vivian C. is Admin)"
+5682,"HOLLOWAY AT THE BOROUGHS
+2070 Oak Meadows Drive
+Surrey, B.C.
+V3Z 1J1",EPS7662,SA
+5683,"SCOTT & NICHOLSON
+
+Building A - Nicholson
+6950 Nicholson Road
+Delta, BC
+V4E 0A8
+
+Building B - Scott
+6960 Nicholson Road
+Delta, BC
+V4E 0A9",EPS5983,EL
+5684,"HARMONY
+222, 224, 226, 228, 230 & 232 East 8th Street
+North Vancouver, B.C. 
+V7L 1Z1",EPS7928,"MC
+(Admin Pool is Admin)"
+5685,"THE LEX
+1249 Granville Street
+Vancouver, BC
+V6Z 1M5",BCS336,"KZ
+"
+5688,"LUMA
+6688 Arcola Street
+Burnaby, BC
+V5E 0B3",BCS4066,RY
+5689,"TSAWWASSEN LANDING
+4738 Hemlock Way
+4662 Hemlock Way
+Tsawwassen, B.C. 
+V4M 0E3
+
+",EPS7865,CL
+5690,"ONE BURRARD PLACE
+(RESIDENTIAL STRATA)
+1289 Hornby Street
+ Vancouver, B.C. 
+V6Z 0G7",EPS8296,JT
+5691,"ONE BURRARD PLACE
+(OFFICE STRATA) 
+1281 Hornby Street
+Vancouver, BC 
+V6Z 0G8",EPS8297,SA
+5692,"CLUB ONE
+1289 Hornby Street
+ Vancouver, B.C. 
+V6Z 1W2",,JT
+5693,"1335 HOWE
+1335 Howe Street
+Vancouver, B.C. 
+V6Z 0H1",EPS8387,"DC
+
+"
+5695,"BRIDGEPORT BUSINESS CENTER
+2777 Jow Street
+Richmond, BC",EPS9314,MC
+5699,"HILLSIDE WEST
+Tower 1 (West)
+4720 Lougheed Highway
+Burnaby, B.C. V5C 0M8
+
+Tower 2 (East)
+4730 Lougheed Highway
+Burnaby, B.C. V5C 0M9",EPS8443,JT
+5700,"MCKENZIE MEWS
+2267 McKenzie Road
+Abbotsford, BC
+V2S 0M9 ",EPS8529,CG
+5702,"ALBA
+2345 Rindall Avenue
+Port Coquitlam, BC
+V3C 0T1",EPS8757,SA
+5704,"BELMONT PARK
+8540 Citation Drive
+TH: 8500, 8510, 8520, 8530, 8550, 8560, 8570 & 8580 Citation Drive
+Richmond, BC
+V6Y 3A3",NW1374,CF
+5705,"THE JERICHO
+20362 - 72B Avenue 
+Langley, BC 
+V2Y 5K4",EPS8883,SA
+5706,"BEXLEY AT THE BOROUGHS
+2075 Oak Meadows Drive 
+Surrey, BC
+V3Z 1J6",EPS7678,EL
+5708,"EPS5393 (2RPP ASP3)
+6928 Pearson Way
+Richmond, BC
+V7C 0C9",EPS5393,CCS
+"5709
+5709-E (3038 St. George)
+5709-W (3018 St. George) ","GEORGE
+3018 & 3038 St George Street 
+Port Moody, BC
+V3H 0L3",EPS6752,KD
+5710,"EPS5394 (ASP 4)
+6928 Pearson Way
+Richmond, B.C.
+V7C 0C9",EPS5394,CCS
+5711,"CEDAR CREEK 2 – THE SIGNATURE COLLECTION
+7588 16th Street, Burnaby, BC V3N 0H8
+7599 15th Street, Burnaby, BC V3N 0H9",EPS8576,"SR/SB
+(SR is Senior PM)
+(Vivian C. is Admin)"
+5712,"TSAWWASSEN WELLNESS CENTRE
+2221 Cormorant Drive
+Tsawwassen, BC",,CL
+5714,"CHANNEL
+629 S Dyke Road, New Westminster",EPS8884,SY
+5715,"SAVOY
+4240 Cambie Street
+Vancouver, BC, V5Z 0K6 ",EPS9089,SY
+"5717
+Phase 1: 15835 85 Avenue
+Phase 2: 15825 85 Avenue
+Phase 3: 15858 Fraser Highway
+Phase 4: 15815 85 Avenue
+Phase 5: 15848 Fraser Highway","FLEETWOOD VILLAGE 
+15835 85 Avenue, Surrey, BC V4N 6W6
+15825 85 Avenue, Surrey, BC V4N 6W9
+15858 Fraser Highway
+15815 85 Avenue
+15848 Fraser Highway
+Surrey, BC",EPS8270,JL
+"5718
+5718-1: 6320 No. 3 Road
+5718-2: 6328 No. 3 Road
+5718-3: 8133 Cook Road","PARAMOUNT
+6320 No. 3 Road, Richmond, BC V6Y 0L5
+6328 No. 3 Road, Richmond, BC V6Y 0L6 
+8133 Cook Road, Richmond, BC V6Y 0L7
+",EPS8061,"RY
+"
+5719,"CLARKE + COMO
+567 Clarke Road
+Coquitlam, BC
+V3J 0K7",EPS7495,JL
+5720,"PATINA
+1028 Barclay Street
+Vancouver, BC
+V6E 0B1",BCS4016,SB
+5721,"PORT & MILL
+645 Como Lake Avenue 
+ Coquitlam, BC
+V3J 0N9
+ 648 Lea Avenue 
+Coquitlam, BC
+V3J 0P1",EPS9407,CL
+5722,"GALLERIA AT CONCORD GARDENS RENTAL HOUSING UNITS
+
+8555 Capstan Way
+Richmond, BC
+V6X 0W1
+
+8668 Hazelbridge Way
+Richmond, BC
+V6X 0W2",EPS9131,"MR/CKS
+(YF is Admin)"
+5723,"ALASKA
+4433 Alaska Street, Burnaby, B.C. 
+V5C 0N3",EPS9413,DC
+"5724
+5724-JT (TH Units 1-24) 
+5724-JT: 9180 Hemlock Drive
+5724-1: 9180 Hemlock
+5724-2: 9188 Hemlock","MAGNOLIA AND CASUARINA AT HAMPTONS PARK
+9180 Hemlock Drive – V6Y 4J5
+9188 Hemlock Drive – V6Y 4J7
+Richmond, BC",BCS1691,JL
+5725,"LEGACY ON DUNBAR (RESIDENTIAL)
+3596 West 28th Avenue
+Vancouver, B.C. 
+V6S 2G5",EPS9531,"KN
+(AW is Admin)"
+5726,"LEGACY ON DUNBAR (COMMERCIAL REMAINDER)
+4402 – 4498 Dunbar Street
+Vancouver, B.C. 
+V6S 2G5",EPS9532,"KN
+(AW is Admin)"
+5730,"RIVER PARK 2
+ASP 5
+105 & 110 6968 Pearson Way
+Richmond, BC
+V7C 0C8",EPS5395,CCS
+5731,"AVANA
+678 Fairview Street 
+Coquitlam, B.C.
+V3J 0N1",EPS6996,SY
+5732,"PRESTON
+32690 - 14th Avenue
+Mission, BC 
+V2V 0K5",EPS9773,CG
+5733,"THE BOROUGHS AMENITIES
+(Shared Amenities in Holloway, Bexley and Chelsea)",n/a,SA
+5734,"E15 JUST OFF MAIN
+322 East 15th Avenue
+
+Townhomes
+302, 304, 306, 308, 310, 312, 314, 316, 318, 320, 324, 326, 328, 330, 332, 334, 336, 338, 340 East 15th Avenue
+ 3130, 3132, 3134, 3136, 3138, 3140 Sophia Street
+Vancouver, BC",EPS9925,HB
+5735,"WEMBLEY
+4991 No. 5 Road
+Richmond, B.C. 
+V6X 0S9",EPS5423,"KZ
+"
+5736,"THE PARAMOUNT OFFICE
+6388 No. 3 Road
+Richmond, BC
+V6Y 0L4",EPS8060,CCS
+5737,"THE NEWMARK 
+(Residential Section)
+4888 Hazel Street
+Burnaby, BC
+V5H 4T4",LMS3131,MC
+5739,"HILLSIDE EAST
+4880 Lougheed Highway 
+Burnaby, B.C. V5C 0N1
+4890 Lougheed Highway 
+Burnaby, B.C. V5C 0N2",EPS8519,FY
+5741,"THE COLLECTION
+3261, 3263, 3269, 3277, 3283, 3285, 3287, 3289, 3293, 3299 Chippendale Road
+West Vancouver",EPS8014,"MC
+(Admin Pool is Admin)"
+5742,"CEDAR GROVE
+Building A – 15238 100 Avenue, Surrey, BC, V3R 7T9
+Building B – 15268 100 Avenue, Surrey, BC, V3R 7V1
+Building C – 15288 100 Avenue, Surrey, BC, V3R 7V2",NW1676,SC
+5743,"CASCADIA
+6951 204 Street
+Langley, BC
+V2Y 3W4",EPS9777,CL
+5744,"VOYCE
+5168 Cambie Street
+Vancouver, B.C.
+V5Z 0K7",EPS9592,EL
+5745,"LILIBET
+520-570 West 28th Avenue
+580-590 West 28th Avenue
+4406-4426 Ash Street
+Vancouver, B.C.",EPS10172,HB
+5746,"SPARK
+4033 May Drive
+Richmond, BC
+V6X 0T3",EPS6727,SY
+5747,"TOWNHOMES AT EVELYN  WALK
+790-796 Arthur Erickson Place
+West Vancouver, BC",EPS9754,SA
+5748,"HIGHSTREET VILLAGE TOWNHOMES 
+30530 Cardinal Avenue
+Abbotsford, BC
+V2T 0L5",EPS10001,CG
+"5749
+5749C (545) = Units 141-146, 241-246 & 441-446
+5749D (565) = Units 161-164 & 461-464
+5749E (555) = Units 151-157 & 351-357
+5749F (535) = Units 131-138","TRAILS 2
+535, 545, 555, 565 East 2nd Street 
+North Vancouver, BC
+V7L 1E1",EPS10157,SR
+5750,"GILMORE TOWER 1
+2186 Gilmore Avenue
+Burnaby, BC
+V5C 0N7",EPS8857,JT
+5751,"PARK W29
+531 West 29th Avenue
+Vancouver, BC
+V5Z 2H8",EPS8695,SA
+5752,"THE INN AT WHISTLER VILLAGE
+4250 Village Stroll
+Whistler, B.C.
+V8E 1E3",VR960,CKS
+5753,"HEARTWOOD
+3535 Highland Drive
+3522 Harper Road
+Coquitlam, B.C.",EPS10464,EL
+5754,"CANVAS
+5504 Brydon Crescent
+Langley, BC 
+V3A 0R3",EPS10139,CG
+5756,"BRIGHOUSE 22
+8699 Spires Road
+8968 Cook Crescent
+Richmond, BC V6Y 1W4",EPS9274,LZ
+5757,"SOLEIL 
+(RESIDENTIAL ASP)
+1588 Johnston Road
+White Rock, BC V4B 0C5
+",EPS10169,CL
+"5758
+NLM as of January 31, 2026","THE FALLS
+24951 112 Ave
+Maple Ridge, BC
+V2W 0L1",EPS10402,SA
+5759,"SOLEIL COMMERCIAL
+1574-1588 Johnston Rd.
+White Rock, BC V4B 0C5
+
+15208-15238 North Bluff Road
+White Rock, BC V4B 3Z7",EPS10170,SA
+5760,"THE WILLOW
+778 West 27th Avenue
+Vancouver BC
+V5Z 2G6",EPS10712,MR
+5761,"CHELSEA AT THE BOROUGHS
+16325 21 Avenue, Surrey, BC (Phases 1-3)
+16355 21 Avenue, Surrey, BC (Phases 4-6)",EPS10004,CL
+5762,"CLUB GILMORE
+2186 Gilmore Avenue
+Burnaby, BC
+V5C 0N7",N/A,JT
+5764,"THE NEWMARK (Joint/Strata Corporation)
+4888 Hazel Street
+5885 Kingsway Avenue
+Burnaby, BC
+V5H 4T4",LMS3131,MC
+5765,"EPIC AT WEST
+1788 Columbia Street
+Vancouver, BC
+V5Y 0L7",EPS4489,SB
+5766,"GRAND CORNICHE 1
+6240 McKay Avenue
+Burnaby, BC
+V5H 4L8",NW3079,MC
+5767,"HOLLYBRIDGE AT RIVER GREEN
+6811 Pearson Way
+6833 Pearson Way
+6855 Pearson Way
+Richmond, B.C. ",EPS9187,"SC/TL
+(YF is Admin)"
+5768,"PIER WEST
+(WEST TOWER)
+680 Quayside Drive
+New Westminster, BC
+V3M 0P2",EPS10722,JT
+5769,"GILMORE TOWER 3
+4168 Lougheed Hwy
+Burnaby, B.C. 
+V5C 0N9",EPS8859,YM
+5770,"POLARIS
+4425 Halifax Street
+Burnaby, BC
+V5C 6P2",LMS3824,BK
+5771,"THE GRAND ON KING GEORGE (RESIDENTIAL STRATA)
+10750 - 135A Street
+Surrey, BC
+V3T 0V4",EPS10825,GR
+5772,"WEST OAK
+6288 Oak Street
+Vancouver, BC
+V6M 2W4
+
+6286, 6294, 6306, 6340, 6342, 6382, 6362, 6360, 6322, 6314, 6312, 6288, 6256 Oak Street 
+Vancouver, BC
+V6M 2W4",EPS11004,"MA
+(AW is Admin)"
+5773,"THE GRAND ON KING GEORGE (COMMERCIAL STRATA)
+10741 King George Boulevard, Surrey, BC V3T 0V5
+10745 King George Boulevard, Surrey, BC V3T 0V5
+10749 King George Boulevard, Surrey, BC V3T 0V5
+13575 107A Avenue, Surrey, BC V3T 0V5",EPS10883,GR
+5774,"PICASSO GALLERIA CONCORD GARDENS (RESIDENTIAL STRATA)
+
+8671 HAZELBRIDGE WAY 
+RICHMOND, BC 
+V6X 0W9
+
+3328 NO. 3 ROAD
+RICHMOND, BC 
+V6X 0X1
+
+8611 HAZELBRIDGE WAY 
+RICHMOND, BC 
+V6X 0W8",EPS10662,FY
+5775,"GILMORE TOWER 2
+2108 Gilmore Avenue
+Burnaby, B.C. 
+V5C 0N8",EPS8858,JT
+5776,"QUINN
+13439 94A Avenue Surrey, B.C.
+V3V 0G9
+9456 134 Street
+Surrey, B.C.
+V3V 0G8",EPS10911,KC
+5777,"CHLOE RESIDENTIAL 
+2096 West 47th Avenue
+Vancouver, BC
+V6M 0E5",EPS9999,EL
+5778,"THE MANDARIN SHARE COST
+
+
+",N/A,"CCS/KN
+(CCS is Senior)"
+5779,"MANDARIN RESIDENCES
+6188 No. 3 Road , Richmond, BC V6Y 0J3
+6288 No. 3 Road , Richmond, BC V6Y 0J4",EPS3548,"KN/CCS
+(FF is Admin)"
+5780,"FRASER
+JOINT/STRATA CORPORATION
+ 9735 / 9739 / 9733 University Crescent, 
+Burnaby, BC V5A 0E8 
+9278 Slopes Mews, 
+Burnaby, BC V5A 0G1 
+9228 Slopes Mews, 
+Burnaby, BC V5A 0E9",EPS5767,SB
+5781,"FRASER
+TH SECTION
+9735 University Crescent, Burnaby, BC V5A 0E8 
+9739 University Crescent, Burnaby, BC V5A 0E8 
+9733 University Crescent, Burnaby, BC V5A 0E8 
+9278 Slopes Mews, Burnaby, BC V5A 0G1",EPS5767,SB
+5782,"FRASER 
+APT SECTION
+9228 Slopes Mews, 
+Burnaby, BC 
+V5A 0E9",EPS5767,SB
+5784,"SEASIDE RIDGE
+1560 Prince Street
+Port Moody, BC
+V3H 3W8",LMS0076,SB
+5785,"PICASSO GALLERIA CONCORD GARDENS 
+RENTAL HOUSING UNIT (ASP 2)
+3328 No. 3 Road
+Richmond, BC
+V6X 0X1",EPS10850,MR
+5786,"PIER WEST 
+(EAST TOWER)
+660 Quayside Drive
+New Westminster, BC
+V3M 0P1",EPS10723,JT
+5787,"ELEMENT 2
+7161 17th Ave, Burnaby, BC
+V3N 1K8",EPS10793,HB
+5788,"BELVEDERE 
+(STRATA CORPORATION/JOINT)
+9675 King George Blvd
+Surrey, BC
+V3T 0T7",EPS11017,"DC/SB
+(DC Is Senior)
+(OY is Admin)"
+5789,"BELVEDERE 
+(RESIDENTIAL SECTION)
+9675 King George Blvd
+ Surrey, BC
+V3T 0T7",EPS11017,"DC/SB
+(DC Is Senior)
+(OY is Admin)"
+5790,"BELVEDERE 
+(COMMERCIAL SECTION)
+9675 King George Blvd
+ Surrey, BC
+V3T 0T7",EPS11017,"DC/SB
+(DC Is Senior)
+(OY is Admin)"
+5791,"PURA
+13238 105 Avenue
+13258 105 Avenue
+Surrey, BC",EPS10005,KC
+5792,"PARK GEORGE 
+13768 100 Avenue, Surrey, BC V3T 0V2 
+13778 100 Avenue, Surrey, BC V3T 0V3",EPS10940,GR
+5793,"GIBSON RESIDENCES
+1961, 1963, 1967 Napier Street
+1051, 1061, 1071, 1081 Semlin Drive
+Vancouver, B.C. 
+V5L 2N6",EPS10909,EL
+5794,"HIGHSTREET VILLAGE CONDOS
+
+30490 Cardinal Avenue, Abbotsford, BC V2T 0L9
+30494 Cardinal Avenue, Abbotsford, BC V2T 0M1",EPS11140,CG
+5795,"BERKELEY HOUSE
+9213 Odlin Road,
+Richmond, BC V6X 0V5
+9233 Odlin Road
+Richmond, BC V6X 0V4",EPS6677,CCS
+5796,"WILDWOOD
+3950, 3952, 3956, 3958, 3960, 3962, 3968, 3972, 3976, 3978, 
+3980, 3982, 3986, 3992, 3996, 3998 Uplands Way
+West Vancouver, B.C.",EPS8151,"MC
+(Admin Pool is Admin)"
+5797,"LINA (JOINT)
+5212 Cambie Street
+Vancouver, BC V5Z 0L6",EPS11309,LZ
+5798,"LINA 
+(RESIDENTIAL SECTION)
+5212 Cambie Street
+Vancouver, BC V5Z 0L6",EPS11309,LZ
+5799,"JINJU
+537 Cottonwood Avenue
+Coquitlam, B.C.
+V3J 0S4 ",EPS10947,DC
+5800,"ANCHOR
+(North Building)
+1100 Clarke Rd
+Port Moody, BC  V3H 0N3
+
+(South Building) 
+2002 St. George St
+Port Moody BC,  V3H 0N4",EPS8288,KZ
+5801,"PICASSO GALLERIA CG COMMERCIAL OFFICE (ASP 3)
+3388 No. Road, Richmond, BC, V6X 0X2 ",EPS10851,CCS
+5802,"PICASSO GALLERIA ARTS SPACE (ASP 4)
+110-8671 Hazelbridge Way
+Richmond, BC",n/a,"CKS/CCS  
+(Cherie)"
+5803,"PICASSO GALLERIA RETAIL (REMAINDER)
+8531-8539 Capstan Way, 
+115-3328 No 3 Road, Commercial Parkade
+Richmond, B.C.",n/a,"CKS/CCS  
+(Cherie)"
+5804,"GRAFIA – JOINT
+2450 Garden Drive, Vancouver, BC V5N 0K1
+2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,KC
+5805,"GRAFIA – RESIDENTIAL SECTION
+2450 Garden Drive, Vancouver, BC V5N 0K1 
+2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,KC
+5806,"GRAFIA – COMMERCIAL SECTION
+2450 Garden Drive, Vancouver, BC V5N 0K1 
+2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,MR
+5807,"CHLOE COMMERCIAL
+2092, 2094 West 47th Avenue
+6306, 6316, 6326, 6336, 6346, 6350, 6370, 6390 East Boulevard
+2099 West 48th Avenue
+Vancouver, B.C.",EPS9998,EL
+5808,"VALEO – JOINT
+Building A
+RESIDENTIAL 
+4788 Hastings St. 
+Burnaby, BC 
+V5C 0P3
+(Units 201-215, 301-319, 401-419, 501-509)
+
+Building A
+COMMERCIAL
+Grocery - 4762 Hastings St.
+Burnaby, BC
+V5C 0P4 
+Retail 1 - 4790 Hastings St.
+Burnaby, BC
+V5C 0P4 
+
+Building B 
+Office
+ 4756 Hasting St., 
+Burnaby, BC
+V5C 0P4
+(Units 201-208, 301-308, 401-408)
+
+Retail 2 (CRU 1) – 4718 Hastings St. Burnaby, BC
+V5C 0P4
+
+Retail 2 (CRU 2) – 4728 Hastings St. Burnaby, BC
+V5C 0P4
+
+Retail 2 (CRU 3) – 4734 Hastings St. Burnaby, BC
+V5C 0P4
+",EPS10007,"EL/CL
+(Eva Lo
+Katy L. Admin)"
+5809,"VALEO – RESIDENTIAL SECTION
+4788 Hastings St. 
+Burnaby, BC 
+V5C 0P3
+(Units 201-215, 301-319, 401-419, 501-509)",EPS10007,"EL/CL
+(Eva Lo
+Katy L. Admin)"
+5810,"VALEO - COMMERCIAL SECTION
+Building B 
+Office 
+4756 Hasting St., 
+Burnaby, BC
+V5C 0P4
+(Units 201-208, 301-308, 401-408)
+
+Retail 2 (CRU 1) – 4718 Hastings St. Burnaby, BC
+V5C 0P4
+
+Retail 2 (CRU 2) – 4728 Hastings St. Burnaby, BC
+V5C 0P4
+
+Retail 2 (CRU 3) – 4734 Hastings St. Burnaby, BC
+V5C 0P4",EPS10007,CL
+5811,"THE COMMONS 
+8230 208B Street
+Langley, B.C.
+V3A 7E6",EPS7988,CCS
+"5812
+Phase 1:
+5812-A is 1942 Starling Drive
+5812-C is 1930 Starling Drive
+Phase 2:
+5812-B, 4772 Douglas Fir Way","WEST COAST ESTATES CONDOS
+1930 Starling Drive, Tsawwassen, BC
+1942 Starling Drive, Tsawwassen, BC",EPS8403,CL
+"5813
+5813-1 – 11191 Horseshoe Way
+5813-2 – 11171 Horseshoe Way
+5183-3 – 11151 Horseshoe Way","RIVERSIDE
+11151, 11171, 11191 Horseshoe Way
+Richmond, BC
+V7A 4S5",LMS1585,CL
+5814,"WATER STREET BY THE PARK
+
+Tower 1
+ 238 Leon Avenue, Kelowna, BC V1Y 0N6
+
+Tower 2 (The Eli) 
+ 1626 Water Street, Kelowna, BC V1Y 0N7",EPS11271,"Terry Li (Senior PM)
+Michelle Ross 
+(Junior PM)"
+5815,"BASTILLE 
+215 McBay Lane
+209 McBay Lane
+Coquitlam, B.C. ",EPS10854,KC
+5816,"HIGHLAND PARK
+2501 161 A Street, Surrey, BC
+V3Z 7Y6",BCS2896,CL
+5817,"HIGHLAND PARK AMENITIES
+2501 161 A Street, Surrey, BC
+V3Z 7Y6",BCS2896,CL
+5818,"SOTO ON 28
+539, 551, 555, 561 
+West 28th
+Vancouver, BC",EPS11532,"MC
+(Admin Pool is Admin)"
+5819,"KINSLEY
+475 West 28th Avenue
+Vancouver, BC
+V5Y 0P2",EPS11606,HB
+5820,"JACOB
+33886 Pine Street
+Abbotsford, B.C.
+V2S 0N9",EPS11725,CG
+5821,"SKAHA LAKE TOWERS
+Phase 1 - 3388 Skaha Lake Road, Penticton BC, V2A 6G4
+
+Phase 2 - 3346 Skaha Lake Road, Penticton BC, V2A 0H6
+
+Phase 3 - 3362 Skaha Lake Road, Penticton BC, V2A 0J4
+",EPS4170,MR
+5822,"SKYVIEW
+7381 Preston Blvd, Mission, B.C.
+V2V 0M1",EPS11766,SA
+5823,WATER STREET BY THE PARK - CLUB,N/A,"Terry Li (Senior PM)
+Michelle Ross 
+(Junior PM)"
+5824,"EAST RIDGE
+3025 McMillan Road
+Abbotsford, B.C.
+V3G 1H3",EPS11610,SA
+5825,"BCS2301
+4204 – 4206 Hastings Street
+Burnaby, B.C. 
+V5C 2J6",BCS2301,EL
+5826,WATER STREET BY THE PARK - REMAINDER,n/a,CKS
+5827,"ARTESIA
+5685 Halley Avenue
+Burnaby, BC
+ V5H 0L9
+
+Townhouse addresses
+5681 & 5683 Halley Avenue, 
+Burnaby, BC V5H 0L9",EPS11556,KN/TL
+5828,"QUAIL LANDING 
+1979 Country Club Drive
+Kelowna, B.C. 
+V1V 0H6",EPS8157,MR
+5829,"TERRACES ON 7TH - JOINT
+1530, 1550, 1570, 1590
+West 7th Avenue
+Vancouver, B.C.",LMS4708,"Terry Li (Senior PM)
+Angela Matheson 
+(Junior PM)"
+5830,"TERRACES ON 7TH - COMMERCIAL SECTION A
+1570 West 7th Avenue
+Vancouver, B.C.
+V6J 5M1",LMS4708,"Terry Li (Senior PM)
+Angela Matheson 
+(Junior PM)"
+5831,"TERRACES ON 7TH - COMMERCIAL SECTION B
+1530 West 7th Avenue
+Vancouver, B.C.
+V6J 1S3",LMS4708,"Terry Li (Senior PM)
+Angela Matheson 
+(Junior PM)"
+5832,"TERRACES ON 7TH - COMMERCIAL SECTION C
+1550 West 7th Avenue
+Vancouver, B.C.
+V6J 1S2",LMS4708,"Terry Li (Senior PM)
+Angela Matheson 
+(Junior PM)"
+5833,"TERRACES ON 7TH - RESIDENTIAL SECTION D
+1570 West 7th Avenue
+Vancouver, B.C.
+V6J 5M1",LMS4708,"Terry Li (Senior PM)
+Angela Matheson 
+(Junior PM)"
+5834,"SAINT GEORGE - JOINT
+2471 St. George Street
+Vancouver, B.C.
+V5T 0L8",EPS11898,SA
+5835,"SAINT GEORGE - RESIDENTIAL SECTION
+2471 St. George Street
+Vancouver, B.C.
+V5T 0L8",EPS11898,SA
+5836,"SAINT GEORGE - COMMERCIAL SECTION
+2471 St. George Street
+Vancouver, B.C.
+V5T 0L8",EPS11898,SA
+5837,"EXECUTIVE ON THE PARK
+423 6th Street
+West Vancouver, BC",EPS10569,"Chris Sargent 
+(Senior PM)
+KaWing Ng
+(Junior PM)"
+5839,"BAILEY
+4928 Quebec Street
+Vancouver, BC
+V5W 0G6",EPS12090,EL
