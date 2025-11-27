@@ -47,7 +47,7 @@
     .logo img {
       max-width: 280px;
       height: auto;
-      filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
     }
 
     .search-card {
@@ -601,7 +601,7 @@
         .map(r => ({
           proj: extractProjectNumber(r['PROJ #'] || r['Proj#'] || ''),
           pm: (r['PM'] || '').split('\n')[0].trim(),
-          strataplan: (r['STRATA \nPLAN'] || r['STRATA PLAN'] || '').trim(),
+          strataplan: (r['STRATA \nPLAN'] || r['STRATA PLAN'] || r['STRATA'] || '').trim(),
           raw: r
         }))
         .filter(r => r.proj);
@@ -740,7 +740,7 @@
       results = applyFilters(results);
 
       const searchTime = performance.now() - startTime;
-      displayResults(results, searchTime);
+      displayResults(results, searchTime, query);
     }
 
     function applyFilters(results) {
@@ -757,12 +757,20 @@
       });
     }
 
-    function displayResults(results, searchTime) {
+    function displayResults(results, searchTime, query) {
       const container = document.getElementById('resultsContainer');
       const resultsEl = document.getElementById('results');
       const countEl = document.getElementById('resultsCount');
       
       container.classList.add('active');
+      
+      // Show search mode context for strata plan searches
+      let headerText = 'Search Results';
+      if (searchMode === 'strata' && results.length > 0) {
+        headerText = `Projects with Strata Plan: ${query}`;
+      }
+      
+      document.querySelector('.results-header h2').textContent = headerText;
       countEl.textContent = `${results.length} result${results.length !== 1 ? 's' : ''}`;
       document.getElementById('searchTime').textContent = `${searchTime.toFixed(1)}ms`;
 
