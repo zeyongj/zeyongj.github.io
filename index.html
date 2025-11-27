@@ -707,32 +707,43 @@
       entries5164.forEach((entry, idx) => {
         console.log(`Entry ${idx + 1}:`, {
           projRaw: entry['PROJ #'],
-          strata: entry['STRATA'],
-          pm: entry['PM']
+          allKeys: Object.keys(entry),
+          allValues: entry
         });
       });
       
+      // Find the actual strata column name
+      const sampleRow = parsed.data[0];
+      const strataColumnName = Object.keys(sampleRow).find(key => 
+        key.toLowerCase().includes('strata')
+      );
+      console.log('Detected STRATA column name:', strataColumnName);
+      
       return parsed.data
         .map(r => {
-          // Try all possible column name variations
-          const strataplan = r['STRATA'] || r['STRATA PLAN'] || r['STRATA \nPLAN'] || r['Strata Plan'] || '';
+          // Find the strata column dynamically by looking for any key containing "strata"
+          const strataKey = Object.keys(r).find(key => 
+            key.toLowerCase().replace(/\s+/g, '').includes('strata')
+          );
+          
+          const strataplan = strataKey ? r[strataKey] : '';
           const projRaw = r['PROJ #'] || r['Proj#'] || r['PROJ#'] || '';
           const proj = extractProjectNumber(projRaw);
           const pm = (r['PM'] || '').split('\n')[0].trim();
           
-          if (proj === '5164') {
-            console.log('Found 5164 entry:');
+          if (proj === '5164' || proj === '5163') {
+            console.log(`Found ${proj} entry:`);
             console.log('  Raw PROJ #:', projRaw);
             console.log('  Extracted:', proj);
-            console.log('  Strata:', strataplan);
+            console.log('  Strata key found:', strataKey);
+            console.log('  Strata value:', strataplan);
             console.log('  PM:', pm);
-            console.log('  All columns:', Object.keys(r));
           }
           
           return {
             proj: proj,
             pm: pm,
-            strataplan: strataplan.trim(),
+            strataplan: (strataplan || '').trim(),
             raw: r
           };
         })
