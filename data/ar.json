@@ -26,19 +26,13 @@
   {
     "Name": "Johannes Phanoto",
     "Portfolio": "5358-5398",
-    "Include": "",
+    "Include": "5502,5504,5505,5506",
     "Exclude": ""
   },
   {
     "Name": "Tony Zan (FA)",
     "Portfolio": "",
     "Include": "5419,5425,5455,5456",
-    "Exclude": ""
-  },
-  {
-    "Name": "Johannes Phanoto",
-    "Portfolio": "5502-5506",
-    "Include": "",
     "Exclude": ""
   },
   {
