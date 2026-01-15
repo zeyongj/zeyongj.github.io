@@ -501,7 +501,7 @@ Tower 2
 233 Robson Street
 Vancouver, BC 
 V6B 0E8",BCS3407,JT
-"5256 – Park Place Joint
+"5256 Â– Park Place Joint
 
 5256-1 (One Park Place)
 5256-2 (Two Park Place)
@@ -509,25 +509,25 @@ V6B 0E8",BCS3407,JT
 
 
 ","PARK PLACE - JOINT
-One Park Place – 13688 – 100th Ave V3T 0G5
-Two Park Place – 9981 Whalley Boulevard V3T 0G6
+One Park Place Â– 13688 Â– 100th Ave V3T 0G5
+Two Park Place Â– 9981 Whalley Boulevard V3T 0G6
 Surrey, BC
 ",EPS561,GR
-"5257 – Park Place Residential
+"5257 Â– Park Place Residential
 
 5256-1 (One Park Place)
 5256-2 (Two Park Place)
 ","PARK PLACE - RESIDENTIAL
-One Park Place – 13688 – 100th Ave
-Two Park Place – 9981 Whalley Boulevard
+One Park Place Â– 13688 Â– 100th Ave
+Two Park Place Â– 9981 Whalley Boulevard
 Surrey, BC
 ",EPS561,GR
-"5258 – Park Place Commercial
+"5258 Â– Park Place Commercial
 
 5256-C
 ","PARK PLACE - COMMERCIAL 
-One Park Place – 13688 – 100th Ave
-Two Park Place – 9981 Whalley Boulevard
+One Park Place Â– 13688 Â– 100th Ave
+Two Park Place Â– 9981 Whalley Boulevard
 Surrey, BC
 ",EPS561,CKS
 5260,PERLA - RESIDENTIAL,BCS282,RY
@@ -618,11 +618,11 @@ V5T 3Z5
 ",BCS4332,"MC
 (Admin Pool is Admin)"
 5293,"MAYNARDS BLOCK
-5293W - 445 West 2nd Avenue – The West Building
-5293N - 1919 Wylie Street – The North Building
-5293S - 429 West 2nd Avenue – The South/Heritage Building
+5293W - 445 West 2nd Avenue Â– The West Building
+5293N - 1919 Wylie Street Â– The North Building
+5293S - 429 West 2nd Avenue Â– The South/Heritage Building
 5293T - Townhouses Addresses:
-408, 418, 428, 438, 448, 458, 468 West 1st Avenue – The North Building
+408, 418, 428, 438, 448, 458, 468 West 1st Avenue Â– The North Building
 Vancouver, B.C.
 ",EPS984,CS
 5295,"OASIS
@@ -785,7 +785,7 @@ V7V 1J5",LMS1435,BK
 5365,"RIVA
 
 5365-1 - 5399 Cedarbridge Way, Richmond V6X 0L6
-5365-2 – 5311 Cedarbridge Way, Richmond V6X 0M3
+5365-2 Â– 5311 Cedarbridge Way, Richmond V6X 0M3
 ",EPS2420,"CKS/KN  
 (KaWing)
 (AW is Admin)"
@@ -819,13 +819,13 @@ Vancouver, BC",EPS3127,BL
 5370-1 (Phase 1)
 5370-2 (Phase 2)
 ","THE LOOKOUT
-Phase 1 – 20 East Royal Avenue
-Phase 2 – 22 East Royal Avenue
+Phase 1 Â– 20 East Royal Avenue
+Phase 2 Â– 22 East Royal Avenue
 New Westminster, B.C. 
 
 ",EPS3217,KD
 5374,"AVANT
-2903 – 2997 Wall Street
+2903 Â– 2997 Wall Street
 Vancouver, B.C.
 V5K 0A6
 ",BCS4321,KD
@@ -992,7 +992,7 @@ LMS1388",CG
 32063 Mt. Waddington Ave.
 Abbotsford, BC",RENTAL,CG
 5428,"SHORELINE (Harbour Heights)
-103 – 150 Shoreline Circle
+103 Â– 150 Shoreline Circle
 Port Moody, BC
 V3H 5B3",RENTAL,AA
 5429,"FRASER APARTMENTS
@@ -1067,7 +1067,7 @@ Retail - 4762 Hastings St., Burnaby
 Grocery - 4790 Hastings St., Burnaby
 
 Building B 
-Office – 4756 Hasting St., Burnaby
+Office Â– 4756 Hasting St., Burnaby
 
 Retail - 4718, 4728, and 4734 Hastings St. Burnaby
 
@@ -1206,7 +1206,7 @@ V5C 0J2
 Vancouver, BC
 V5Y 0L8",EPS4169,GR
 5534,"LOWER LONSDALE SYNERGY I
-137-149 St. Patrick’s Avenue
+137-149 St. PatrickÂ’s Avenue
 North Vancouver, B.C. 
 V7L 0E7
 ",EPS4078,"MC
@@ -1224,7 +1224,7 @@ V6S 0J1",EPS3494,CS
 Richmond, BC
 V6X 0R2
 
-",,TL
+",,JL
 5541,"MONARCH
 4427 Cambie Street
 518 West 28th Avenue
@@ -1337,8 +1337,8 @@ V5A 0A1
 West Tower - 455 SW Marine Drive Vancouver BC V5X 0H3
 East Tower - 433 SW Marine Drive Vancouver BC V5X 0H5
 
-Townhouse (West Tower) – 8110, 8120 8130, 8180, 8182, 8188 Nunavut Lane Vancouver BC V5X 0H3
-Townhouse (East Tower) – 8081, 8083, 8085, 8087, 8093, 8095 Yukon Street Vancouver BC V5X 0H5",EPS5144,"CZ/FY
+Townhouse (West Tower) Â– 8110, 8120 8130, 8180, 8182, 8188 Nunavut Lane Vancouver BC V5X 0H3
+Townhouse (East Tower) Â– 8081, 8083, 8085, 8087, 8093, 8095 Yukon Street Vancouver BC V5X 0H5",EPS5144,"CZ/FY
 (CZ is PM)
 (EJ is Admin)"
 5573,"THE GRAND AT LANSDOWNE - COMMERCIAL SECTION
@@ -1453,8 +1453,8 @@ V6X 0S5
 "5597
 5597-1 (Hazelbridge)
 5597-2 (Ketcheson)","SOUTH ESTATES 
-3311 Ketcheson Road – V6X 0S4
-8800 Hazelbridge Way – V6X 0S3
+3311 Ketcheson Road Â– V6X 0S4
+8800 Hazelbridge Way Â– V6X 0S3
 Richmond, B.C.  
 ",EPS6023,RY
 5598,THE ARC COMMERCIAL,ASP,"CKS/CS
@@ -1724,11 +1724,11 @@ V3N 0H1",EPS5758,"CZ
 
 "
 5677,"CEDAR CREEK
-Phase 1 – 7133 14th Avenue, Burnaby, BC V3N 0H5
+Phase 1 Â– 7133 14th Avenue, Burnaby, BC V3N 0H5
 
-Phase 2 – 7169 14th Avenue, Burnaby, BC V3N 0H6
+Phase 2 Â– 7169 14th Avenue, Burnaby, BC V3N 0H6
 
-Phase 3 – 7579 16th Street, Burnaby, BC V3N 0H7",EPS7638,"CKS/CS  
+Phase 3 Â– 7579 16th Street, Burnaby, BC V3N 0H7",EPS7638,"CKS/CS  
 (Christie)"
 5678,"KINGS CROSSING 1
 7388 Kingsway
@@ -1846,7 +1846,7 @@ V3H 0L3",EPS6752,KD
 6928 Pearson Way
 Richmond, B.C.
 V7C 0C9",EPS5394,CCS
-5711,"CEDAR CREEK 2 – THE SIGNATURE COLLECTION
+5711,"CEDAR CREEK 2 Â– THE SIGNATURE COLLECTION
 7588 16th Street, Burnaby, BC V3N 0H8
 7599 15th Street, Burnaby, BC V3N 0H9",EPS8576,"SR/SB
 (SR is Senior PM)
@@ -1913,8 +1913,8 @@ V5C 0N3",EPS9413,DC
 5724-JT: 9180 Hemlock Drive
 5724-1: 9180 Hemlock
 5724-2: 9188 Hemlock","MAGNOLIA AND CASUARINA AT HAMPTONS PARK
-9180 Hemlock Drive – V6Y 4J5
-9188 Hemlock Drive – V6Y 4J7
+9180 Hemlock Drive Â– V6Y 4J5
+9188 Hemlock Drive Â– V6Y 4J7
 Richmond, BC",BCS1691,JL
 5725,"LEGACY ON DUNBAR (RESIDENTIAL)
 3596 West 28th Avenue
@@ -1922,7 +1922,7 @@ Vancouver, B.C.
 V6S 2G5",EPS9531,"KN
 (AW is Admin)"
 5726,"LEGACY ON DUNBAR (COMMERCIAL REMAINDER)
-4402 – 4498 Dunbar Street
+4402 Â– 4498 Dunbar Street
 Vancouver, B.C. 
 V6S 2G5",EPS9532,"KN
 (AW is Admin)"
@@ -1972,9 +1972,9 @@ Burnaby, B.C. V5C 0N2",EPS8519,FY
 West Vancouver",EPS8014,"MC
 (Admin Pool is Admin)"
 5742,"CEDAR GROVE
-Building A – 15238 100 Avenue, Surrey, BC, V3R 7T9
-Building B – 15268 100 Avenue, Surrey, BC, V3R 7V1
-Building C – 15288 100 Avenue, Surrey, BC, V3R 7V2",NW1676,SC
+Building A Â– 15238 100 Avenue, Surrey, BC, V3R 7T9
+Building B Â– 15268 100 Avenue, Surrey, BC, V3R 7V1
+Building C Â– 15288 100 Avenue, Surrey, BC, V3R 7V2",NW1676,SC
 5743,"CASCADIA
 6951 204 Street
 Langley, BC
@@ -2262,13 +2262,13 @@ Richmond, BC",n/a,"CKS/CCS
 115-3328 No 3 Road, Commercial Parkade
 Richmond, B.C.",n/a,"CKS/CCS  
 (Cherie)"
-5804,"GRAFIA – JOINT
+5804,"GRAFIA Â– JOINT
 2450 Garden Drive, Vancouver, BC V5N 0K1
 2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,KC
-5805,"GRAFIA – RESIDENTIAL SECTION
+5805,"GRAFIA Â– RESIDENTIAL SECTION
 2450 Garden Drive, Vancouver, BC V5N 0K1 
 2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,KC
-5806,"GRAFIA – COMMERCIAL SECTION
+5806,"GRAFIA Â– COMMERCIAL SECTION
 2450 Garden Drive, Vancouver, BC V5N 0K1 
 2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,MR
 5807,"CHLOE COMMERCIAL
@@ -2276,7 +2276,7 @@ Richmond, B.C.",n/a,"CKS/CCS
 6306, 6316, 6326, 6336, 6346, 6350, 6370, 6390 East Boulevard
 2099 West 48th Avenue
 Vancouver, B.C.",EPS9998,EL
-5808,"VALEO – JOINT
+5808,"VALEO Â– JOINT
 Building A
 RESIDENTIAL 
 4788 Hastings St. 
@@ -2300,18 +2300,18 @@ Burnaby, BC
 V5C 0P4
 (Units 201-208, 301-308, 401-408)
 
-Retail 2 (CRU 1) – 4718 Hastings St. Burnaby, BC
+Retail 2 (CRU 1) Â– 4718 Hastings St. Burnaby, BC
 V5C 0P4
 
-Retail 2 (CRU 2) – 4728 Hastings St. Burnaby, BC
+Retail 2 (CRU 2) Â– 4728 Hastings St. Burnaby, BC
 V5C 0P4
 
-Retail 2 (CRU 3) – 4734 Hastings St. Burnaby, BC
+Retail 2 (CRU 3) Â– 4734 Hastings St. Burnaby, BC
 V5C 0P4
 ",EPS10007,"EL/CL
 (Eva Lo
 Katy L. Admin)"
-5809,"VALEO – RESIDENTIAL SECTION
+5809,"VALEO Â– RESIDENTIAL SECTION
 4788 Hastings St. 
 Burnaby, BC 
 V5C 0P3
@@ -2326,13 +2326,13 @@ Burnaby, BC
 V5C 0P4
 (Units 201-208, 301-308, 401-408)
 
-Retail 2 (CRU 1) – 4718 Hastings St. Burnaby, BC
+Retail 2 (CRU 1) Â– 4718 Hastings St. Burnaby, BC
 V5C 0P4
 
-Retail 2 (CRU 2) – 4728 Hastings St. Burnaby, BC
+Retail 2 (CRU 2) Â– 4728 Hastings St. Burnaby, BC
 V5C 0P4
 
-Retail 2 (CRU 3) – 4734 Hastings St. Burnaby, BC
+Retail 2 (CRU 3) Â– 4734 Hastings St. Burnaby, BC
 V5C 0P4",EPS10007,CL
 5811,"THE COMMONS 
 8230 208B Street
@@ -2347,9 +2347,9 @@ Phase 2:
 1930 Starling Drive, Tsawwassen, BC
 1942 Starling Drive, Tsawwassen, BC",EPS8403,CL
 "5813
-5813-1 – 11191 Horseshoe Way
-5813-2 – 11171 Horseshoe Way
-5183-3 – 11151 Horseshoe Way","RIVERSIDE
+5813-1 Â– 11191 Horseshoe Way
+5813-2 Â– 11171 Horseshoe Way
+5183-3 Â– 11151 Horseshoe Way","RIVERSIDE
 11151, 11171, 11191 Horseshoe Way
 Richmond, BC
 V7A 4S5",LMS1585,CL
@@ -2403,7 +2403,7 @@ Michelle Ross
 Abbotsford, B.C.
 V3G 1H3",EPS11610,SA
 5825,"BCS2301
-4204 – 4206 Hastings Street
+4204 Â– 4206 Hastings Street
 Burnaby, B.C. 
 V5C 2J6",BCS2301,EL
 5826,WATER STREET BY THE PARK - REMAINDER,n/a,CKS
@@ -2485,3 +2485,4 @@ Surrey, B.C.V3T 0X5",EPS11797,SA
 6138 Birney Avenue
 Vancouver, BC 
 V6S 0N1",EPS11825,SC
+
