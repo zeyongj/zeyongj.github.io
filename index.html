@@ -317,8 +317,9 @@
     .result-header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       margin-bottom: 15px;
+      gap: 10px;
     }
 
     .project-number {
@@ -335,6 +336,7 @@
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.5px;
+      flex-shrink: 0;
     }
 
     .result-details {
@@ -430,6 +432,10 @@
 
       .result-details {
         grid-template-columns: 1fr;
+      }
+
+      .project-name {
+        font-size: 18px;
       }
     }
   </style>
@@ -731,10 +737,15 @@
           const proj = extractProjectNumber(projRaw);
           const pm = (r['PM'] || '').split('\n')[0].trim();
           
-          if (proj === '5164' || proj === '5163') {
+          // Extract PROJECT NAME - get the first line only
+          const projectNameRaw = r['PROJECT NAME'] || '';
+          const projectName = projectNameRaw.split('\n')[0].trim();
+          
+          if (proj === '5164' || proj === '5163' || proj === '5517') {
             console.log(`Found ${proj} entry:`);
             console.log('  Raw PROJ #:', projRaw);
             console.log('  Extracted:', proj);
+            console.log('  Project Name:', projectName);
             console.log('  Strata key found:', strataKey);
             console.log('  Strata value:', strataplan);
             console.log('  PM:', pm);
@@ -744,6 +755,7 @@
             proj: proj,
             pm: pm,
             strataplan: (strataplan || '').trim(),
+            projectName: projectName, // NEW: Store the project name
             raw: r
           };
         })
@@ -801,6 +813,7 @@
             proj: key,
             pm: record.pm,
             strataplan: record.strataplan,
+            projectName: record.projectName, // NEW: Include project name
             fa: '',
             ap: '',
             ar: '',
@@ -816,6 +829,10 @@
           // Also update PM if it was empty
           if (record.pm && !existing.pm) {
             existing.pm = record.pm;
+          }
+          // Update project name if it was empty
+          if (record.projectName && !existing.projectName) {
+            existing.projectName = record.projectName;
           }
         }
       });
@@ -841,6 +858,8 @@
       
       console.log('Search index built. Entry for 5164:');
       console.log(searchIndex.get('5164'));
+      console.log('Entry for 5517:');
+      console.log(searchIndex.get('5517'));
     }
 
     function findPerson(key, num, data) {
@@ -963,7 +982,7 @@
           html += `
             <div class="result-card nlm">
               <div class="result-header">
-                <div class="project-number">#${proj}</div>
+                <div class="project-name">#${proj}</div>
                 <span class="nlm-badge">NLM</span>
               </div>
               <div style="color: var(--danger); font-weight: 600; font-size: 18px; margin-bottom: 10px;">
@@ -978,7 +997,7 @@
         });
       }
 
-      // Show regular results
+      // Show regular results - PROJECT NAME in detail section
       html += results.map(r => `
         <div class="result-card ${r.isNLM ? 'nlm' : ''}">
           <div class="result-header">
@@ -988,8 +1007,8 @@
           ${r.isNLM ? '<div style="color: var(--danger); font-weight: 500; margin-bottom: 15px;">⚠️ Project is No Longer Managed (NLM)</div>' : ''}
           <div class="result-details">
             <div class="detail-item">
-              <div class="detail-label">Project Number</div>
-              <div class="detail-value">${r.proj}</div>
+              <div class="detail-label">Project Name</div>
+              <div class="detail-value">${r.projectName || '—'}</div>
             </div>
             <div class="detail-item">
               <div class="detail-label">Strata Plan</div>
