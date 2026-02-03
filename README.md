@@ -237,7 +237,7 @@ For issues or questions, contact:
 
 ## 📄 License
 
-© 2025 Zeyong Jin. All Rights Reserved.
+© 2026 Zeyong Jin. All Rights Reserved.
 
 Rancho logos and branding are proprietary assets of Rancho Management Services (B.C.) Ltd.
 
