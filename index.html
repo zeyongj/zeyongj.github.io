@@ -606,6 +606,36 @@
       box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
     }
 
+    .load-more-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .btn-load-more {
+      padding: 12px 40px;
+      border: 2px solid var(--rm-accent);
+      border-radius: 10px;
+      background: white;
+      color: var(--rm-accent);
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn-load-more:hover {
+      background: var(--rm-accent);
+      color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+    }
+
+    .load-more-info {
+      font-size: 13px;
+      color: #6c757d;
+      margin-top: 8px;
+    }
+
     @media (max-width: 768px) {
       .container {
         padding: 15px;
@@ -792,6 +822,13 @@
     let rmIndex = new Map();
     let searchMode = 'simple';
     let activeTab = 'strata';
+
+    // RM pagination state
+    const RM_PAGE_SIZE = 50;
+    let rmAllGroups = [];
+    let rmDisplayedCount = 0;
+    let rmSearchTime = 0;
+    let rmSearchQuery = '';
 
     const BASE_URL = 'https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/';
 
@@ -1286,16 +1323,100 @@
           );
           if (matches.length > 0) matchedGroups.push({ key, records: matches });
         });
-        // Cap results for text search to prevent overwhelming display
-        if (matchedGroups.length > 50) {
-          matchedGroups = matchedGroups.slice(0, 50);
-        }
       }
 
-      displayRMResults(matchedGroups, performance.now() - startTime, rawQuery);
+      // Store all results for pagination
+      rmAllGroups = matchedGroups;
+      rmDisplayedCount = 0;
+      rmSearchTime = performance.now() - startTime;
+      rmSearchQuery = rawQuery;
+
+      displayRMResults();
     }
 
-    function displayRMResults(groups, searchTime, query) {
+    function loadMoreRM() {
+      appendRMResults();
+    }
+
+    function renderRMGroupHTML(group) {
+      const first = group.records[0];
+
+      if (group.records.length === 1) {
+        return `
+          <div class="result-card rm-card">
+            <div class="result-header">
+              <div class="project-number rm-number">RM${group.key}</div>
+              <span class="rm-badge">RM</span>
+            </div>
+            <div class="result-details">
+              <div class="detail-item">
+                <div class="detail-label">File #</div>
+                <div class="detail-value">${first.fileNum}</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Unit #</div>
+                <div class="detail-value">${first.unit || '—'}</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">St #</div>
+                <div class="detail-value">${first.stNum || '—'}</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Street</div>
+                <div class="detail-value">${first.street || '—'}</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">City</div>
+                <div class="detail-value">${first.city || '—'}</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">PM</div>
+                <div class="detail-value">${first.pm || '—'}</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Accountant</div>
+                <div class="detail-value">${first.acct || '—'}</div>
+              </div>
+            </div>
+          </div>`;
+      }
+
+      // Multiple units → table view
+      return `
+        <div class="result-card rm-card">
+          <div class="result-header">
+            <div class="project-number rm-number">RM${group.key}</div>
+            <span class="rm-badge">${group.records.length} units</span>
+          </div>
+          <table class="rm-units-table">
+            <thead>
+              <tr>
+                <th>File #</th>
+                <th>Unit #</th>
+                <th>St #</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>PM</th>
+                <th>Accountant</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${group.records.map(r => `
+                <tr>
+                  <td>${r.fileNum}</td>
+                  <td>${r.unit || '—'}</td>
+                  <td>${r.stNum || '—'}</td>
+                  <td>${r.street || '—'}</td>
+                  <td>${r.city || '—'}</td>
+                  <td>${r.pm || '—'}</td>
+                  <td>${r.acct || '—'}</td>
+                </tr>`).join('')}
+            </tbody>
+          </table>
+        </div>`;
+    }
+
+    function displayRMResults() {
       const container = document.getElementById('resultsContainer');
       const resultsEl = document.getElementById('results');
       const countEl = document.getElementById('resultsCount');
@@ -1305,11 +1426,11 @@
       titleEl.textContent = 'RM Search Results';
       titleEl.style.color = 'var(--rm-accent)';
 
-      const totalRecords = groups.reduce((s, g) => s + g.records.length, 0);
-      countEl.textContent = `${groups.length} project${groups.length !== 1 ? 's' : ''} (${totalRecords} record${totalRecords !== 1 ? 's' : ''})`;
-      document.getElementById('searchTime').textContent = `${searchTime.toFixed(1)}ms`;
+      const totalRecords = rmAllGroups.reduce((s, g) => s + g.records.length, 0);
+      countEl.textContent = `${rmAllGroups.length} project${rmAllGroups.length !== 1 ? 's' : ''} (${totalRecords} record${totalRecords !== 1 ? 's' : ''})`;
+      document.getElementById('searchTime').textContent = `${rmSearchTime.toFixed(1)}ms`;
 
-      if (groups.length === 0) {
+      if (rmAllGroups.length === 0) {
         resultsEl.innerHTML = `
           <div class="no-results">
             <div class="no-results-icon">📭</div>
@@ -1319,86 +1440,54 @@
         return;
       }
 
-      const html = groups.map(group => {
-        const first = group.records[0];
+      // Show first page
+      const page = rmAllGroups.slice(0, RM_PAGE_SIZE);
+      rmDisplayedCount = page.length;
 
-        if (group.records.length === 1) {
-          return `
-            <div class="result-card rm-card">
-              <div class="result-header">
-                <div class="project-number rm-number">RM${group.key}</div>
-                <span class="rm-badge">RM</span>
-              </div>
-              <div class="result-details">
-                <div class="detail-item">
-                  <div class="detail-label">File #</div>
-                  <div class="detail-value">${first.fileNum}</div>
-                </div>
-                <div class="detail-item">
-                  <div class="detail-label">Unit #</div>
-                  <div class="detail-value">${first.unit || '—'}</div>
-                </div>
-                <div class="detail-item">
-                  <div class="detail-label">St #</div>
-                  <div class="detail-value">${first.stNum || '—'}</div>
-                </div>
-                <div class="detail-item">
-                  <div class="detail-label">Street</div>
-                  <div class="detail-value">${first.street || '—'}</div>
-                </div>
-                <div class="detail-item">
-                  <div class="detail-label">City</div>
-                  <div class="detail-value">${first.city || '—'}</div>
-                </div>
-                <div class="detail-item">
-                  <div class="detail-label">PM</div>
-                  <div class="detail-value">${first.pm || '—'}</div>
-                </div>
-                <div class="detail-item">
-                  <div class="detail-label">Accountant</div>
-                  <div class="detail-value">${first.acct || '—'}</div>
-                </div>
-              </div>
-            </div>`;
-        }
-
-        // Multiple units → table view
-        return `
-          <div class="result-card rm-card">
-            <div class="result-header">
-              <div class="project-number rm-number">RM${group.key}</div>
-              <span class="rm-badge">${group.records.length} units</span>
-            </div>
-            <table class="rm-units-table">
-              <thead>
-                <tr>
-                  <th>File #</th>
-                  <th>Unit #</th>
-                  <th>St #</th>
-                  <th>Street</th>
-                  <th>City</th>
-                  <th>PM</th>
-                  <th>Accountant</th>
-                </tr>
-              </thead>
-              <tbody>
-                ${group.records.map(r => `
-                  <tr>
-                    <td>${r.fileNum}</td>
-                    <td>${r.unit || '—'}</td>
-                    <td>${r.stNum || '—'}</td>
-                    <td>${r.street || '—'}</td>
-                    <td>${r.city || '—'}</td>
-                    <td>${r.pm || '—'}</td>
-                    <td>${r.acct || '—'}</td>
-                  </tr>`).join('')}
-              </tbody>
-            </table>
-          </div>`;
-      }).join('');
+      let html = page.map(renderRMGroupHTML).join('');
+      html += buildLoadMoreHTML();
 
       resultsEl.innerHTML = html;
       container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function appendRMResults() {
+      const resultsEl = document.getElementById('results');
+      const nextPage = rmAllGroups.slice(rmDisplayedCount, rmDisplayedCount + RM_PAGE_SIZE);
+      rmDisplayedCount += nextPage.length;
+
+      // Remove old load-more container
+      const oldBtn = document.getElementById('rmLoadMoreContainer');
+      if (oldBtn) oldBtn.remove();
+
+      // Append new cards
+      const fragment = document.createElement('div');
+      fragment.innerHTML = nextPage.map(renderRMGroupHTML).join('') + buildLoadMoreHTML();
+
+      while (fragment.firstChild) {
+        resultsEl.appendChild(fragment.firstChild);
+      }
+
+      // Scroll to the first newly added card
+      const allCards = resultsEl.querySelectorAll('.rm-card');
+      if (allCards.length > 0) {
+        const firstNew = allCards[allCards.length - nextPage.length];
+        if (firstNew) firstNew.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function buildLoadMoreHTML() {
+      const remaining = rmAllGroups.length - rmDisplayedCount;
+      if (remaining <= 0) return '';
+      return `
+        <div class="load-more-container" id="rmLoadMoreContainer">
+          <button class="btn-load-more" onclick="loadMoreRM()">
+            Load More (${Math.min(remaining, RM_PAGE_SIZE)} of ${remaining} remaining)
+          </button>
+          <div class="load-more-info">
+            Showing ${rmDisplayedCount} of ${rmAllGroups.length} projects
+          </div>
+        </div>`;
     }
 
     // ═══════════════════════════════════════════════════════════════
