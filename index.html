@@ -21,6 +21,9 @@
       --dark: #343a40;
       --border: #dee2e6;
       --shadow: rgba(0, 0, 0, 0.1);
+      --rm-accent: #7c3aed;
+      --rm-accent-dark: #5b21b6;
+      --rm-accent-light: #ede9fe;
     }
 
     body {
@@ -127,6 +130,68 @@
       background: var(--border);
     }
 
+    /* ── Top-level tab bar ── */
+    .top-tabs {
+      display: flex;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid var(--border);
+    }
+
+    .top-tab {
+      flex: 1;
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      background: var(--light);
+      color: var(--dark);
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .top-tab:first-child {
+      border-right: 1px solid var(--border);
+    }
+
+    .top-tab.active-strata {
+      background: var(--primary);
+      color: white;
+    }
+
+    .top-tab.active-rm {
+      background: var(--rm-accent);
+      color: white;
+    }
+
+    .top-tab:not(.active-strata):not(.active-rm):hover {
+      background: var(--border);
+    }
+
+    .top-tab .tab-badge {
+      display: inline-block;
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-left: 6px;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+
+    .top-tab.active-strata .tab-badge,
+    .top-tab.active-rm .tab-badge {
+      background: rgba(255,255,255,0.25);
+      color: white;
+    }
+
+    .top-tab:not(.active-strata):not(.active-rm) .tab-badge {
+      background: var(--border);
+      color: var(--dark);
+    }
+
+    /* ── Search mode tabs ── */
     .search-modes {
       display: flex;
       gap: 15px;
@@ -181,6 +246,11 @@
       box-shadow: 0 0 0 4px rgba(44, 90, 160, 0.1);
     }
 
+    .search-input.rm-input:focus {
+      border-color: var(--rm-accent);
+      box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+    }
+
     .search-icon {
       position: absolute;
       right: 18px;
@@ -188,6 +258,27 @@
       transform: translateY(-50%);
       color: var(--primary);
       font-size: 20px;
+    }
+
+    /* RM prefix badge in search box */
+    .rm-prefix {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--rm-accent);
+      color: white;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      letter-spacing: 0.5px;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .search-input.rm-input {
+      padding-left: 60px;
     }
 
     .advanced-search {
@@ -314,6 +405,15 @@
       background: #fff5f5;
     }
 
+    .result-card.rm-card {
+      border-left: 5px solid var(--rm-accent);
+      background: #faf5ff;
+    }
+
+    .result-card.rm-card:hover {
+      border-color: var(--rm-accent);
+    }
+
     .result-header {
       display: flex;
       justify-content: space-between;
@@ -328,8 +428,23 @@
       color: var(--primary);
     }
 
+    .project-number.rm-number {
+      color: var(--rm-accent);
+    }
+
     .nlm-badge {
       background: var(--danger);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      flex-shrink: 0;
+    }
+
+    .rm-badge {
+      background: var(--rm-accent);
       color: white;
       padding: 6px 12px;
       border-radius: 6px;
@@ -365,6 +480,40 @@
       font-weight: 600;
     }
 
+    /* RM units table for multi-unit projects */
+    .rm-units-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .rm-units-table th {
+      background: var(--rm-accent-light);
+      color: var(--rm-accent-dark);
+      padding: 8px 12px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--rm-accent);
+    }
+
+    .rm-units-table td {
+      padding: 8px 12px;
+      border-bottom: 1px solid var(--border);
+      color: var(--dark);
+    }
+
+    .rm-units-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .rm-units-table tr:hover td {
+      background: var(--rm-accent-light);
+    }
+
     .no-results {
       text-align: center;
       padding: 40px 20px;
@@ -392,7 +541,7 @@
 
     .stats {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
       gap: 15px;
       margin-bottom: 20px;
     }
@@ -405,6 +554,10 @@
       text-align: center;
     }
 
+    .stat-card.rm-stat {
+      background: linear-gradient(135deg, var(--rm-accent) 0%, #a78bfa 100%);
+    }
+
     .stat-number {
       font-size: 28px;
       font-weight: 700;
@@ -414,6 +567,43 @@
     .stat-label {
       font-size: 12px;
       opacity: 0.9;
+    }
+
+    .rm-search-hint {
+      font-size: 13px;
+      color: #6c757d;
+      margin-bottom: 15px;
+      padding: 10px 14px;
+      background: var(--rm-accent-light);
+      border-radius: 8px;
+      border-left: 3px solid var(--rm-accent);
+    }
+
+    .rm-search-hint code {
+      background: rgba(124, 58, 237, 0.1);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      color: var(--rm-accent-dark);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .btn-rm {
+      background: var(--rm-accent);
+      color: white;
+    }
+
+    .btn-rm:hover {
+      background: var(--rm-accent-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
     }
 
     @media (max-width: 768px) {
@@ -437,6 +627,20 @@
       .project-name {
         font-size: 18px;
       }
+
+      .top-tab {
+        padding: 12px 10px;
+        font-size: 13px;
+      }
+
+      .rm-units-table {
+        font-size: 12px;
+      }
+
+      .rm-units-table th,
+      .rm-units-table td {
+        padding: 6px 8px;
+      }
     }
   </style>
 </head>
@@ -450,21 +654,35 @@
 
     <div class="search-card">
       <div class="search-header">
-        <h1>🔍 Project Search</h1>
+        <h1 id="searchTitle">🔍 Project Search</h1>
         <div class="btn-group">
           <button class="btn btn-secondary" id="advancedBtn">Advanced Search</button>
           <a href="admin.html" class="btn btn-primary">Admin Login</a>
         </div>
       </div>
 
+      <!-- Top-level Tabs -->
+      <div class="top-tabs">
+        <button class="top-tab active-strata" id="tabStrata" data-tab="strata">
+          🏢 Strata Projects <span class="tab-badge" id="strataCountBadge">—</span>
+        </button>
+        <button class="top-tab" id="tabRM" data-tab="rm">
+          🏠 RM Projects <span class="tab-badge" id="rmCountBadge">—</span>
+        </button>
+      </div>
+
       <div class="stats" id="stats" style="display: none;">
         <div class="stat-card">
           <div class="stat-number" id="totalProjects">0</div>
-          <div class="stat-label">Active Projects</div>
+          <div class="stat-label">Strata Projects</div>
         </div>
         <div class="stat-card">
           <div class="stat-number" id="nlmCount">0</div>
           <div class="stat-label">NLM Projects</div>
+        </div>
+        <div class="stat-card rm-stat">
+          <div class="stat-number" id="rmProjectCount">0</div>
+          <div class="stat-label">RM Projects</div>
         </div>
         <div class="stat-card">
           <div class="stat-number" id="searchTime">0ms</div>
@@ -472,44 +690,69 @@
         </div>
       </div>
 
-      <div class="search-modes">
-        <button class="mode-btn active" data-mode="simple">Simple Search</button>
-        <button class="mode-btn" data-mode="multi">Multi-Project</button>
-        <button class="mode-btn" data-mode="strata">By Strata Plan</button>
+      <!-- ═══ STRATA TAB ═══ -->
+      <div class="tab-content active" id="strataContent">
+        <div class="search-modes">
+          <button class="mode-btn active" data-mode="simple">Simple Search</button>
+          <button class="mode-btn" data-mode="multi">Multi-Project</button>
+          <button class="mode-btn" data-mode="strata">By Strata Plan</button>
+        </div>
+
+        <div class="search-input-group">
+          <input
+            type="text"
+            id="searchInput"
+            class="search-input"
+            placeholder="Enter project number (e.g., 5164 or 5164-10)"
+            autocomplete="off"
+          >
+          <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="advanced-search" id="advancedSearch">
+          <h3 style="margin-bottom: 15px; color: var(--primary);">Advanced Filters</h3>
+          <div class="form-group">
+            <label>PM Name</label>
+            <input type="text" id="filterPM" placeholder="Filter by PM name">
+          </div>
+          <div class="form-group">
+            <label>FA Name</label>
+            <input type="text" id="filterFA" placeholder="Filter by FA name">
+          </div>
+          <div class="form-group">
+            <label>Show NLM Only</label>
+            <select id="filterNLM">
+              <option value="">All Projects</option>
+              <option value="yes">NLM Only</option>
+              <option value="no">Exclude NLM</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" id="searchBtn" style="width: 100%;">Search Projects</button>
       </div>
 
-      <div class="search-input-group">
-        <input 
-          type="text" 
-          id="searchInput" 
-          class="search-input" 
-          placeholder="Enter project number (e.g., 5164 or 5164-10)"
-          autocomplete="off"
-        >
-        <span class="search-icon">🔍</span>
-      </div>
+      <!-- ═══ RM TAB ═══ -->
+      <div class="tab-content" id="rmContent">
+        <div class="rm-search-hint">
+          Enter the first 4 digits of the File # to search. For example, type <code>0202</code> to find RM0202.
+          You can also search by street name, city, or PM initials.
+        </div>
 
-      <div class="advanced-search" id="advancedSearch">
-        <h3 style="margin-bottom: 15px; color: var(--primary);">Advanced Filters</h3>
-        <div class="form-group">
-          <label>PM Name</label>
-          <input type="text" id="filterPM" placeholder="Filter by PM name">
+        <div class="search-input-group">
+          <span class="rm-prefix">RM</span>
+          <input
+            type="text"
+            id="rmSearchInput"
+            class="search-input rm-input"
+            placeholder="e.g., 0202 or PRINCESS or RMD"
+            autocomplete="off"
+          >
+          <span class="search-icon">🔍</span>
         </div>
-        <div class="form-group">
-          <label>FA Name</label>
-          <input type="text" id="filterFA" placeholder="Filter by FA name">
-        </div>
-        <div class="form-group">
-          <label>Show NLM Only</label>
-          <select id="filterNLM">
-            <option value="">All Projects</option>
-            <option value="yes">NLM Only</option>
-            <option value="no">Exclude NLM</option>
-          </select>
-        </div>
-      </div>
 
-      <button class="btn btn-primary" id="searchBtn" style="width: 100%;">Search Projects</button>
+        <button class="btn btn-rm" id="rmSearchBtn" style="width: 100%;">Search RM Projects</button>
+      </div>
 
       <div id="loading" class="loading" style="display: none;">
         <div class="spinner"></div>
@@ -520,7 +763,7 @@
     <div id="resultsContainer" class="search-card results-container">
       <div class="results-header">
         <div class="results-header-left">
-          <h2 style="color: var(--primary); margin: 0;">Search Results</h2>
+          <h2 style="color: var(--primary); margin: 0;" id="resultsTitle">Search Results</h2>
           <span class="results-count" id="resultsCount">0 results</span>
         </div>
         <button class="btn-clear" id="clearBtn">🗑️ Clear Results</button>
@@ -536,42 +779,46 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <script>
-    // Data cache
+    // ═══════════════════════════════════════════════════════════════
+    //  DATA & STATE
+    // ═══════════════════════════════════════════════════════════════
     let dataCache = {
-      pm: [],
-      nlm: [],
-      fa: [],
-      ap: [],
-      ar: [],
-      loaded: false,
-      loadTime: null
+      pm: [], nlm: [], fa: [], ap: [], ar: [],
+      rm: [],
+      loaded: false, rmLoaded: false, loadTime: null
     };
 
-    // Search index for faster lookups
     let searchIndex = new Map();
-
-    // Current search mode
+    let rmIndex = new Map();
     let searchMode = 'simple';
+    let activeTab = 'strata';
 
-    // Base URL for data files
     const BASE_URL = 'https://raw.githubusercontent.com/zeyongj/zeyongj.github.io/main/data/';
 
-    // Initialize
+    // ═══════════════════════════════════════════════════════════════
+    //  INIT
+    // ═══════════════════════════════════════════════════════════════
     document.addEventListener('DOMContentLoaded', () => {
       loadDataAsync();
       setupEventListeners();
       updateFooter();
       updateTime();
       getUserIP();
-      
-      // Update time every second
       setInterval(updateTime, 1000);
     });
 
+    // ═══════════════════════════════════════════════════════════════
+    //  EVENTS
+    // ═══════════════════════════════════════════════════════════════
     function setupEventListeners() {
-      // Mode switching
+      // Top tabs
+      document.querySelectorAll('.top-tab').forEach(tab => {
+        tab.addEventListener('click', e => switchTopTab(e.currentTarget.dataset.tab));
+      });
+
+      // Strata sub-mode tabs
       document.querySelectorAll('.mode-btn').forEach(btn => {
-        btn.addEventListener('click', (e) => {
+        btn.addEventListener('click', e => {
           document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
           e.target.classList.add('active');
           searchMode = e.target.dataset.mode;
@@ -579,105 +826,148 @@
         });
       });
 
-      // Advanced search toggle
       document.getElementById('advancedBtn').addEventListener('click', () => {
         document.getElementById('advancedSearch').classList.toggle('active');
       });
 
-      // Search button
       document.getElementById('searchBtn').addEventListener('click', performSearch);
-
-      // Clear results button
+      document.getElementById('rmSearchBtn').addEventListener('click', performRMSearch);
       document.getElementById('clearBtn').addEventListener('click', clearResults);
 
-      // Enter key to search
-      document.getElementById('searchInput').addEventListener('keypress', (e) => {
+      document.getElementById('searchInput').addEventListener('keypress', e => {
         if (e.key === 'Enter') performSearch();
+      });
+      document.getElementById('rmSearchInput').addEventListener('keypress', e => {
+        if (e.key === 'Enter') performRMSearch();
       });
     }
 
+    function switchTopTab(tab) {
+      activeTab = tab;
+      clearResults();
+
+      const strataTab = document.getElementById('tabStrata');
+      const rmTab = document.getElementById('tabRM');
+      const advBtn = document.getElementById('advancedBtn');
+      const titleEl = document.getElementById('searchTitle');
+
+      if (tab === 'strata') {
+        strataTab.classList.add('active-strata');
+        rmTab.classList.remove('active-rm');
+        document.getElementById('strataContent').classList.add('active');
+        document.getElementById('rmContent').classList.remove('active');
+        advBtn.style.display = '';
+        titleEl.textContent = '🔍 Project Search';
+      } else {
+        strataTab.classList.remove('active-strata');
+        rmTab.classList.add('active-rm');
+        document.getElementById('strataContent').classList.remove('active');
+        document.getElementById('rmContent').classList.add('active');
+        advBtn.style.display = 'none';
+        titleEl.textContent = '🏠 RM Project Search';
+        setTimeout(() => document.getElementById('rmSearchInput').focus(), 100);
+      }
+    }
+
     function clearResults() {
-      const container = document.getElementById('resultsContainer');
-      const input = document.getElementById('searchInput');
-      
-      container.classList.remove('active');
-      input.value = '';
-      input.focus();
-      
-      // Scroll back to search box
+      document.getElementById('resultsContainer').classList.remove('active');
+      if (activeTab === 'strata') {
+        document.getElementById('searchInput').value = '';
+        document.getElementById('searchInput').focus();
+      } else {
+        document.getElementById('rmSearchInput').value = '';
+        document.getElementById('rmSearchInput').focus();
+      }
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     function updatePlaceholder() {
       const input = document.getElementById('searchInput');
-      const placeholders = {
+      const ph = {
         simple: 'Enter project number (e.g., 5164 or 5164-10)',
         multi: 'Enter multiple projects separated by comma (e.g., 5164, 5200, 5300)',
         strata: 'Enter strata plan (e.g., BCS1362 or EPS3602)'
       };
-      input.placeholder = placeholders[searchMode] || placeholders.simple;
+      input.placeholder = ph[searchMode] || ph.simple;
     }
 
+    // ═══════════════════════════════════════════════════════════════
+    //  DATA LOADING
+    // ═══════════════════════════════════════════════════════════════
     async function loadDataAsync() {
-      if (dataCache.loaded) return;
-      
-      // Try to load from localStorage first
+      if (dataCache.loaded && dataCache.rmLoaded) return;
+
       const cachedData = localStorage.getItem('rancho_data_cache');
       const cacheTimestamp = localStorage.getItem('rancho_cache_time');
       const cacheAge = cacheTimestamp ? Date.now() - parseInt(cacheTimestamp) : Infinity;
-      
-      // Use cache if less than 1 hour old
+
+      let strataFromCache = false;
       if (cachedData && cacheAge < 3600000) {
         try {
           const cached = JSON.parse(cachedData);
-          dataCache = cached;
+          dataCache.pm = cached.pm || [];
+          dataCache.nlm = cached.nlm || [];
+          dataCache.fa = cached.fa || [];
+          dataCache.ap = cached.ap || [];
+          dataCache.ar = cached.ar || [];
           dataCache.loaded = true;
           buildSearchIndex();
-          updateStats();
-          console.log('Loaded from cache');
-          return;
+          strataFromCache = true;
+          console.log('Strata data loaded from cache');
         } catch (e) {
           console.log('Cache invalid, reloading...');
         }
       }
-      
+
       const loadingEl = document.getElementById('loading');
       loadingEl.style.display = 'block';
 
       try {
         const startTime = performance.now();
+        const promises = [];
 
-        const [pmData, nlmData, faData, apData, arData] = await Promise.all([
-          fetchAndParsePM(),
-          fetchAndParseNLM(),
-          fetchAndParseFA(),
-          fetchJSON('ap.json'),
-          fetchJSON('ar.json')
-        ]);
+        if (!strataFromCache) {
+          promises.push(
+            fetchAndParsePM(),
+            fetchAndParseNLM(),
+            fetchAndParseFA(),
+            fetchJSON('ap.json'),
+            fetchJSON('ar.json')
+          );
+        }
+        promises.push(fetchAndParseRM());
 
-        dataCache = {
-          pm: pmData,
-          nlm: nlmData,
-          fa: faData,
-          ap: apData,
-          ar: arData,
-          loaded: true,
-          loadTime: performance.now() - startTime
-        };
+        const results = await Promise.all(promises);
 
-        // Save to localStorage
-        try {
-          localStorage.setItem('rancho_data_cache', JSON.stringify(dataCache));
-          localStorage.setItem('rancho_cache_time', Date.now().toString());
-        } catch (e) {
-          console.warn('Could not cache data:', e);
+        if (!strataFromCache) {
+          dataCache.pm = results[0];
+          dataCache.nlm = results[1];
+          dataCache.fa = results[2];
+          dataCache.ap = results[3];
+          dataCache.ar = results[4];
+          dataCache.rm = results[5];
+          dataCache.loaded = true;
+
+          try {
+            localStorage.setItem('rancho_data_cache', JSON.stringify({
+              pm: dataCache.pm, nlm: dataCache.nlm, fa: dataCache.fa,
+              ap: dataCache.ap, ar: dataCache.ar
+            }));
+            localStorage.setItem('rancho_cache_time', Date.now().toString());
+          } catch (e) { console.warn('Could not cache:', e); }
+
+          buildSearchIndex();
+        } else {
+          dataCache.rm = results[0];
         }
 
-        buildSearchIndex();
+        dataCache.rmLoaded = true;
+        dataCache.loadTime = performance.now() - startTime;
+
+        buildRMIndex();
         updateStats();
         loadingEl.style.display = 'none';
-        
-        console.log(`Data loaded in ${dataCache.loadTime.toFixed(2)}ms`);
+        console.log(`All data loaded in ${dataCache.loadTime.toFixed(2)}ms`);
       } catch (error) {
         console.error('Error loading data:', error);
         loadingEl.innerHTML = '<div style="color: var(--danger);">Error loading data. Please refresh the page.</div>';
@@ -685,114 +975,72 @@
     }
 
     async function fetchJSON(filename) {
-      const response = await fetch(BASE_URL + filename);
-      return response.json();
+      const res = await fetch(BASE_URL + filename);
+      return res.json();
     }
 
     async function fetchAndParsePM() {
-      const response = await fetch(BASE_URL + 'pm.csv');
-      const text = await response.text();
+      const res = await fetch(BASE_URL + 'pm.csv');
+      const text = await res.text();
       const fixed = text.replace(/"([^"]*)\n([^"]*)"/g, (_, a, b) => `"${a} ${b}"`);
       const parsed = Papa.parse(fixed, {
-        header: true,
-        skipEmptyLines: true,
-        quoteChar: '"',
-        transformHeader: h => h.trim() // Remove whitespace from headers
+        header: true, skipEmptyLines: true, quoteChar: '"',
+        transformHeader: h => h.trim()
       });
-      
-      console.log('CSV Headers:', parsed.meta.fields); // Debug: see what headers we got
-      console.log('Total rows parsed:', parsed.data.length);
-      
-      // Find all 5164 entries
-      const entries5164 = parsed.data.filter(r => {
+
+      return parsed.data.map(r => {
+        const strataKey = Object.keys(r).find(k => k.toLowerCase().replace(/\s+/g, '').includes('strata'));
+        const strataplan = strataKey ? r[strataKey] : '';
         const projRaw = r['PROJ #'] || r['Proj#'] || r['PROJ#'] || '';
-        return projRaw.trim().startsWith('5164');
-      });
-      
-      console.log('All 5164 entries found:', entries5164.length);
-      entries5164.forEach((entry, idx) => {
-        console.log(`Entry ${idx + 1}:`, {
-          projRaw: entry['PROJ #'],
-          allKeys: Object.keys(entry),
-          allValues: entry
-        });
-      });
-      
-      // Find the actual strata column name
-      const sampleRow = parsed.data[0];
-      const strataColumnName = Object.keys(sampleRow).find(key => 
-        key.toLowerCase().includes('strata')
-      );
-      console.log('Detected STRATA column name:', strataColumnName);
-      
-      return parsed.data
-        .map(r => {
-          // Find the strata column dynamically by looking for any key containing "strata"
-          const strataKey = Object.keys(r).find(key => 
-            key.toLowerCase().replace(/\s+/g, '').includes('strata')
-          );
-          
-          const strataplan = strataKey ? r[strataKey] : '';
-          const projRaw = r['PROJ #'] || r['Proj#'] || r['PROJ#'] || '';
-          const proj = extractProjectNumber(projRaw);
-          const pm = (r['PM'] || '').split('\n')[0].trim();
-          
-          // Extract PROJECT NAME - get the first line only
-          const projectNameRaw = r['PROJECT NAME'] || '';
-          const projectName = projectNameRaw.split('\n')[0].trim();
-          
-          if (proj === '5164' || proj === '5163' || proj === '5517') {
-            console.log(`Found ${proj} entry:`);
-            console.log('  Raw PROJ #:', projRaw);
-            console.log('  Extracted:', proj);
-            console.log('  Project Name:', projectName);
-            console.log('  Strata key found:', strataKey);
-            console.log('  Strata value:', strataplan);
-            console.log('  PM:', pm);
-          }
-          
-          return {
-            proj: proj,
-            pm: pm,
-            strataplan: (strataplan || '').trim(),
-            projectName: projectName, // NEW: Store the project name
-            raw: r
-          };
-        })
-        .filter(r => r.proj);
+        const proj = extractProjectNumber(projRaw);
+        const pm = (r['PM'] || '').split('\n')[0].trim();
+        const projectName = (r['PROJECT NAME'] || '').split('\n')[0].trim();
+        return { proj, pm, strataplan: (strataplan || '').trim(), projectName, raw: r };
+      }).filter(r => r.proj);
     }
 
     async function fetchAndParseNLM() {
-      const response = await fetch(BASE_URL + 'nlm.csv');
-      const text = await response.text();
+      const res = await fetch(BASE_URL + 'nlm.csv');
+      const text = await res.text();
       const parsed = Papa.parse(text, { header: true });
-      
-      return parsed.data
-        .map(r => extractProjectNumber(r['PROJ #'] || r['Proj#'] || ''))
-        .filter(p => p);
+      return parsed.data.map(r => extractProjectNumber(r['PROJ #'] || r['Proj#'] || '')).filter(p => p);
     }
 
     async function fetchAndParseFA() {
-      const response = await fetch(BASE_URL + 'fa.csv');
-      const text = await response.text();
+      const res = await fetch(BASE_URL + 'fa.csv');
+      const text = await res.text();
       const parsed = Papa.parse(text, {
-        header: true,
-        skipEmptyLines: true,
-        quoteChar: '"',
-        delimitersToGuess: [',', '\t']
+        header: true, skipEmptyLines: true, quoteChar: '"', delimitersToGuess: [',', '\t']
       });
-      
-      return parsed.data
-        .map(r => {
-          const projRaw = Object.values(r)[0] || '';
-          const proj = projRaw.trim().match(/^\d{4}/)?.[0] || '';
-          const rawFa = (r.FA || '').trim();
-          return {
-            proj: proj,
-            fa: rawFa ? toTitleCase(rawFa) : ''
-          };
-        })
-        .filter(r => r.proj);
+      return parsed.data.map(r => {
+        const projRaw = Object.values(r)[0] || '';
+        const proj = projRaw.trim().match(/^\d{4}/)?.[0] || '';
+        const rawFa = (r.FA || '').trim();
+        return { proj, fa: rawFa ? toTitleCase(rawFa) : '' };
+      }).filter(r => r.proj);
+    }
+
+    async function fetchAndParseRM() {
+      const res = await fetch(BASE_URL + 'rm.csv');
+      const text = await res.text();
+      const parsed = Papa.parse(text, {
+        header: true, skipEmptyLines: true, transformHeader: h => h.trim()
+      });
+
+      return parsed.data.map(r => {
+        const fileNum = (r['FILE#'] || '').trim();
+        if (!fileNum) return null;
+        return {
+          key: fileNum.slice(0, 4),
+          fileNum,
+          unit: (r['Unit #'] || '').trim(),
+          stNum: (r['ST. #'] || '').trim(),
+          street: (r['STREET'] || '').trim(),
+          city: (r['CITY'] || '').trim(),
+          pm: (r['PM'] || '').trim(),
+          acct: (r['ACCT'] || '').trim()
+        };
+      }).filter(r => r !== null && r.key);
     }
 
     function extractProjectNumber(str) {
@@ -803,63 +1051,49 @@
       return str.toLowerCase().replace(/(^|\s)\S/g, c => c.toUpperCase());
     }
 
+    // ═══════════════════════════════════════════════════════════════
+    //  INDEX BUILDING
+    // ═══════════════════════════════════════════════════════════════
     function buildSearchIndex() {
       searchIndex.clear();
-      
+
       dataCache.pm.forEach(record => {
         const key = record.proj;
         if (!searchIndex.has(key)) {
           searchIndex.set(key, {
-            proj: key,
-            pm: record.pm,
-            strataplan: record.strataplan,
-            projectName: record.projectName, // NEW: Include project name
-            fa: '',
-            ap: '',
-            ar: '',
-            isNLM: false
+            proj: key, pm: record.pm, strataplan: record.strataplan,
+            projectName: record.projectName, fa: '', ap: '', ar: '', isNLM: false
           });
         } else {
-          // If project already exists, update strata if current one is empty
-          const existing = searchIndex.get(key);
-          if (record.strataplan && !existing.strataplan) {
-            existing.strataplan = record.strataplan;
-            console.log(`Updated ${key} strata to: ${record.strataplan}`);
-          }
-          // Also update PM if it was empty
-          if (record.pm && !existing.pm) {
-            existing.pm = record.pm;
-          }
-          // Update project name if it was empty
-          if (record.projectName && !existing.projectName) {
-            existing.projectName = record.projectName;
-          }
+          const ex = searchIndex.get(key);
+          if (record.strataplan && !ex.strataplan) ex.strataplan = record.strataplan;
+          if (record.pm && !ex.pm) ex.pm = record.pm;
+          if (record.projectName && !ex.projectName) ex.projectName = record.projectName;
         }
       });
 
-      dataCache.fa.forEach(record => {
-        if (searchIndex.has(record.proj)) {
-          searchIndex.get(record.proj).fa = record.fa;
-        }
+      dataCache.fa.forEach(r => {
+        if (searchIndex.has(r.proj)) searchIndex.get(r.proj).fa = r.fa;
       });
 
       dataCache.nlm.forEach(proj => {
-        if (searchIndex.has(proj)) {
-          searchIndex.get(proj).isNLM = true;
-        }
+        if (searchIndex.has(proj)) searchIndex.get(proj).isNLM = true;
       });
 
-      // Add AP/AR
       searchIndex.forEach((record, proj) => {
-        const numProj = parseInt(proj);
-        record.ap = findPerson(proj, numProj, dataCache.ap) || '—';
-        record.ar = findPerson(proj, numProj, dataCache.ar) || '—';
+        const num = parseInt(proj);
+        record.ap = findPerson(proj, num, dataCache.ap) || '—';
+        record.ar = findPerson(proj, num, dataCache.ar) || '—';
       });
-      
-      console.log('Search index built. Entry for 5164:');
-      console.log(searchIndex.get('5164'));
-      console.log('Entry for 5517:');
-      console.log(searchIndex.get('5517'));
+    }
+
+    function buildRMIndex() {
+      rmIndex.clear();
+      dataCache.rm.forEach(r => {
+        if (!rmIndex.has(r.key)) rmIndex.set(r.key, []);
+        rmIndex.get(r.key).push(r);
+      });
+      console.log(`RM index: ${rmIndex.size} projects, ${dataCache.rm.length} records`);
     }
 
     function findPerson(key, num, data) {
@@ -867,9 +1101,7 @@
         const ps = (e.Portfolio || '').trim();
         const inc = (e.Include || '').split(',').map(s => s.trim()).filter(Boolean);
         const exc = (e.Exclude || '').split(',').map(s => s.trim()).filter(Boolean);
-
         if (inc.includes(key)) return e.Name;
-
         if (ps.endsWith('+')) {
           const start = parseInt(ps.slice(0, -1));
           if (num >= start && !exc.includes(key)) return e.Name;
@@ -881,65 +1113,48 @@
       return null;
     }
 
+    // ═══════════════════════════════════════════════════════════════
+    //  STRATA SEARCH
+    // ═══════════════════════════════════════════════════════════════
     function performSearch() {
-      if (!dataCache.loaded) {
-        alert('Data is still loading. Please wait...');
-        return;
-      }
-
+      if (!dataCache.loaded) { alert('Data is still loading. Please wait...'); return; }
       const startTime = performance.now();
       const query = document.getElementById('searchInput').value.trim();
-      
-      if (!query) {
-        alert('Please enter a search term');
-        return;
-      }
+      if (!query) { alert('Please enter a search term'); return; }
 
       let results = [];
-      let nlmProjects = []; // Track NLM-only projects
+      let nlmProjects = [];
 
       if (searchMode === 'simple') {
         const proj = query.slice(0, 4);
         const record = searchIndex.get(proj);
-        if (record) {
-          results = [record];
-        } else if (dataCache.nlm.includes(proj)) {
-          // Project is NLM but not in main data
-          nlmProjects.push(proj);
-        }
+        if (record) results = [record];
+        else if (dataCache.nlm.includes(proj)) nlmProjects.push(proj);
       } else if (searchMode === 'multi') {
-        const projects = query.split(',').map(p => p.trim().slice(0, 4)).filter(Boolean);
-        projects.forEach(p => {
+        query.split(',').map(p => p.trim().slice(0, 4)).filter(Boolean).forEach(p => {
           const record = searchIndex.get(p);
-          if (record) {
-            results.push(record);
-          } else if (dataCache.nlm.includes(p)) {
-            nlmProjects.push(p);
-          }
+          if (record) results.push(record);
+          else if (dataCache.nlm.includes(p)) nlmProjects.push(p);
         });
       } else if (searchMode === 'strata') {
-        const strataQuery = query.toUpperCase().replace(/\s+/g, '');
+        const sq = query.toUpperCase().replace(/\s+/g, '');
         results = Array.from(searchIndex.values())
-          .filter(r => r.strataplan.toUpperCase().replace(/\s+/g, '').includes(strataQuery));
+          .filter(r => r.strataplan.toUpperCase().replace(/\s+/g, '').includes(sq));
       }
 
-      // Apply advanced filters
       results = applyFilters(results);
-
-      const searchTime = performance.now() - startTime;
-      displayResults(results, searchTime, query, nlmProjects);
+      displayResults(results, performance.now() - startTime, query, nlmProjects);
     }
 
     function applyFilters(results) {
-      const pmFilter = document.getElementById('filterPM').value.trim().toLowerCase();
-      const faFilter = document.getElementById('filterFA').value.trim().toLowerCase();
-      const nlmFilter = document.getElementById('filterNLM').value;
-
+      const pmF = document.getElementById('filterPM').value.trim().toLowerCase();
+      const faF = document.getElementById('filterFA').value.trim().toLowerCase();
+      const nlmF = document.getElementById('filterNLM').value;
       return results.filter(r => {
-        if (pmFilter && !r.pm.toLowerCase().includes(pmFilter)) return false;
-        if (faFilter && !r.fa.toLowerCase().includes(faFilter)) return false;
-        if (nlmFilter === 'yes' && !r.isNLM) return false;
-        if (nlmFilter === 'no' && r.isNLM) return false;
+        if (pmF && !r.pm.toLowerCase().includes(pmF)) return false;
+        if (faF && !r.fa.toLowerCase().includes(faF)) return false;
+        if (nlmF === 'yes' && !r.isNLM) return false;
+        if (nlmF === 'no' && r.isNLM) return false;
         return true;
       });
     }
@@ -948,56 +1163,47 @@
       const container = document.getElementById('resultsContainer');
       const resultsEl = document.getElementById('results');
       const countEl = document.getElementById('resultsCount');
-      
+      const titleEl = document.getElementById('resultsTitle');
+
       container.classList.add('active');
-      
-      // Show search mode context for strata plan searches
+      titleEl.style.color = 'var(--primary)';
+
       let headerText = 'Search Results';
-      if (searchMode === 'strata' && results.length > 0) {
-        headerText = `Projects with Strata Plan: ${query}`;
-      }
-      
-      document.querySelector('.results-header h2').textContent = headerText;
-      
-      const totalCount = results.length + nlmProjects.length;
-      countEl.textContent = `${totalCount} result${totalCount !== 1 ? 's' : ''}`;
+      if (searchMode === 'strata' && results.length > 0) headerText = `Projects with Strata Plan: ${query}`;
+      titleEl.textContent = headerText;
+
+      const total = results.length + nlmProjects.length;
+      countEl.textContent = `${total} result${total !== 1 ? 's' : ''}`;
       document.getElementById('searchTime').textContent = `${searchTime.toFixed(1)}ms`;
 
-      if (results.length === 0 && nlmProjects.length === 0) {
+      if (total === 0) {
         resultsEl.innerHTML = `
           <div class="no-results">
             <div class="no-results-icon">📭</div>
             <h3>No Results Found</h3>
             <p>Try adjusting your search criteria</p>
-          </div>
-        `;
+          </div>`;
         return;
       }
 
       let html = '';
-
-      // Show NLM-only projects first (not in PM data)
-      if (nlmProjects.length > 0) {
-        nlmProjects.forEach(proj => {
-          html += `
-            <div class="result-card nlm">
-              <div class="result-header">
-                <div class="project-name">#${proj}</div>
-                <span class="nlm-badge">NLM</span>
-              </div>
-              <div style="color: var(--danger); font-weight: 600; font-size: 18px; margin-bottom: 10px;">
-                ⚠️ This project is No Longer Managed by Rancho
-              </div>
-              <div style="color: #6c757d; margin-top: 10px;">
-                <strong>Note:</strong> This project has been transferred to another management company. 
-                For more information, please check the Project List or contact PM/Admin.
-              </div>
+      nlmProjects.forEach(proj => {
+        html += `
+          <div class="result-card nlm">
+            <div class="result-header">
+              <div class="project-name">#${proj}</div>
+              <span class="nlm-badge">NLM</span>
             </div>
-          `;
-        });
-      }
+            <div style="color: var(--danger); font-weight: 600; font-size: 18px; margin-bottom: 10px;">
+              ⚠️ This project is No Longer Managed by Rancho
+            </div>
+            <div style="color: #6c757d; margin-top: 10px;">
+              <strong>Note:</strong> This project has been transferred to another management company.
+              For more information, please check the Project List or contact PM/Admin.
+            </div>
+          </div>`;
+      });
 
-      // Show regular results - PROJECT NAME in detail section
       html += results.map(r => `
         <div class="result-card ${r.isNLM ? 'nlm' : ''}">
           <div class="result-header">
@@ -1035,62 +1241,196 @@
       `).join('');
 
       resultsEl.innerHTML = html;
-
-      // Smooth scroll to results
       container.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
+    // ═══════════════════════════════════════════════════════════════
+    //  RM SEARCH
+    // ═══════════════════════════════════════════════════════════════
+    function performRMSearch() {
+      if (!dataCache.rmLoaded) { alert('RM data is still loading. Please wait...'); return; }
+      const startTime = performance.now();
+      const rawQuery = document.getElementById('rmSearchInput').value.trim();
+      if (!rawQuery) { alert('Please enter a search term'); return; }
+
+      const query = rawQuery.toUpperCase();
+      let matchedGroups = [];
+
+      const isNumericKey = /^\d{1,4}$/.test(query);
+
+      if (isNumericKey) {
+        const paddedKey = query.padStart(4, '0');
+        const records = rmIndex.get(paddedKey);
+        if (records) matchedGroups.push({ key: paddedKey, records });
+      } else {
+        // Text search: street, city, PM, or accountant
+        rmIndex.forEach((records, key) => {
+          const matches = records.filter(r =>
+            r.street.toUpperCase().includes(query) ||
+            r.city.toUpperCase().includes(query) ||
+            r.pm.toUpperCase().includes(query) ||
+            r.acct.toUpperCase().includes(query)
+          );
+          if (matches.length > 0) matchedGroups.push({ key, records: matches });
+        });
+        // Cap results for text search to prevent overwhelming display
+        if (matchedGroups.length > 50) {
+          matchedGroups = matchedGroups.slice(0, 50);
+        }
+      }
+
+      displayRMResults(matchedGroups, performance.now() - startTime, rawQuery);
+    }
+
+    function displayRMResults(groups, searchTime, query) {
+      const container = document.getElementById('resultsContainer');
+      const resultsEl = document.getElementById('results');
+      const countEl = document.getElementById('resultsCount');
+      const titleEl = document.getElementById('resultsTitle');
+
+      container.classList.add('active');
+      titleEl.textContent = 'RM Search Results';
+      titleEl.style.color = 'var(--rm-accent)';
+
+      const totalRecords = groups.reduce((s, g) => s + g.records.length, 0);
+      countEl.textContent = `${groups.length} project${groups.length !== 1 ? 's' : ''} (${totalRecords} record${totalRecords !== 1 ? 's' : ''})`;
+      document.getElementById('searchTime').textContent = `${searchTime.toFixed(1)}ms`;
+
+      if (groups.length === 0) {
+        resultsEl.innerHTML = `
+          <div class="no-results">
+            <div class="no-results-icon">📭</div>
+            <h3>No RM Projects Found</h3>
+            <p>Try a different File # (first 4 digits), street name, city, or PM initials</p>
+          </div>`;
+        return;
+      }
+
+      const html = groups.map(group => {
+        const first = group.records[0];
+
+        if (group.records.length === 1) {
+          return `
+            <div class="result-card rm-card">
+              <div class="result-header">
+                <div class="project-number rm-number">RM${group.key}</div>
+                <span class="rm-badge">RM</span>
+              </div>
+              <div class="result-details">
+                <div class="detail-item">
+                  <div class="detail-label">File #</div>
+                  <div class="detail-value">${first.fileNum}</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Unit #</div>
+                  <div class="detail-value">${first.unit || '—'}</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">St #</div>
+                  <div class="detail-value">${first.stNum || '—'}</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Street</div>
+                  <div class="detail-value">${first.street || '—'}</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">City</div>
+                  <div class="detail-value">${first.city || '—'}</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">PM</div>
+                  <div class="detail-value">${first.pm || '—'}</div>
+                </div>
+                <div class="detail-item">
+                  <div class="detail-label">Accountant</div>
+                  <div class="detail-value">${first.acct || '—'}</div>
+                </div>
+              </div>
+            </div>`;
+        }
+
+        // Multiple units → table view
+        return `
+          <div class="result-card rm-card">
+            <div class="result-header">
+              <div class="project-number rm-number">RM${group.key}</div>
+              <span class="rm-badge">${group.records.length} units</span>
+            </div>
+            <table class="rm-units-table">
+              <thead>
+                <tr>
+                  <th>File #</th>
+                  <th>Unit #</th>
+                  <th>St #</th>
+                  <th>Street</th>
+                  <th>City</th>
+                  <th>PM</th>
+                  <th>Accountant</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${group.records.map(r => `
+                  <tr>
+                    <td>${r.fileNum}</td>
+                    <td>${r.unit || '—'}</td>
+                    <td>${r.stNum || '—'}</td>
+                    <td>${r.street || '—'}</td>
+                    <td>${r.city || '—'}</td>
+                    <td>${r.pm || '—'}</td>
+                    <td>${r.acct || '—'}</td>
+                  </tr>`).join('')}
+              </tbody>
+            </table>
+          </div>`;
+      }).join('');
+
+      resultsEl.innerHTML = html;
+      container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    // ═══════════════════════════════════════════════════════════════
+    //  STATS & HELPERS
+    // ═══════════════════════════════════════════════════════════════
     function updateStats() {
       document.getElementById('stats').style.display = 'grid';
       document.getElementById('totalProjects').textContent = searchIndex.size;
       document.getElementById('nlmCount').textContent = dataCache.nlm.length;
+      document.getElementById('rmProjectCount').textContent = rmIndex.size;
+      document.getElementById('strataCountBadge').textContent = searchIndex.size;
+      document.getElementById('rmCountBadge').textContent = rmIndex.size;
     }
 
     function updateFooter() {
       const lastMod = new Date(document.lastModified);
-      document.getElementById('lastModified').textContent = 
+      document.getElementById('lastModified').textContent =
         'Site last updated: ' + lastMod.toLocaleString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          hour: '2-digit',
-          minute: '2-digit'
+          year: 'numeric', month: 'long', day: 'numeric',
+          hour: '2-digit', minute: '2-digit'
         });
       document.getElementById('currentYear').textContent = new Date().getFullYear();
     }
 
     function updateTime() {
       const now = new Date();
-      const options = {
-        weekday: 'long',
-        year: 'numeric',
-        month: 'long',
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: false
-      };
-      document.getElementById('currentTime').textContent = 
-        '🕐 ' + now.toLocaleString('en-US', options);
+      document.getElementById('currentTime').textContent =
+        '🕐 ' + now.toLocaleString('en-US', {
+          weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
+          hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false
+        });
     }
 
     async function getUserIP() {
       try {
-        // Using ipapi.co for geolocation (free, no API key needed)
-        const response = await fetch('https://ipapi.co/json/');
-        const data = await response.json();
-        
+        const res = await fetch('https://ipapi.co/json/');
+        const data = await res.json();
         if (data.city && data.country_name) {
-          document.getElementById('userLocation').textContent = 
-            `${data.city}, ${data.country_name}`;
+          document.getElementById('userLocation').textContent = `${data.city}, ${data.country_name}`;
         } else if (data.country_name) {
           document.getElementById('userLocation').textContent = data.country_name;
         } else {
           document.getElementById('userLocation').textContent = 'Location unavailable';
         }
-      } catch (error) {
-        console.log('Could not fetch location:', error);
+      } catch (e) {
         document.getElementById('userLocation').textContent = 'Location unavailable';
       }
     }
