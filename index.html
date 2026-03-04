@@ -1023,9 +1023,22 @@
     async function fetchAndParseRM() {
       const res = await fetch(BASE_URL + 'rm.csv');
       const text = await res.text();
-      const parsed = Papa.parse(text, {
+      // rm.csv has 2 extra header rows (title + date) before the actual column headers.
+      // Strip them so PapaParse picks up the real headers (PROJECT, FILE#, Unit #, ...).
+      const lines = text.split(/\r?\n/);
+      // Find the actual header line that contains "FILE#"
+      let headerIdx = 0;
+      for (let i = 0; i < Math.min(lines.length, 10); i++) {
+        if (lines[i].includes('FILE#')) { headerIdx = i; break; }
+      }
+      const csvBody = lines.slice(headerIdx).join('\n');
+
+      const parsed = Papa.parse(csvBody, {
         header: true, skipEmptyLines: true, transformHeader: h => h.trim()
       });
+
+      console.log('RM CSV headers found:', parsed.meta.fields);
+      console.log('RM CSV rows parsed:', parsed.data.length);
 
       return parsed.data.map(r => {
         const fileNum = (r['FILE#'] || '').trim();
