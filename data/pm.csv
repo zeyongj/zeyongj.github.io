@@ -76,7 +76,7 @@ Vancouver, BC
 V6B 2Y5
 5103R for residential
 5103C for commercial
-",LMS3182,"KZ
+",LMS3182,"AM
 "
 5104,"QUAYSIDE MARINA
 1088 Marinaside Crescent
@@ -325,7 +325,7 @@ V6B 0B5",,YM
 Vancouver, BC
 V6B 5P2
 
-",LMS2146,"KZ
+",LMS2146,"MB
 "
 "5198
 5255-1 (Tower 1)
@@ -457,7 +457,7 @@ Vancouver, BC V5T 0B4
 5068 Kwantlen Street V6X 4K4
 5088 Kwantlen Street V6X 4K5
 5168 Kwantlen St. V6X 0A2
-Richmond, B.C.",BCS1861,KZ
+Richmond, B.C.",BCS1861,KC
 5240,"WEST PENDER PLACE (COMMERCIAL)
 1477 West Pender
 1409 West Pender
@@ -535,7 +535,7 @@ Surrey, BC
 5262,VICTORIA HILL - COMMERCIAL,BCS2450,SA
 5263,VICTORIA HILL - JOINT,BCS2450,DC
 5266,MARINASIDE RESORT - RESIDENTIAL,LMS4255,JL
-5267,DEL PRADO - RESIDENTIAL,LMS2146,KZ
+5267,DEL PRADO - RESIDENTIAL,LMS2146,MB
 5271,"CEDAR CREEK NORTH
 1480 Southview Street
 Coquitlam, BC
@@ -856,7 +856,7 @@ V6Y 3AE
 
 Townhomes:
 8700, 8710, 8720, 8730, 8750, 8760, 8770, 8780, 8790, 8800, 8810, 8820, 8830, 8840, 8850, 8860 Citation Drive
-Richmond, BC",NW1321,KZ
+Richmond, BC",NW1321,MC
 "5380
 5380-A: Building A
 5380-BC: Building B/C","BLOCK 100
@@ -1153,7 +1153,8 @@ Coquitlam, BC V3J 0E8",EPS4454,YM
 5523-B","CENTREVIEW
 Tower A: 112 East 13th Street
 Tower B: 125 East 14th Street
-North Vancouver, BC ",EPS3752,DC
+North Vancouver, BC ",EPS3752,"DC/EL
+Olivia is admin"
 "5525
 5525-1a Alderbridge
 5525-1c Cedarbridge
@@ -1343,12 +1344,12 @@ V6X 0N8 ",EPS4801,RY
 5574,"ELLE - JOINT
 6533 Buswell Street
 Richmond, BC
-V6Y 0J6",EPS5474,"KZ
+V6Y 0J6",EPS5474,"MC
 "
 5575,"ELLE - RESIDENTIAL SECTION
 6533 Buswell Street
 Richmond, BC
-V6Y 0J6",EPS5474,"KZ
+V6Y 0J6",EPS5474,"MC
 "
 "5576
 (formerly 5738)","The Paramount Cost Share 
@@ -1631,8 +1632,7 @@ V6S 0L5
 Burnaby, B.C.
 V5A 0C8
 
-",EPS5447,"KZ
-(LPJ is Admin)"
+",EPS5447,RY
 5655,"MODA
 6658 Dow Avenue 
 Burnaby, BC 
@@ -1758,7 +1758,7 @@ V7L 1Z1",EPS7928,"MC
 5685,"THE LEX
 1249 Granville Street
 Vancouver, BC
-V6Z 1M5",BCS336,"KZ
+V6Z 1M5",BCS336,"SC/TT
 "
 5688,"LUMA
 6688 Arcola Street
@@ -1941,7 +1941,7 @@ Vancouver, BC",EPS9925,HB
 5735,"WEMBLEY
 4991 No. 5 Road
 Richmond, B.C. 
-V6X 0S9",EPS5423,"KZ
+V6X 0S9",EPS5423,"MB
 "
 5736,"THE PARAMOUNT OFFICE
 6388 No. 3 Road
