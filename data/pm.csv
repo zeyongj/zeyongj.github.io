@@ -263,7 +263,7 @@ V6Z 2W5
 
 
 
-",LMS2781,SB/LZ
+",LMS2781,SB
 5162,"POMARIA
 1455 Howe Street
 Vancouver, BC
@@ -416,10 +416,6 @@ V6B 6H4
 Vancouver, B.C.
 V6B 6B7
 ",LMS1716,SC
-5232,"MINORU
-7371 Minoru Blvd.
-Richmond, BC
-V6Y 1Z3",NW2697,CKS
 "5234
 ","DONOVAN
 1055 Richards Street
@@ -446,7 +442,8 @@ V5T 0A8
 240, 250, 260, 270, 280, 290 
 East 7th Avenue 
 Vancouver, BC V5T 0B4
-",BCS4075,SA
+",BCS4075,"AL
+Admin is Peter Lam"
 "5238
 5238A (Tower A, 5028 Kwantlen)
 5238B (Tower B, 5068 Kwantlen)
@@ -532,7 +529,8 @@ Surrey, BC
 ",EPS561,CKS
 5260,PERLA - RESIDENTIAL,BCS282,RY
 5261,FREESIA - JOINT,BCS1903,CL
-5262,VICTORIA HILL - COMMERCIAL,BCS2450,SA
+5262,VICTORIA HILL - COMMERCIAL,BCS2450,"AL
+Admin is Peter Lam"
 5263,VICTORIA HILL - JOINT,BCS2450,DC
 5266,MARINASIDE RESORT - RESIDENTIAL,LMS4255,JL
 5267,DEL PRADO - RESIDENTIAL,LMS2146,MB
@@ -589,8 +587,8 @@ V5C 0G8
 Phase 2 - 2232 Douglas Road
 2236, 2238
 Burnaby, BC
-V5C 0G9",BCS4311,"CL
-"
+V5C 0G9",BCS4311,"AL
+Peter Lam is Admin"
 5286,"COSMO
 161 West Georgia Street
 Vancouver, BC
@@ -1026,7 +1024,9 @@ V2Y 0L7
 9191 University Crescent
 Burnaby, BC
 V5A 0A1",,KH
-5443,THE SPOT RENTAL HOUSING ,,AA
+5443,"THE SPOT RENTAL HOUSING 
+481, 483, 485, 487, 489, 491, 493 & 495 W. 13TH AVENUE
+VANCOUVER, BC",,AA
 5447,"MELVILLE MANOR
 1855 West 8th Avenue
 Vancouver, B.C. 
@@ -1086,6 +1086,8 @@ V2A 5B1",N/A,KH
 Vancouver, B.C. 
 V5P 3W7",N/A,KH
 5463,"2655 King George Blvd
+2640 152 St Surrey
+V4P 1M8
 Surrey, B.C. 
 V4P 1H7",N/A,KH
 5463,"1941 Commercial Drive
@@ -1214,7 +1216,8 @@ V6B 2K7",LMS2412,SA
 5536,"BINNING TOWER
 3355 Binning Road
 Vancouver, BC
-V6S 0J1",EPS3494,CS
+V6S 0J1",EPS3494,"AL
+Peter Lam is Admin"
 5537,"DIAMOND CLUB
 8988 Patterson Road
 Richmond, BC
@@ -1334,9 +1337,7 @@ West Tower - 455 SW Marine Drive Vancouver BC V5X 0H3
 East Tower - 433 SW Marine Drive Vancouver BC V5X 0H5
 
 Townhouse (West Tower) ? 8110, 8120 8130, 8180, 8182, 8188 Nunavut Lane Vancouver BC V5X 0H3
-Townhouse (East Tower) ? 8081, 8083, 8085, 8087, 8093, 8095 Yukon Street Vancouver BC V5X 0H5",EPS5144,"CZ/FY
-(CZ is PM)
-(EJ is Admin)"
+Townhouse (East Tower) ? 8081, 8083, 8085, 8087, 8093, 8095 Yukon Street Vancouver BC V5X 0H5",EPS5144,AL
 5573,"THE GRAND AT LANSDOWNE - COMMERCIAL SECTION
 5599 Cooney Road
 Richmond, B.C. 
@@ -1512,7 +1513,7 @@ V5C 0L8
 1012-1020 Auckland Street 
 New Westminster, BC 
 V3M 0M3
-",EPS6050,SC
+",EPS6050,SY
 5618,"THE GEORGIA WEST
 20686 Eastleigh Crescent 
 Langley, B.C.
@@ -1775,12 +1776,13 @@ V4M 0E3
 (RESIDENTIAL STRATA)
 1289 Hornby Street
  Vancouver, B.C. 
-V6Z 0G7",EPS8296,Angie Lai
+V6Z 0G7",EPS8296,JT
 5691,"ONE BURRARD PLACE
 (OFFICE STRATA) 
 1281 Hornby Street
 Vancouver, BC 
-V6Z 0G8",EPS8297,SA
+V6Z 0G8",EPS8297,"AL
+Peter Lam is Admin"
 5692,"CLUB ONE
 1289 Hornby Street
  Vancouver, B.C. 
@@ -2005,7 +2007,8 @@ V5C 0N7",EPS8857,JT
 5751,"PARK W29
 531 West 29th Avenue
 Vancouver, BC
-V5Z 2H8",EPS8695,SA
+V5Z 2H8",EPS8695,"AL
+Peter Lam is Admin"
 5752,"THE INN AT WHISTLER VILLAGE
 4250 Village Stroll
 Whistler, B.C.
@@ -2476,7 +2479,7 @@ V5R 0G6",EPS4621,SC
 5846,"LENNOX
 100 & 110 E. 17th Street
 1708, 1716, 1724, 1732, 1736 & 1740 Lonsdale Avenue
-North Vancouver, BC",EPS12039,YN
+North Vancouver, BC",EPS12039,AL
 5847,"THE BRUNSWICK (COMMERCIAL SECTION)
 4011 Bayview Street
 Richmond, BC V7E 0A4",BCS1165,CKS
@@ -2500,7 +2503,7 @@ Vancouver, BC",EPS12324,MB
 5850,"SLATE
 2135 Springer Avenue 
 Burnaby B.C. 
-V5B 2Z6",EPS12295,YM
+V5B 0C1",EPS12295,YM
 5851,"THE HAMILTON
 8750 University Crescent
 Burnaby, B.C.
@@ -2509,3 +2512,7 @@ V5A 0G9",EPS9151,HB
 110 Switchmen Street
 Vancouver, B.C. 
 V6A 0C6",EPS2374,YM
+5853,"GRIZZLY RIDGE
+60 Grizzly Ridge Trail 
+Big White, B.C. 
+V1P 1T4",KAS3742,AM
