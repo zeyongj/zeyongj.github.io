@@ -57,7 +57,7 @@ N-1099 Marinaside Crescent V6Z 2Z3 (5061-3)
 5069,"CAMBRIDGE PLACE
 555 West 14th Avenue
 Vancouver, BC
-V6Z 4G8",VR1428,YN
+V6Z 4G8",VR1428,HC
 5079,"AVONLEA HEIGHTS
 3060 Plateau Crescent
 Coquitlam, BC
@@ -123,7 +123,7 @@ V6Z 3B8
 483-489 Beach Crescent
 Vancouver, BC 
 V6Z 3B9",BCS679,"BL/TL
-(Mariya is Admin)
+(BL's Admin)
 "
 5118,"AZURA TWO
 1495 Richards Street
@@ -443,7 +443,7 @@ V5T 0A8
 East 7th Avenue 
 Vancouver, BC V5T 0B4
 ",BCS4075,"AL
-Admin is Peter Lam"
+(PL is Admin)"
 "5238
 5238A (Tower A, 5028 Kwantlen)
 5238B (Tower B, 5068 Kwantlen)
@@ -506,10 +506,15 @@ V6B 0E8",BCS3407,JT
 
 
 ","PARK PLACE - JOINT
+Residential
 One Park Place ? 13688 ? 100th Ave V3T 0G5
 Two Park Place ? 9981 Whalley Boulevard V3T 0G6
 Surrey, BC
-",EPS561,GR
+
+Commercial
+9908 King George Blvd.
+13678 100 Ave.
+Surrey, BC",EPS561,GR
 "5257 ? Park Place Residential
 
 5256-1 (One Park Place)
@@ -523,10 +528,9 @@ Surrey, BC
 
 5256-C
 ","PARK PLACE - COMMERCIAL 
-One Park Place ? 13688 ? 100th Ave
-Two Park Place ? 9981 Whalley Boulevard
-Surrey, BC
-",EPS561,CKS
+9908 King George Blvd.
+13678 100 Avenue
+Surrey, BC",EPS561,CKS
 5260,PERLA - RESIDENTIAL,BCS282,RY
 5261,FREESIA - JOINT,BCS1903,CL
 5262,VICTORIA HILL - COMMERCIAL,BCS2450,"AL
@@ -567,7 +571,7 @@ Townhouses
 408, 410, 416, 418, East 11th Avenue
 401, 411 and 421 East 12th Avenue
 Vancouver, BC 
-",EPS1093,KD
+",EPS1093,AM
 5280,ALTO - RESIDENTIAL,BCS3664,BK
 "5281
 5281-C","LONDON PLACE 
@@ -702,13 +706,6 @@ Richmond, BC",BCS3325,YM
 6828 Eckersley Road, V6Y 0E8 (Tower 2)
 8600 Park Road, V6Y 0C3 (Tower 1)
 Richmond, BC",BCS4130,JL
-"5325
-5325-1 (Tower 1, 9500 Odlin)
-5325-2 (Tower 2, 9399 Tomicki)
-","CAMBRIDGE PARK
-9500 Odlin Road V6X 0H5 (Tower 1)
-9399 Tomicki Avenue V6X 0H6 (Tower 2)
-Richmond, BC",BCS4008,KC
 5326,"THE BRITTANY (APARTMENTS)
 3292 East 54th Avenue
 Vancouver, BC V5S 0A1",BCS1545,SC
@@ -826,7 +823,7 @@ New Westminster, B.C.
 2903 ? 2997 Wall Street
 Vancouver, B.C.
 V5K 0A6
-",BCS4321,YN
+",BCS4321,JA
 5375,"WESTWOOD
 1123 Westwood Street V3B 0M1
 3080 Lincoln Avenue V3B 0L9
@@ -1094,6 +1091,11 @@ V4P 1H7",N/A,KH
 Vancouver, B.C. 
 V5N 4A8",N/A,KH
 5464,PIER WEST RENTALS,N/A,JR
+5465,"TERRACES ON 7TH DEVELOPMENT CORPORATION
+Section B ? 1530 West 7th Avenue
+Section C ? 1550 West 7th Avenue
+Vancouver, BC
+V6J 1S2",N/A,TL/AM
 5502,"SAGE
 5782 Berton Avenue
 Vancouver, BC V6S 0C1",BCS4265,CF
@@ -1232,7 +1234,7 @@ V5Z 2Y8",EPS4575,MB
 5542,"JAMES WALK
 168 East 35th Avenue
 Vancouver, BC
-V5W 1A6",EPS3680,YN
+V5W 1A6",EPS3680,HC
 5544,"V6A
 221 Union Street
 Vancouver, BC
@@ -1270,7 +1272,7 @@ V3B 5C2",NW1668,KC
 5553,"EASTON
 617 Smith Avenue
 Coquitlam, BC
-V3J 0C3",EPS1326,YN
+V3J 0C3",EPS1326,JA
 "5555
 ","THE CHARLESON
 499 Pacific Street
@@ -1939,7 +1941,7 @@ V2V 0K5",EPS9773,CG
 Townhomes
 302, 304, 306, 308, 310, 312, 314, 316, 318, 320, 324, 326, 328, 330, 332, 334, 336, 338, 340 East 15th Avenue
  3130, 3132, 3134, 3136, 3138, 3140 Sophia Street
-Vancouver, BC",EPS9925,HB
+Vancouver, BC",EPS9925,TN
 5735,"WEMBLEY
 4991 No. 5 Road
 Richmond, B.C. 
@@ -1966,7 +1968,7 @@ West Vancouver",EPS8014,"MC
 5742,"CEDAR GROVE
 Building A ? 15238 100 Avenue, Surrey, BC, V3R 7T9
 Building B ? 15268 100 Avenue, Surrey, BC, V3R 7V1
-Building C ? 15288 100 Avenue, Surrey, BC, V3R 7V2",NW1676,YN
+Building C ? 15288 100 Avenue, Surrey, BC, V3R 7V2",NW1676,SA
 5744,"VOYCE
 5168 Cambie Street
 Vancouver, B.C.
@@ -2370,9 +2372,6 @@ Phase 2 - 3346 Skaha Lake Road, Penticton BC, V2A 0H6
 
 Phase 3 - 3362 Skaha Lake Road, Penticton BC, V2A 0J4
 ",EPS4170,MR
-5822,"SKYVIEW
-7381 Preston Blvd, Mission, B.C.
-V2V 0M1",EPS11766,SA
 5823,WATER STREET BY THE PARK - CLUB,N/A,"Terry Li (Senior PM)
 Michelle Ross 
 (Junior PM)"
@@ -2516,3 +2515,4 @@ V6A 0C6",EPS2374,YM
 60 Grizzly Ridge Trail 
 Big White, B.C. 
 V1P 1T4",KAS3742,AM
+5856,ARTESIA COST SHARE,N/A,KN
