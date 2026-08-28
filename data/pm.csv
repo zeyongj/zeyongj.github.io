@@ -1030,7 +1030,7 @@ Vancouver, B.C.
 V6J 1V9
 
 *2940 Main Street - Million Energy Homes",,"KH
-(Juliana is Admin)"
+"
 5452,"QUALICO VANCOUVER
 17720 65A Avenue
 Surrey, B.C. V3S 5N4
@@ -1038,11 +1038,13 @@ Surrey, B.C. V3S 5N4
 
 
 ",,CL
-5455,"2175 WEST 7TH (LAWRENCE MANOR)
+"5455
+NLM as of September 30, 2026","2175 WEST 7TH (LAWRENCE MANOR)
 2175 West 7th Avenue
 Vancouver, BC
 V6K 1X9",N/A,KH
-5456,"1960 WEST 7TH (CASA GRANDE)
+"5456
+NLM as of September 30, 2026","1960 WEST 7TH (CASA GRANDE)
 1960 West 7th Avenue
 Vancouver, BC
 V6J 1T1",N/A,KH
@@ -1729,7 +1731,8 @@ Phase 1 ? 7133 14th Avenue, Burnaby, BC V3N 0H5
 Phase 2 ? 7169 14th Avenue, Burnaby, BC V3N 0H6
 
 Phase 3 ? 7579 16th Street, Burnaby, BC V3N 0H7",EPS7638,"CKS/CS  
-(Christie)"
+(Christie is PM)
+(Christina L. is Admin)"
 5678,"KINGS CROSSING 1
 7388 Kingsway
 Burnaby, BC
@@ -1790,7 +1793,7 @@ V6Z 0G7",EPS8296,JT
 1281 Hornby Street
 Vancouver, BC 
 V6Z 0G8",EPS8297,"AL
-Peter Lam is Admin"
+(Peter Lam is Admin)"
 5692,"CLUB ONE
 1289 Hornby Street
  Vancouver, B.C. 
@@ -1798,8 +1801,7 @@ V6Z 1W2",,JT
 5693,"1335 HOWE
 1335 Howe Street
 Vancouver, B.C. 
-V6Z 0H1",EPS8387,"JT/AL
-Alyanna is admin
+V6Z 0H1",EPS8387,"AL
 "
 5695,"BRIDGEPORT BUSINESS CENTER
 2777 Jow Street
@@ -2101,13 +2103,14 @@ V6M 2W4
 Oak Street 
 Vancouver, BC
 V6M 2W4",EPS11004,"TT
-(AW is Admin)"
+"
 5773,"THE GRAND ON KING GEORGE (COMMERCIAL STRATA)
 10741 King George Boulevard, Surrey, BC V3T 0V5
 10745 King George Boulevard, Surrey, BC V3T 0V5
 10749 King George Boulevard, Surrey, BC V3T 0V5
 13575 107A Avenue, Surrey, BC V3T 0V5",EPS10883,GR
-5774,"PICASSO GALLERIA CONCORD GARDENS (RESIDENTIAL STRATA)
+"5774
+NLM as of August 31, 2026","PICASSO GALLERIA CONCORD GARDENS (RESIDENTIAL STRATA)
 
 8671 HAZELBRIDGE WAY 
 RICHMOND, BC 
@@ -2453,7 +2456,7 @@ KaWing Ng
 5838,"WINTERRA AT THE LAKES
 2532 Shoreline Drive 
 Lake Country, BC 
-V4V 2R6",KAS3521,AM/TL
+V4V 2R6",KAS3521,MR
 5839,"BAILEY
 4928 Quebec Street
 Vancouver, BC
@@ -2524,8 +2527,52 @@ V1P 1T4",KAS3742,AM
 5854,"SILVER & CEDAR
 8423 Cedar Street Mission, BC 
 V4S 0G6",EPS12808,CG
+5855,"ROCKLIN
+1295 Rocklin Street
+Coquitlam, BC
+V3E 0R3",EPS12783,CL
 5856,ARTESIA COST SHARE,N/A,SB
 5857,"ARBOUR
 9658, 9668, 9678, 9688 University Crescent
 Burnaby, BC
-V5A 0B3",EPS12386,CZ
+V5A 0B3",EPS12386,HB
+5858,"2 BURRARD PLACE
+1277 Hornby Street Vancouver, B.C.
+V6Z 0H7",EPS12960,"AL/JT
+(AB is Admin)"
+5859,"SEYMOUR AT BADEN
+946, 948, 950, 952, 954, 956 and 958 Lytton Street
+North Vancouver, BC",EPS12824,"RD/DC
+(Admin Pool is Admin)"
+5860,"THE MUSE ? JOINT
+9015 120 Street
+Delta, B.C.
+V4C 0E3",EPS5399,SA
+5861,"THE MUSE ? RESIDENTIAL SECTION
+9015 120 Street
+Delta, B.C.
+V4C 0E3",EPS5399,SA
+5862,"THE MUSE ? COMMERCIAL SECTION
+9015 120 Street
+Delta, B.C.
+V4C 0E3",EPS5399,SA
+5863,"YEW AT BADEN
+968 Lytton Street
+North Vancouver, BC
+V7H 0C6",EPS12838,"MB
+(Admin Pool is Admin)"
+5864,"SOUTH GROVE
+33520, 33525 and 33595 Kingston Avenue
+ Abbotsford BC",EPS10630,SA
+5865,"COVE AT BADEN
+930-940 Lytton Street
+North Vancouver, BC
+V7H 0C3",EPS12933,"RD
+(Admin Pool is Admin)"
+5866,"2 BURRARD PLACE OFFICE
+1277 Hornby Street 
+Vancouver, B.C.",EPS12961,SA
+5867,"GUILDEN
+10425 147 Street
+10405 147 Street
+Surrey, B.C.",EPS12072,CL
