@@ -8,7 +8,7 @@ PLAN",PM
 5911 Alderbridge 
 Richmond, BC
 V6X 1A3",LMS3174,"CKS/KN  (KaWing is PM)
-(AW is Admin)"
+(Harley is Admin)"
 5015,"AUGUSTA GROVE
 1690 Augusta Avenue (A)
 1750 Augusta Avenue (B)
@@ -26,7 +26,8 @@ V6X 3Z2",LMS2194,SY
 2350 Westerly Street
 Abbotsford, BC
 V2T 6T7",LMS3890,CG
-5035,"THE CLARKSON
+"5035
+NLM as of November 30, 2026","THE CLARKSON
 680 Clarkson Street
 New Westminster, BC
 V3M 6X9",LMS3317,AM
@@ -39,7 +40,7 @@ V3M 6X9",LMS3317,AM
 1383 Howe Street
 Vancouver, BC
 V6Z 2R5",LMS1554,"CKS/KN  (KaWing is PM)
-(AW is Admin)"
+(Harley is Admin)"
 5061,"MARINASIDE RESORT RESIDENCES - JOINT
 D-193 Aquarius Mews V6Z 2Z2 (5061-1)
 E-1077 Marinaside Crescent V6Z 2Z5  (5061-2)
@@ -70,12 +71,12 @@ V3E 3B3",LMS1632,LZ
 7680 Granville Avenue (Tower I) V6Y 4B9
 7760 Granville Avenue (Tower II) V6Y 4C2
 Richmond, BC",LMS2807,SY
-5103,"THE GRAFTON (JOINT)
+"5103
+5103R - Residential
+5103C - Commercial","THE GRAFTON (JOINT)
 1238 Homer Street
 Vancouver, BC
 V6B 2Y5
-5103R for residential
-5103C for commercial
 ",LMS3182,"AM
 "
 5104,"QUAYSIDE MARINA
@@ -200,12 +201,12 @@ Smithe Street / 903, 909, 919, 923, 929, 955 Expo Blvd",BCS1437,"FY/CL
 (EJ is Admin)"
 5141,"THE VICTORIA (RESIDENTIAL)
 751 & 789 Helmcken V6B 5R1",LMS1608,"CKS/KN  (KaWing is PM)
-(AW is Admin)"
+(Harley is Admin)"
 5142,"EXECUTIVE PLACE (formerly The Victoria Commercial)
 1070, 1080, 1090 Howe Street
 Vancouver, BC
 V6Z 1P5",LMS1608,"CKS/KN  (KaWing is PM)
-(AW is Admin)"
+(Harley is Admin)"
 5143,"FREESIA (RESIDENTIAL)
 1082 Seymour Street       
 Vancouver, BC 
@@ -219,7 +220,7 @@ Vancouver, BC V6B 3M6",BCS1903,CL
 642-690 West 6th Avenue
 Vancouver, BC
 V5Z 1A3",BCS1849,"KN
-(AW is Admin)"
+(Harley is Admin)"
 "5145
 5145-1 (638 Beach Cres., Tower 1 + TH)
 5145-2 (633 Kinghorne, Tower 2)
@@ -389,7 +390,8 @@ V6Y 0A4",BCS2591,SY
 3298 E 54th Ave V5S 0A1
 Vancouver, BC
 ",BCS1545,SC
-5213,"YALE CROSSING
+"5213
+NLM as of November 30, 2026","YALE CROSSING
 2632 Pauline Street
 Abbotsford, BC
 V2S 0C9",BCS3562,CG
@@ -670,7 +672,7 @@ Townhomes: 555 & 565 Pacific St. / 1378, 1382, 1386, 1390 & 1394 Seymour St.",EP
 5312,"THE VICTORIA (JOINT)
 751 & 789 Helmcken V6B 5R1",LMS1608,"CKS/KN  
 (KaWing is PM)
-(AW is Admin)"
+(Harley is Admin)"
 5314,"258 CONDOS
 258 6th Street
 New Westminster, BC 
@@ -745,13 +747,13 @@ V6X 0L5",EPS2415,JL
 Vancouver, BC
 V6C 3E8",LMS3837,"CKS/KN  
 (KaWing is PM)
-(AW is Admin)"
+(Harley is Admin)"
 5345,"LE SOLEIL -COMMERCIAL  SECTION
 567 Hornby Street
 Vancouver, BC
 V6C 3E8",LMS3837,"CKS/KN  
 (KaWing is PM)
-(AW is Admin)"
+(Harley is Admin)"
 5350,"SKALA
 453 & 455 East 16th Avenue
 Vancouver, B.C.",EPS2573,"MC
@@ -785,7 +787,7 @@ V7V 1J5",LMS1435,BK
 5365-2 ? 5311 Cedarbridge Way, Richmond V6X 0M3
 ",EPS2420,"CKS/KN  
 (KaWing)
-(AW is Admin)"
+(Harley is Admin)"
 5367,"STRATUS AT SOLO DISTRICT
 2008 Rosser Avenue
 Burnaby, BC 
@@ -876,7 +878,7 @@ Vancouver, BC",,"CKS/CS
 (Christie)"
 5383,RIVA CLUB,,"CKS/KN  
 (KaWing)
-(AW is Admin)"
+(Harley is Admin)"
 "5385
 (EXPAND ROW FOR COMPLETE LIST OF PROJECT NOs.)
 5385-1A SL1-5 5108 Claude
@@ -979,7 +981,7 @@ Vancouver, BC V5Y 0L2",EPS3524,HB
 1383 Howe Street
 Vancouver, BC
 V6Z 2R5",LMS1554,"KN
-(AW is Admin)"
+(Harley is Admin)"
 5419,"SIEMANS ESTATES LTD.
 34313 Forrest Terrace
 Abbotsford, BC
@@ -1040,16 +1042,6 @@ Surrey, B.C. V3S 5N4
 
 
 ",,CL
-"5455
-NLM as of September 30, 2026","2175 WEST 7TH (LAWRENCE MANOR)
-2175 West 7th Avenue
-Vancouver, BC
-V6K 1X9",N/A,KH
-"5456
-NLM as of September 30, 2026","1960 WEST 7TH (CASA GRANDE)
-1960 West 7th Avenue
-Vancouver, BC
-V6J 1T1",N/A,KH
 5457,"WEST 41ST
 2028, 2032, 2034, 2036
 West 41st Avenue
@@ -1150,7 +1142,7 @@ Burnaby, BC V5C 0J9",EPS4242,CKS
 7008 River Parkway
 Richmond, BC V6X 0R1",EPS3584,"CKS/KN  
 (KaWing)
-(AW is Admin)"
+(Harley is Admin)"
 5521,"PARK AVENUE WEST
 13696 100th Avenue
 Surrey, BC V3T 0L5
@@ -1168,7 +1160,7 @@ Coquitlam, BC V3J 0E8",EPS4454,YM
 Tower A: 112 East 13th Street
 Tower B: 125 East 14th Street
 North Vancouver, BC ",EPS3752,"DC/EL
-Olivia is admin"
+Juliana is admin"
 "5525
 5525-1a Alderbridge
 5525-1c Cedarbridge
@@ -1384,7 +1376,7 @@ Richmond, BC",N/A,CCS
 567 Hornby Street
 Vancouver, BC
 V6C 3E8",LMS3837,"KN 
-(AW is Admin)"
+(Harley is Admin)"
 5579,"THE GRAYSON
 489 West 26th Ave.
 Vancouver, B.C. 
@@ -1925,12 +1917,12 @@ Richmond, BC",BCS1691,JL
 3596 West 28th Avenue
 Vancouver, B.C. 
 V6S 2G5",EPS9531,"KN
-(AW is Admin)"
+(Harley is Admin)"
 5726,"LEGACY ON DUNBAR (COMMERCIAL REMAINDER)
 4402 ? 4498 Dunbar Street
 Vancouver, B.C. 
 V6S 2G5",EPS9532,"KN
-(AW is Admin)"
+(Harley is Admin)"
 5730,"RIVER PARK 2
 ASP 5
 105 & 110 6968 Pearson Way
@@ -2565,3 +2557,38 @@ Vancouver, B.C.",EPS12961,SA
 10425 147 Street
 10405 147 Street
 Surrey, B.C.",EPS12072,CL
+5868,"BOTANICA 
+(JOINT)
+668 Gardena Drive
+Coquitlam, B.C. V3J 0R8
+
+588 Harrison Avenue
+Coquitlam, B.C. V3J 0R8
+
+592 Harrison Avenue
+Coquitlam, B.C. V3J 0T3
+
+585 Kemsley Avenue
+Coquitlam, B.C. V3J 0T4
+
+595 Kemsley Avenue
+Coquitlam, B.C. V3J 0T4",EPS12462,JL
+5869,"BOTANICA 
+(RESIDENTIAL SECTION)
+668 Gardena Drive
+Coquitlam, B.C. V3J 0R8
+
+588 Harrison Avenue
+Coquitlam, B.C. V3J 0R8
+
+592 Harrison Avenue
+Coquitlam, B.C. V3J 0T3
+
+585 Kemsley Avenue
+Coquitlam, B.C. V3J 0T4
+
+595 Kemsley Avenue
+Coquitlam, B.C. V3J 0T4",EPS12462,JL
+5870,"BOTANICA COMMERCIAL SECTION
+588 Kemsley
+Coquitlam, B.C.  ",EPS12462,SD
