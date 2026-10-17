@@ -30,7 +30,7 @@ V2T 6T7",LMS3890,CG
 NLM as of November 30, 2026","THE CLARKSON
 680 Clarkson Street
 New Westminster, BC
-V3M 6X9",LMS3317,AM
+V3M 6X9",LMS3317,SD
 5038,"THE AQUARIUS COMMERCIAL
 1108-1196 Pacific Blvd. 
 125-179 Davie Street
@@ -77,8 +77,7 @@ Richmond, BC",LMS2807,SY
 1238 Homer Street
 Vancouver, BC
 V6B 2Y5
-",LMS3182,"AM
-"
+",LMS3182,SD
 5104,"QUAYSIDE MARINA
 1088 Marinaside Crescent
 Vancouver, BC
@@ -566,7 +565,7 @@ Townhouses
 408, 410, 416, 418, East 11th Avenue
 401, 411 and 421 East 12th Avenue
 Vancouver, BC 
-",EPS1093,AM
+",EPS1093,SD
 5278,"UPTOWN - RESIDENTIAL
 2788 Prince Edward Street
 Vancouver, BC   V5T 0C8
@@ -575,7 +574,7 @@ Townhouses
 408, 410, 416, 418, East 11th Avenue
 401, 411 and 421 East 12th Avenue
 Vancouver, BC 
-",EPS1093,AM
+",EPS1093,SD
 5280,ALTO - RESIDENTIAL,BCS3664,BK
 "5281
 5281-C","LONDON PLACE 
@@ -1091,7 +1090,7 @@ V5N 4A8",N/A,KH
 Section B ? 1530 West 7th Avenue
 Section C ? 1550 West 7th Avenue
 Vancouver, BC
-V6J 1S2",N/A,TL/AM
+V6J 1S2",N/A,TL
 5466,"BCS2301 (RENTAL)
 4204 ? 4206 Hastings Street
 Burnaby, B.C. 
@@ -1227,7 +1226,7 @@ Peter Lam is Admin"
 Richmond, BC
 V6X 0R2
 
-",,AM
+",,SD
 5541,"MONARCH
 4427 Cambie Street
 518 West 28th Avenue
@@ -1480,7 +1479,7 @@ V3E 3E6
 2900, 2902, 2906, 2908, 2910, 2912, 2916, 2918, 2920, 2922, 2926, 2928, 2930, 2932, 2936, 2938, 2940, 2942, 2944 Panorama Drive
 Coquitlam, BC V3E 3B4",LMS2058,KC
 "5609
-NLM as of October 26, 2026","LINCOLN'S GATE
+NLM as of October 31, 2026","LINCOLN'S GATE
 10620 150th Street
 Surrey, B.C.
 V3R 7S1
@@ -2021,7 +2020,7 @@ V8E 1E3",VR960,CKS
 5753,"HEARTWOOD
 3535 Highland Drive
 3522 Harper Road
-Coquitlam, B.C.",EPS10464,EL
+Coquitlam, B.C.",EPS10464,HC
 5754,"CANVAS
 5504 Brydon Crescent
 Langley, BC 
@@ -2504,7 +2503,7 @@ V6A 0C6",EPS2374,YM
 5853,"GRIZZLY RIDGE
 60 Grizzly Ridge Trail 
 Big White, B.C. 
-V1P 1T4",KAS3742,AM
+V1P 1T4",KAS3742,SD
 5854,"SILVER & CEDAR
 8423 Cedar Street Mission, BC 
 V4S 0G6",EPS12808,CG
@@ -2557,7 +2556,15 @@ Vancouver, B.C.",EPS12961,SA
 10425 147 Street
 10405 147 Street
 Surrey, B.C.",EPS12072,CL
-5868,"BOTANICA 
+"5868
+Newstar:
+5868-G 668 Gardena Drive
+5868-H1 588 Harrison Avenue
+5868-H2 592 Harrison Avenue
+5868-K1 585 Kemsley Avenue
+5868-K2 595 Kemsley Avenue
+5868-C 588 Kemsley Avenue
+5868-H1: 580 Harrison Avenue (TH)","BOTANICA 
 (JOINT)
 668 Gardena Drive
 Coquitlam, B.C. V3J 0R8
@@ -2592,3 +2599,9 @@ Coquitlam, B.C. V3J 0T4",EPS12462,JL
 5870,"BOTANICA COMMERCIAL SECTION
 588 Kemsley
 Coquitlam, B.C.  ",EPS12462,SD
+5871,"AMSON BLOC
+5937 144 Street, Surrey, BC V3X 1A6",EPS12689,JA
+5872,"THE BELGRAVIA
+6838 Station Hill Drive
+Burnaby, B.C. 
+V3N 5A4",LMS2404,SY
