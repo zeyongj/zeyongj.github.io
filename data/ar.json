@@ -1,36 +1,42 @@
 [
   {
     "Name": "Eric Lee",
-    "Portfolio": "5006-5125",
+    "Portfolio": "5006-5127",
     "Include": "",
     "Exclude": "5061,5063"
   },
   {
     "Name": "Mark Esguerra",
-    "Portfolio": "5127-5201",
+    "Portfolio": "5128-5203",
     "Include": "",
     "Exclude": ""
   },
   {
     "Name": "Kelly Lam",
-    "Portfolio": "5203-5285",
+    "Portfolio": "5204-5292",
     "Include": "",
     "Exclude": ""
   },
   {
     "Name": "Danny Liang",
-    "Portfolio": "5286-5363",
+    "Portfolio": "5293-5365",
     "Include": "",
     "Exclude": ""
   },
   {
-    "Name": "Johannes Phanoto",
-    "Portfolio": "5365-5398",
+    "Name": "Kelly Lam (Interim)",
+    "Portfolio": "5367-5385",
     "Include": "",
     "Exclude": ""
   },
   {
-    "Name": "Johannes Phanoto",
+    "Name": "Danny Liang (Interim)",
+    "Portfolio": "5386-5398",
+    "Include": "",
+    "Exclude": ""
+  },
+  {
+    "Name": "Danny Liang (Interim)",
     "Portfolio": "5502-5520",
     "Include": "",
     "Exclude": ""
@@ -66,56 +72,56 @@
     "Exclude": ""
   },
   {
-    "Name": "Navpreet Kaur",
-    "Portfolio": "5521-5560",
+    "Name": "Chloe Wong",
+    "Portfolio": "5521-5565",
     "Include": "",
     "Exclude": ""
   },
   {
     "Name": "Sharon Garcia",
-    "Portfolio": "5563-5611",
+    "Portfolio": "5566-5616",
     "Include": "",
     "Exclude": ""
   },
   {
     "Name": "Dutchie Nambeke",
-    "Portfolio": "5613-5673",
+    "Portfolio": "5618-5676",
     "Include": "",
     "Exclude": ""
   },
   {
     "Name": "Aldrich Agno",
-    "Portfolio": "5675-5710",
+    "Portfolio": "5677-5713",
     "Include": "",
     "Exclude": ""
   },
   {
-    "Name": "Mae Teaño",
-    "Portfolio": "5711-5739",
+    "Name": "Navpreet Kaur",
+    "Portfolio": "5714-5745",
     "Include": "",
     "Exclude": ""
   },
   {
     "Name": "Husay Issaqzai",
-    "Portfolio": "5740-5771",
+    "Portfolio": "5746-5775",
     "Include": "",
     "Exclude": ""
   },
   {
     "Name": "Felicitas Badidles",
-    "Portfolio": "5772-5794",
+    "Portfolio": "5776-5810",
     "Include": "5061,5063",
     "Exclude": ""
   },
   {
     "Name": "Shivam Seth",
-    "Portfolio": "5795-5839",
+    "Portfolio": "5811-5845",
     "Include": "",
     "Exclude": ""
   },
   {
     "Name": "Wendy Yan",
-    "Portfolio": "5840+",
+    "Portfolio": "5846+",
     "Include": "",
     "Exclude": ""
   }
