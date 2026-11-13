@@ -275,7 +275,7 @@ V6Z 1C2
  1088,1092 Seymour Street       
 Vancouver, BC 
 ",BCS1903,CL
-5164-10,"PINTURA (JOINT)
+Oct-64,"PINTURA (JOINT)
 1530 West 8th Avenue
 Vancouver, BC
 V6J 5M6
@@ -501,7 +501,7 @@ Tower 2
 233 Robson Street
 Vancouver, BC 
 V6B 0E8",BCS3407,JT
-"5256 ñ Park Place Joint
+"5256 ? Park Place Joint
 
 5256-1 (One Park Place)
 5256-2 (Two Park Place)
@@ -510,24 +510,24 @@ V6B 0E8",BCS3407,JT
 
 ","PARK PLACE - JOINT
 Residential
-One Park Place ñ 13688 ñ 100th Ave V3T 0G5
-Two Park Place ñ 9981 Whalley Boulevard V3T 0G6
+One Park Place ? 13688 ? 100th Ave V3T 0G5
+Two Park Place ? 9981 Whalley Boulevard V3T 0G6
 Surrey, BC
 
 Commercial
 9908 King George Blvd.
 13678 100 Ave.
 Surrey, BC",EPS561,GR
-"5257 ñ Park Place Residential
+"5257 ? Park Place Residential
 
 5256-1 (One Park Place)
 5256-2 (Two Park Place)
 ","PARK PLACE - RESIDENTIAL
-One Park Place ñ 13688 ñ 100th Ave
-Two Park Place ñ 9981 Whalley Boulevard
+One Park Place ? 13688 ? 100th Ave
+Two Park Place ? 9981 Whalley Boulevard
 Surrey, BC
 ",EPS561,GR
-"5258 ñ Park Place Commercial
+"5258 ? Park Place Commercial
 
 5256-C
 ","PARK PLACE - COMMERCIAL 
@@ -623,11 +623,11 @@ V5T 3Z5
 ",BCS4332,"MC
 (Admin Pool is Admin)"
 5293,"MAYNARDS BLOCK
-5293W - 445 West 2nd Avenue ñ The West Building
-5293N - 1919 Wylie Street ñ The North Building
-5293S - 429 West 2nd Avenue ñ The South/Heritage Building
+5293W - 445 West 2nd Avenue ? The West Building
+5293N - 1919 Wylie Street ? The North Building
+5293S - 429 West 2nd Avenue ? The South/Heritage Building
 5293T - Townhouses Addresses:
-408, 418, 428, 438, 448, 458, 468 West 1st Avenue ñ The North Building
+408, 418, 428, 438, 448, 458, 468 West 1st Avenue ? The North Building
 Vancouver, B.C.
 ",EPS984,CS
 5295,"OASIS
@@ -641,7 +641,7 @@ V5C 0G6
 5301,"THE RESIDENCES AT SUTER BROOK
 301 Capilano Road
 Port Moody, BC
-V3H 0G6",EPS1232,JL
+V3H 0G6",EPS1232,BL
 5302,"KITS 360 - JOINT
 1777 West 7th Avenue
 1772, 1776, 1778, 1780, 1782, 1786, 1788 West 6th Avenue
@@ -783,7 +783,7 @@ V7V 1J5",LMS1435,BK
 5365,"RIVA
 
 5365-1 - 5399 Cedarbridge Way, Richmond V6X 0L6
-5365-2 ñ 5311 Cedarbridge Way, Richmond V6X 0M3
+5365-2 ? 5311 Cedarbridge Way, Richmond V6X 0M3
 ",EPS2420,"CKS/KN  
 (KaWing)
 (Harley is Admin)"
@@ -817,13 +817,13 @@ Vancouver, BC",EPS3127,BL
 5370-1 (Phase 1)
 5370-2 (Phase 2)
 ","THE LOOKOUT
-Phase 1 ñ 20 East Royal Avenue
-Phase 2 ñ 22 East Royal Avenue
+Phase 1 ? 20 East Royal Avenue
+Phase 2 ? 22 East Royal Avenue
 New Westminster, B.C. 
 
 ",EPS3217,LZ
 5374,"AVANT
-2903 ñ 2997 Wall Street
+2903 ? 2997 Wall Street
 Vancouver, B.C.
 V5K 0A6
 ",BCS4321,JA
@@ -990,7 +990,7 @@ LMS1388",CG
 32063 Mt. Waddington Ave.
 Abbotsford, BC",RENTAL,CG
 5428,"SHORELINE (Harbour Heights)
-103 ñ 150 Shoreline Circle
+103 ? 150 Shoreline Circle
 Port Moody, BC
 V3H 5B3",RENTAL,AA
 5429,"FRASER APARTMENTS
@@ -1053,7 +1053,7 @@ Retail - 4762 Hastings St., Burnaby
 Grocery - 4790 Hastings St., Burnaby
 
 Building B 
-Office ñ 4756 Hasting St., Burnaby
+Office ? 4756 Hasting St., Burnaby
 
 Retail - 4718, 4728, and 4734 Hastings St. Burnaby
 
@@ -1087,12 +1087,12 @@ Vancouver, B.C.
 V5N 4A8",N/A,KH
 5464,PIER WEST RENTALS,N/A,JR
 5465,"TERRACES ON 7TH DEVELOPMENT CORPORATION
-Section B ñ 1530 West 7th Avenue
-Section C ñ 1550 West 7th Avenue
+Section B ? 1530 West 7th Avenue
+Section C ? 1550 West 7th Avenue
 Vancouver, BC
 V6J 1S2",N/A,TL
 5466,"BCS2301 (RENTAL)
-4204 ñ 4206 Hastings Street
+4204 ? 4206 Hastings Street
 Burnaby, B.C. 
 V5C 2J6",N/A,KH
 5502,"SAGE
@@ -1207,7 +1207,7 @@ V5C 0J2
 Vancouver, BC
 V5Y 0L8",EPS4169,GR
 5534,"LOWER LONSDALE SYNERGY I
-137-149 St. Patrickís Avenue
+137-149 St. Patrick?s Avenue
 North Vancouver, B.C. 
 V7L 0E7
 ",EPS4078,"MC
@@ -1231,7 +1231,7 @@ V6X 0R2
 4427 Cambie Street
 518 West 28th Avenue
 Vancouver, BC
-V5Z 2Y8",EPS4575,MB
+V5Z 2Y8",EPS4575,TN
 5542,"JAMES WALK
 168 East 35th Avenue
 Vancouver, BC
@@ -1339,8 +1339,8 @@ V5A 0A1
 West Tower - 455 SW Marine Drive Vancouver BC V5X 0H3
 East Tower - 433 SW Marine Drive Vancouver BC V5X 0H5
 
-Townhouse (West Tower) ñ 8110, 8120 8130, 8180, 8182, 8188 Nunavut Lane Vancouver BC V5X 0H3
-Townhouse (East Tower) ñ 8081, 8083, 8085, 8087, 8093, 8095 Yukon Street Vancouver BC V5X 0H5",EPS5144,AL
+Townhouse (West Tower) ? 8110, 8120 8130, 8180, 8182, 8188 Nunavut Lane Vancouver BC V5X 0H3
+Townhouse (East Tower) ? 8081, 8083, 8085, 8087, 8093, 8095 Yukon Street Vancouver BC V5X 0H5",EPS5144,AL
 5573,"THE GRAND AT LANSDOWNE - COMMERCIAL SECTION
 5599 Cooney Road
 Richmond, B.C. 
@@ -1453,8 +1453,8 @@ V6X 0S5
 "5597
 5597-1 (Hazelbridge)
 5597-2 (Ketcheson)","SOUTH ESTATES 
-3311 Ketcheson Road ñ V6X 0S4
-8800 Hazelbridge Way ñ V6X 0S3
+3311 Ketcheson Road ? V6X 0S4
+8800 Hazelbridge Way ? V6X 0S3
 Richmond, B.C.  
 ",EPS6023,RY
 5598,THE ARC COMMERCIAL,ASP,"CKS/CS
@@ -1462,7 +1462,7 @@ Richmond, B.C.
 5601,"CRISTALLO
 828 Gauthier Avenue
 Coquitlam, B.C.
-V3K 0E9",EPS4769,EL
+V3K 0E9",EPS4769,SD
 5603,"QUEEN'S LANDING
 115 West Queens Road
 North Vancouver B.C.
@@ -1478,14 +1478,6 @@ Coquitlam, BC
 V3E 3E6
 2900, 2902, 2906, 2908, 2910, 2912, 2916, 2918, 2920, 2922, 2926, 2928, 2930, 2932, 2936, 2938, 2940, 2942, 2944 Panorama Drive
 Coquitlam, BC V3E 3B4",LMS2058,KC
-"5609
-NLM as of October 31, 2026","LINCOLN'S GATE
-10620 150th Street
-Surrey, B.C.
-V3R 7S1
-
-** UNITS 800 THRU 1318 ONLY **
-Other units managed by other management companies; unit owner to confirm which.",NW1581,SA
 5610,"TRIOMPHE
 1888 Gilmore Avenue
 Burnaby, BC
@@ -1720,11 +1712,11 @@ V3N 0H1",EPS5758,"CZ
 
 "
 5677,"CEDAR CREEK
-Phase 1 ñ 7133 14th Avenue, Burnaby, BC V3N 0H5
+Phase 1 ? 7133 14th Avenue, Burnaby, BC V3N 0H5
 
-Phase 2 ñ 7169 14th Avenue, Burnaby, BC V3N 0H6
+Phase 2 ? 7169 14th Avenue, Burnaby, BC V3N 0H6
 
-Phase 3 ñ 7579 16th Street, Burnaby, BC V3N 0H7",EPS7638,"CKS/CS  
+Phase 3 ? 7579 16th Street, Burnaby, BC V3N 0H7",EPS7638,"CKS/CS  
 (Christie is PM)
 (Christina L. is Admin)"
 5678,"KINGS CROSSING 1
@@ -1740,7 +1732,7 @@ V2Y 1X1",EPS7877,SA
 2085 Skyline Court
 Burnaby, B.C. 
 V5C 0M6 ",EPS6726,"LZ/CZ
-(Anna V. is Admin)"
+(Trisha is Admin)"
 5682,"HOLLOWAY AT THE BOROUGHS
 2070 Oak Meadows Drive
 Surrey, B.C.
@@ -1843,7 +1835,7 @@ V3H 0L3",EPS6752,BL
 6928 Pearson Way
 Richmond, B.C.
 V7C 0C9",EPS5394,CCS
-5711,"CEDAR CREEK 2 ñ THE SIGNATURE COLLECTION
+5711,"CEDAR CREEK 2 ? THE SIGNATURE COLLECTION
 7588 16th Street, Burnaby, BC V3N 0H8
 7599 15th Street, Burnaby, BC V3N 0H9",EPS8576,"SB
 "
@@ -1909,8 +1901,8 @@ V5C 0N3",EPS9413,DC
 5724-JT: 9180 Hemlock Drive
 5724-1: 9180 Hemlock
 5724-2: 9188 Hemlock","MAGNOLIA AND CASUARINA AT HAMPTONS PARK
-9180 Hemlock Drive ñ V6Y 4J5
-9188 Hemlock Drive ñ V6Y 4J7
+9180 Hemlock Drive ? V6Y 4J5
+9188 Hemlock Drive ? V6Y 4J7
 Richmond, BC",BCS1691,JL
 5725,"LEGACY ON DUNBAR (RESIDENTIAL)
 3596 West 28th Avenue
@@ -1918,7 +1910,7 @@ Vancouver, B.C.
 V6S 2G5",EPS9531,"KN
 (Harley is Admin)"
 5726,"LEGACY ON DUNBAR (COMMERCIAL REMAINDER)
-4402 ñ 4498 Dunbar Street
+4402 ? 4498 Dunbar Street
 Vancouver, B.C. 
 V6S 2G5",EPS9532,"KN
 (Harley is Admin)"
@@ -1968,9 +1960,9 @@ Burnaby, B.C. V5C 0N2",EPS8519,FY
 West Vancouver",EPS8014,"MC
 (Admin Pool is Admin)"
 5742,"CEDAR GROVE
-Building A ñ 15238 100 Avenue, Surrey, BC, V3R 7T9
-Building B ñ 15268 100 Avenue, Surrey, BC, V3R 7V1
-Building C ñ 15288 100 Avenue, Surrey, BC, V3R 7V2",NW1676,SA
+Building A ? 15238 100 Avenue, Surrey, BC, V3R 7T9
+Building B ? 15268 100 Avenue, Surrey, BC, V3R 7V1
+Building C ? 15288 100 Avenue, Surrey, BC, V3R 7V2",NW1676,SA
 5744,"VOYCE
 5168 Cambie Street
 Vancouver, B.C.
@@ -2102,7 +2094,7 @@ V6M 2W4",EPS11004,"TT
 10741 King George Boulevard, Surrey, BC V3T 0V5
 10745 King George Boulevard, Surrey, BC V3T 0V5
 10749 King George Boulevard, Surrey, BC V3T 0V5
-13575 107A Avenue, Surrey, BC V3T 0V5",EPS10883,GR
+13575 107A Avenue, Surrey, BC V3T 0V5",EPS10883,EL
 5775,"GILMORE TOWER 2
 2108 Gilmore Avenue
 Burnaby, B.C. 
@@ -2232,13 +2224,13 @@ Richmond, BC",n/a,"CKS/CCS
 115-3328 No 3 Road, Commercial Parkade
 Richmond, B.C.",n/a,"CKS/CCS  
 (Cherie)"
-5804,"GRAFIA ñ JOINT
+5804,"GRAFIA ? JOINT
 2450 Garden Drive, Vancouver, BC V5N 0K1
 2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,KC
-5805,"GRAFIA ñ RESIDENTIAL SECTION
+5805,"GRAFIA ? RESIDENTIAL SECTION
 2450 Garden Drive, Vancouver, BC V5N 0K1 
 2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,KC
-5806,"GRAFIA ñ COMMERCIAL SECTION
+5806,"GRAFIA ? COMMERCIAL SECTION
 2450 Garden Drive, Vancouver, BC V5N 0K1 
 2305-2351 East Broadway, Vancouver, BC V5N 0K1",EPS10989,MR
 5807,"CHLOE COMMERCIAL
@@ -2246,7 +2238,7 @@ Richmond, B.C.",n/a,"CKS/CCS
 6306, 6316, 6326, 6336, 6346, 6350, 6370, 6390 East Boulevard
 2099 West 48th Avenue
 Vancouver, B.C.",EPS9998,EL
-5808,"VALEO ñ JOINT
+5808,"VALEO ? JOINT
 Building A
 RESIDENTIAL 
 4788 Hastings St. 
@@ -2270,17 +2262,17 @@ Burnaby, BC
 V5C 0P4
 (Units 201-208, 301-308, 401-408)
 
-Retail 2 (CRU 1) ñ 4718 Hastings St. Burnaby, BC
+Retail 2 (CRU 1) ? 4718 Hastings St. Burnaby, BC
 V5C 0P4
 
-Retail 2 (CRU 2) ñ 4728 Hastings St. Burnaby, BC
+Retail 2 (CRU 2) ? 4728 Hastings St. Burnaby, BC
 V5C 0P4
 
-Retail 2 (CRU 3) ñ 4734 Hastings St. Burnaby, BC
+Retail 2 (CRU 3) ? 4734 Hastings St. Burnaby, BC
 V5C 0P4
 ",EPS10007,"EL/CL
 (Christine K. Admin)"
-5809,"VALEO ñ RESIDENTIAL SECTION
+5809,"VALEO ? RESIDENTIAL SECTION
 4788 Hastings St. 
 Burnaby, BC 
 V5C 0P3
@@ -2294,13 +2286,13 @@ Burnaby, BC
 V5C 0P4
 (Units 201-208, 301-308, 401-408)
 
-Retail 2 (CRU 1) ñ 4718 Hastings St. Burnaby, BC
+Retail 2 (CRU 1) ? 4718 Hastings St. Burnaby, BC
 V5C 0P4
 
-Retail 2 (CRU 2) ñ 4728 Hastings St. Burnaby, BC
+Retail 2 (CRU 2) ? 4728 Hastings St. Burnaby, BC
 V5C 0P4
 
-Retail 2 (CRU 3) ñ 4734 Hastings St. Burnaby, BC
+Retail 2 (CRU 3) ? 4734 Hastings St. Burnaby, BC
 V5C 0P4",EPS10007,CL
 5811,"THE COMMONS 
 8230 208B Street
@@ -2316,9 +2308,9 @@ Phase 2:
 1930 Starling Drive, Tsawwassen, BC
 1942 Starling Drive, Tsawwassen, BC",EPS8403,CL
 "5813
-5813-1 ñ 11191 Horseshoe Way
-5813-2 ñ 11171 Horseshoe Way
-5183-3 ñ 11151 Horseshoe Way","RIVERSIDE
+5813-1 ? 11191 Horseshoe Way
+5813-2 ? 11171 Horseshoe Way
+5183-3 ? 11151 Horseshoe Way","RIVERSIDE
 11151, 11171, 11191 Horseshoe Way
 Richmond, BC
 V7A 4S5",LMS1585,EL
@@ -2369,7 +2361,7 @@ Michelle Ross
 Abbotsford, B.C.
 V3G 1H3",EPS11610,SA
 5825,"BCS2301
-4204 ñ 4206 Hastings Street
+4204 ? 4206 Hastings Street
 Burnaby, B.C. 
 V5C 2J6",BCS2301,EL
 5826,WATER STREET BY THE PARK - REMAINDER,n/a,CKS
@@ -2471,7 +2463,7 @@ North Vancouver, BC",EPS12039,AL
 5847,"THE BRUNSWICK (COMMERCIAL SECTION)
 4011 Bayview Street
 Richmond, BC V7E 0A4",BCS1165,CKS
-5848,"FORM ñ JOINT
+5848,"FORM ? JOINT
 1524 - 1538 W 6th Avenue
 Vancouver, B.C. 
 
@@ -2483,7 +2475,7 @@ Vancouver, BC
 Commercial: 
 1524 W 6th Avenue
 Vancouver, BC",EPS12324,MB
-5849,"FORM ñ
+5849,"FORM ?
 RESIDENTIAL SECTION
 1530 W 6th Avenue
 1526, 1528, 1532, 1534, 1536 & 1538 W. 6th Avenue
@@ -2524,15 +2516,15 @@ V6Z 0H7",EPS12960,"AL/JT
 946, 948, 950, 952, 954, 956 and 958 Lytton Street
 North Vancouver, BC",EPS12824,"RD/DC
 (Admin Pool is Admin)"
-5860,"THE MUSE ñ JOINT
+5860,"THE MUSE ? JOINT
 9015 120 Street
 Delta, B.C.
 V4C 0E3",EPS5399,SA
-5861,"THE MUSE ñ RESIDENTIAL SECTION
+5861,"THE MUSE ? RESIDENTIAL SECTION
 9015 120 Street
 Delta, B.C.
 V4C 0E3",EPS5399,SA
-5862,"THE MUSE ñ COMMERCIAL SECTION
+5862,"THE MUSE ? COMMERCIAL SECTION
 9015 120 Street
 Delta, B.C.
 V4C 0E3",EPS5399,SA
@@ -2605,7 +2597,7 @@ Coquitlam, B.C.  ",EPS12462,SD
 6838 Station Hill Drive
 Burnaby, B.C. 
 V3N 5A4",LMS2404,SY
-5873,"WOODLAND BLOCK ñ JOINT
+5873,"WOODLAND BLOCK ? JOINT
 2388 East 10th Avenue, 
 2377 East 11th Avenue
 2398 East 10th Avenue, 
@@ -2613,14 +2605,22 @@ V3N 5A4",LMS2404,SY
 2621, 2631, 2641, 2651, 2661, 2671, 2675, 2681 Nanaimo Street 
 Vancouver, B.C. 
 V5N 0H3",EPS9393,EL
-5874,"WOODLAND BLOCK ñ RESIDENTIAL SECTION
+5874,"WOODLAND BLOCK ? RESIDENTIAL SECTION
 2388 East 10th Avenue, 
 2377 East 11th Avenue
 2398 East 10th Avenue, 
 2397 East 11th Avenue
 Vancouver, B.C. 
 V5N 0H3",EPS9393,EL
-5875,"WOODLAND BLOCK ñ COMMERCIAL SECTION
+5875,"WOODLAND BLOCK ? COMMERCIAL SECTION
 2621, 2631, 2641, 2651, 2661, 2671, 2675, 2681 Nanaimo Street 
 Vancouver, B.C. 
 V5N 0H3",EPS9393,EL
+5876,"GEORGETOWN 2 ? COMMERCIAL 
+13738 Central Avenue 
+10250 Whalley Boulevard 
+Surrey, B.C.",EPS12248,BK
+5877,"THE OFFICES AT HOTEL GEORGIA
+699 Howe Street 
+Vancouver, BC 
+V6C 2T4",BCS4101,YM
